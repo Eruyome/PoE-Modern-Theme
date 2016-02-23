@@ -1,0 +1,6 @@
+*.project
+*.idea
+*.css.map
+/theme/development/images/old_images
+/node_modules
+/test
