@@ -13,6 +13,10 @@
 		overflow-x: hidden;
 		background-color: #eee;
 		min-width: 920px;
+
+		/* test */
+		background: #eee url(%%headerimg%%) no-repeat 50% 0%;
+		background-size: auto 200px;
 	}
 		
 		/* General Styles - Links / Buttons / Inputs */
@@ -91,15 +95,22 @@
 		/* Header */
 		#header {
 			margin: 0px;
-			height: 196px;
 			border: none;
-			background-color: #30333A;
-			background-image: url(%%headerimg%%);
+			height: 144px;
+			/*
+			height: 196px;
+			/*background-color: #30333A;
+			background-image: url(%%headerimg%%);*/
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			background-size: cover;
 			z-index: 1;
-			box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
+			/* box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
+
+			/* test */
+			background-image: none;
+			box-shadow: none;
+			background-color: transparent;
 		}
 
 			/* Subreddits Bar */
@@ -313,7 +324,7 @@
 				height: 42px;
 				background-image: url(%%spritesheet%%);
 				background-position: -80px -00px;
-				margin: 0 8px 0 0;
+				margin: 74px 2px 0 0;
 				vertical-align: top;
 				font-size: 0px;
 			}
@@ -325,26 +336,31 @@
 
 		 		#header .pagename a {
 		 			display: inline-block;
-		 			line-height: 42px;
-		 			color: #fff;
-		 			font-size: 42px;
-		 			font-weight: bold;
-		 			font-family: Lato, arial, sans-serif;
-		 			font-variant: normal;
 		 			text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
+					background: url(%%logo%%);
+					background-position: 0px 0px;
+					width: 127px;
+					height: 98px;
+					font-size: 0;
+					margin-top: 20px;
 		 		}
-
+				#header .pagename a:hover {
+					background-position: 128px 0px;
+				}
 
 			/* Tabmenu (hot/new/top) */
 			#header-bottom-left {
 				position: absolute;
+				top: 0px;
+				/*
 				top: 100px;
+				*/
 				left: 16px;
 				right: 384px;
 			}
 
 				#header .tabmenu {
-					margin: 12px 0 0 0;
+					margin: -8px 0 0 0;
 					display: block;
 					height: 42px;
 					line-height: 42px;
@@ -360,6 +376,9 @@
 						background-color: rgba(0,0,0,0.24);
 						height: 42px;
 						z-index: -1;
+
+						/* test */
+						display: none;
 					}
 
 					#header .tabmenu ul li {}
@@ -374,6 +393,9 @@
 						color: rgba(255,255,255,0.7);
 						display: inline-block;
 						line-height: 32px;
+
+						/* test */
+						text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 					}
 
 						#header .tabmenu li a:hover {color: #fff;}
@@ -384,6 +406,8 @@
 							padding-bottom: 4px;
 							color: #fff;
 							border-bottom: 2px solid;
+							/* test */
+							text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 						}
 
 
@@ -1345,7 +1369,10 @@
 				content: "";
 				display: block;
 				position: absolute;
+				top: 48px;
+				/*
 				top: 100px;
+				*/
 				width: 320px;
 				z-index: 1;
 				border-radius: 2px;
@@ -1370,7 +1397,10 @@
 				.side .titlebox h1.redditname {
 					margin-bottom: 6px;
 					position: absolute;
+					top: 256px;
+					/*
 					top: 308px;
+					*/
 					z-index: 100;
 					font-family: Lato, arial,verdana,helvetica,sans-serif;
 				}
@@ -1382,7 +1412,10 @@
 						z-index: 100;
 						color: #333;
 						font-size: 12px;
+						top: 284px;
+						/*
 						top: 336px;
+						*/
 					}
 
 					div.titlebox span.word {display: none;}
@@ -1411,7 +1444,10 @@
 					margin: 0;
 				    position: absolute;
 				    margin-left: 208px;
-				    top: 314px;
+				    top: 262px;
+					/*
+					top: 314px;
+					*/
 				    z-index: 100;
 				}
 
@@ -1471,7 +1507,10 @@
 			/* Search */
 			#search {
 				position: absolute;
+				top: 332px;
+				/*
 				top: 384px;
+				*/
 				z-index: 1;
 				width: 320px;
 			}
@@ -1576,7 +1615,10 @@
 			/* Submit Button */
 			.morelink {
 				position: absolute;
+				top: 390px;
+				/*
 				top: 442px;
+				*/
 				background-color: #0079d3;
 				background-image: none !important;
 				width: 152px;
@@ -2146,7 +2188,10 @@
 
 					.comments-page .side .linkinfo {
 						position: absolute;
-						top: 494px;
+						top: 442px;
+						/*
+						top: 442px;
+						*/
 						padding: 16px;
 						width: 320px;
 						background-color: #fff;

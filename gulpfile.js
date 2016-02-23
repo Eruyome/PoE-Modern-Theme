@@ -27,7 +27,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('./theme/production/css/'))
 	;
 	/* Compile compressed (no added charset) */
-	gulp.src('/theme/development/scss/*.scss')
+	gulp.src('./theme/development/scss/*.scss')
 		.pipe(sass({outputStyle: 'compressed'})
 			.on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
