@@ -588,7 +588,20 @@
 
 						.thumbnail.default 			{background: url(%%spritesheet%%) -176px -048px;}
 						.thumbnail.self 			{background: url(%%spritesheet%%) -096px -104px;}
-						.stickied .thumbnail 		{background: url(%%spritesheet%%) -096px -048px;}
+						.stickied .thumbnail 		{
+							background: url(%%spritesheet%%) -128px -160px !important;
+							background-repeat:  no-repeat;
+							width: 26px;
+							height: 26px;
+							margin-top: 18px;
+							margin-left: 6px;
+						}
+						.stickied div.RES-keyNav-activeElement {
+							padding-left: 0 !important;
+						}
+						.res .stickied .RES-keyNav-activeElement {
+							padding-left: 0;
+						}
 						.over18.link .thumbnail 	{background: url(%%spritesheet%%) -176px -104px !important;}
 							.over18.link .thumbnail img {display: none;}
 
@@ -944,8 +957,8 @@
 
 
 					/* Sticky Post */
-					.thing.stickied {
-						
+					.stickied .midcol {
+						display: none;
 					}
 
 						.thing.link.stickied a.title, .thing.link.stickied a, .thing.link.stickied .entry li .comments {color: #27b062!important;}					
@@ -1153,12 +1166,11 @@
 
 						.res .entry {transition: all 0.10s ease;}
 
-						div.RES-keyNav-activeElement, 
-						div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed {
+						div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed {
 							background-color: transparent !important;
 							padding-left: 8px !important;
-							border-left: 3px solid #C2C2C2;
 						}
+
 
 							div.commentarea div.RES-keyNav-activeElement .md {
 								background-color: transparent !important;
@@ -1389,7 +1401,7 @@
 							}
 		/* Sidebar */
 		.side {
-			margin: 282px 16px 108px 0px;
+			margin: 259px 16px 108px 0px;
 			padding: 0;
 			background-color: transparent;
 			width: 320px;
@@ -1401,12 +1413,13 @@
 
 		.side .md h6:first-of-type {
 			width: 270px;
-			height: 41px;
-			margin: 16px 8px;
+			height: 30px;
+			margin: 10px auto;
+			text-align: center;
 		}
 		.side .md h6:first-of-type a {
-			width: 41px;
-			height: 41px;
+			width: 30px;
+			height: 30px;
 			border-radius: 50%;
 			display: inline-block;
 			margin: 0 2px;
@@ -1432,19 +1445,19 @@
 			background-color: #6b6b6b;
 		}
 		.side .md h6:first-of-type a[href*="www.facebook.com"] {
-			background-position: -41px 0;
+			background-position: -30px 0;
 		}
 		.side .md h6:first-of-type a[href*="twitch.tv"] {
-			background-position: -82px 0;
+			background-position: -60px 0;
 		}
 		.side .md h6:first-of-type a[href*="www.youtube.com"] {
-			background-position: 124px ;
+			background-position: -90px 0;
 		}
 		.side .md h6:first-of-type a[href*="mumble://thebwt.com"] {
-			background-position: -164px 0;
+			background-position: -120px 0;
 		}
 		.side .md h6:first-of-type a[href*="http://webchat.freenode.net/"] {
-			background-position: -204px 0;
+			background-position: -150px 0;
 		}
 		.side .titlebox .md h4 a[href*="/message/compose"] {
 			color: #737373;
@@ -1479,7 +1492,7 @@
 				    display: block;
 				    width: 320px;
 				    z-index: -1;
-				    height: 76px;
+				    height: 74px;
 				    margin-top: -16px;
 				    margin-left: -16px;
 				    background-color: #fff;
@@ -1505,7 +1518,7 @@
 						position: absolute;
 						z-index: 100;
 						color: #333;
-						font-size: 12px;
+						font-size: 11px;
 						top: 284px;
 						/*
 						top: 336px;
@@ -1537,7 +1550,7 @@
 				.titlebox .fancy-toggle-button {
 				    position: absolute;
 				    margin-left: 208px;
-				    top: 262px;
+				    top: 249px;
 				    z-index: 100;
 					font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
 				}
@@ -1545,7 +1558,7 @@
 					.titlebox .fancy-toggle-button .active {
 						display: block;
 						border: none;
-						height: 32px;
+						height: 30px;
 						border-radius: 2px;
 						line-height: 30px;
 						background-image: none !important;
@@ -1611,10 +1624,7 @@
 			/* Search */
 			#search {
 				position: absolute;
-				top: 332px;
-				/*
-				top: 384px;
-				*/
+				top: 328px;
 				z-index: 1;
 				width: 320px;
 			}
@@ -1624,8 +1634,8 @@
 					border: 0px solid;
 					border-radius: 2px;
 					width: 320px;
-					height: 42px;
-					line-height: 41px;
+					height: 30px;
+					line-height: 30px;
 					background-color: #fff;
 
 
@@ -1719,14 +1729,14 @@
 			/* Submit Button */
 			.morelink {
 				position: absolute;
-				top: 390px;
+				top: 374px;
 				font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
 				background-color: #0079d3;
 				background-image: none !important;
 				width: 152px;
-				height: 36px;
+				height: 30px;
 				border-radius: 2px;
-				line-height: 36px;
+				line-height: 30px;
 				border: none;
 				text-align: center;
 				padding: 0px 0px;
@@ -1814,7 +1824,7 @@
 					line-height: 24px;
 					color: #292f34;
 					font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
-					margin: 8px 0px;
+					margin: 1px 0px 6px 0;
 				}
 
 			.titlebox .tagline {
@@ -1986,7 +1996,7 @@
 					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
 					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
 				}
-				.side .md>ul:nth-of-type(3), .side .md>ul:nth-of-type(6) {
+				.side .md>ul:nth-of-type(3) {
 					margin-bottom: 14px;
 				}
 				.side .md>ul:nth-of-type(3) li {
@@ -2114,22 +2124,6 @@
 				.md hr {border: solid 1px #e5e5e5;}
 
 				.side .titlebox .md h5 a[href^="https://dd.reddit.com/r/poeblackmarket/"], .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
-					/*width: 70px;
-					height: 70px;
-					margin: 0;
-					border-radius: 50%;
-					padding: 23px 0;
-					text-align: center;
-					position: absolute;
-					top: -176px;
-					z-index: 2147483647;
-					right: -2px;
-					font-size: 16px;
-					font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
-					border: 1px solid #D4D4D4;
-					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
-					transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-					*/
 					text-align: center;
 					font-size: 10px;
 					font-weight: 900;
@@ -2142,6 +2136,10 @@
 					background: #202020;
 					color: #ECF0F1;
 					margin: 0 auto;
+					position: absolute;
+					top: 286px;
+					z-index: 110;
+					right: 45px;
 				}
 				.side .titlebox .md h5:nth-of-type(2) {
 					position: inherit;
@@ -2533,14 +2531,14 @@
 								.morecomments a {color: #738491;}
 
 				/* Sidebar stuff */
-				.comments-page .side {margin-top: 400px;}
+				.comments-page .side {
+					margin-top: 400px;
+					margin-top: 376px;
+				}
 
 					.comments-page .side .linkinfo {
 						position: absolute;
-						top: 442px;
-						/*
-						top: 442px;
-						*/
+						top: 419px;
 						padding: 16px;
 						width: 320px;
 						background-color: #fff;
@@ -2555,7 +2553,7 @@
 
 						.comments-page .side .linkinfo .score {color: #292f34;}
 
-					.res.comments-page .side {margin-top: 414px;}
+					.res.comments-page .side {margin-top: 390px;}
 
 				/* That new blog-like next-post thing */
 				.read-next {
@@ -3613,18 +3611,34 @@
 
 
 a[href^='https://pathofexile.com/shop/']{
-   position: absolute;
-   top: 49px;
-   z-index: 1000;
-   display: inline-block;
-   height: 190px;
-   width: 318px;
-   right: 17px;
-   font-size: 18px;
-   text-shadow: 0px 0px 2px #000000;
-   padding: 80px 15px 15px;
+	position: absolute;
+	top: 49px;
+	z-index: 1000;
+	display: inline-block;
+	height: 190px;
+	width: 318px;
+	right: 17px;
+	font-size: 18px;
+	text-shadow: 0px 0px 2px #000000;
+	padding: 110px 15px 15px;
+	color:#DFCF99;
+	line-height: 20px;
+	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
 }
 
+
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+	background-color: inherit !important;
+}
+
+.thing[data-domain="pathofexile.com"] .thumbnail img {
+	border-radius: 50%;
+	display:none;
+}
+.thing[data-domain="pathofexile.com"] .thumbnail {
+	background-image: url(%%poe-thumb%%);
+	background-size: contain;
+}
 
 @media only screen and (max-width: 1200px) {
 	.side {
@@ -3634,6 +3648,9 @@ a[href^='https://pathofexile.com/shop/']{
 		margin: 16px 346px 64px 10px;
 	}
 }
+
+
+
 	/* ===============================================================================================================================
 
 		

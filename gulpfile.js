@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	nano = require('gulp-cssnano'),
 	minifyCss = require('gulp-minify-css'),
+	cssmin = require('gulp-cssmin'),
 	rename = require('gulp-rename');
 
 var imagemin = require('gulp-imagemin'),
@@ -32,7 +33,8 @@ gulp.task('styles', function() {
 			.on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
 		//.pipe(nano({zindex:false}))
-		.pipe(minifyCss())
+		//.pipe(minifyCss())
+		.pipe(cssmin({showLog :true,debug:true}))
 		.pipe(gulp.dest('./theme/production/css/'))
 	;
 });
