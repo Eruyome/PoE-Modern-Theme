@@ -1,0 +1,201 @@
+/// Variables generated with http://sebastianpontow.de/css2compass/
+
+//urls
+$url_headerimage: 			url(%%headerimg%%);
+$url_spritesheet: 	url(%%spritesheet%%);
+$url_logo: 			url(%%logo%%);
+$url_noresults: 	url(%%noresults%%);
+$url_mediaicons: 	url(%%mediaicons%%);
+$url_sidebarimg: 	url(%%sidebarimg%%);
+$url_sidebaricons: 	url(%%sidebaricons%%);
+$url_commentbox: 	url(%%commentbox%%);
+$url_faq: 			url(%%faq%%);
+$url_flair-classes: url(%%flair-classes%%);
+$url_flair-forum: 	url(%%flair-forum%%);
+$url_flair-asc: 	url(%%flair-asc%%);
+$url_thumb: 		url(%%poe-thumb%%);
+
+
+// font-colors
+$font_color_0: #24a0ed;
+$font_color_1: #fff;
+$font_color_2: #738491;
+$font_color_3: #292f34;
+$font_color_4: rgba(255,255,255,0.4);
+$font_color_5: rgba(255,255,255,.8);
+$font_color_6: #4d5763;
+$font_color_7: rgba(255,255,255,0.7);
+$font_color_8: rgba(232,186,127,0.7);
+$font_color_9: rgba(232,186,127,1);
+$font_color_10: #ff6422;
+$font_color_11: #5c5bd7;
+$font_color_12: #98abba;
+$font_color_13: #27b062;
+$font_color_14: #4a4f57;
+$font_color_15: #b3b3b3;
+$font_color_16: #4f8ef7;
+$font_color_17: rgba(0,0,0,0.64);
+$font_color_18: #000;
+$font_color_19: #737373;
+$font_color_20: #333;
+$font_color_21: rgba(0,0,0,0.32);
+$font_color_22: #ecf0f1;
+$font_color_23: #7d5d8a;
+$font_color_25: rgba(255,255,255,.8);
+$font_color_27: rgba(255,255,255,0.45);
+$font_color_28: rgba(255,255,255,0.45);
+$font_color_29: rgba(255,255,255,0.6);
+$font_color_30: #516ae8;
+$font_color_32: red;
+$font_color_33: #3bb9ff;
+$font_color_34: #af6025;
+$font_color_35: #dfcf99;
+
+// font-stacks
+$font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
+$font_stack_sans: #{Verdana, 'DejaVu Sans', sans-serif};
+
+
+// background-colors
+$bg_color_0: #eee;
+$bg_color_1: #0079d3;
+$bg_color_2: #fff;
+$bg_color_3: #158be2;
+$bg_color_4: #0066b2;
+$bg_color_5: rgba(0,0,0,.3);
+$bg_color_6: rgba(0,0,0,0.08);
+$bg_color_7: #f1f1f1;
+$bg_color_8: #f50;
+$bg_color_9: #ea4848;
+$bg_color_10: #ec5b5b;
+$bg_color_11: #c73d3d;
+$bg_color_12: rgba(0,0,0,.4);
+$bg_color_13: rgba(0,0,0,0.24);
+$bg_color_14: rgba(232, 186, 127, 1);
+$bg_color_15: #f2f2f2;
+$bg_color_16: rgba(0,0,0,.04);
+$bg_color_17: #ff5500;
+$bg_color_18: rgba(79, 77, 192, 0.0);
+$bg_color_19: rgba(79, 77, 192, 0.9);
+$bg_color_20: #f00;
+$bg_color_21: #27b062;
+$bg_color_22: #ea4876;
+$bg_color_23: #738491;
+$bg_color_24: #ffe9e6;
+$bg_color_25: #fb797e;
+$bg_color_26: #fc535a;
+$bg_color_27: #dddddd;
+$bg_color_28: #ececec;
+$bg_color_29: #22e1a6;
+$bg_color_31: #eff7ff;
+$bg_color_32: white;
+$bg_color_33: #f5f8f9;
+$bg_color_34: #4f8ef7;
+$bg_color_35: rgba(79, 142, 247, 0.75);
+$bg_color_36: rgba(0,0,0,.2);
+$bg_color_37: #00a0d2;
+$bg_color_38: #3b5999;
+$bg_color_39: #64459c;
+$bg_color_40: #c4302c;
+$bg_color_41: #000;
+$bg_color_42: #6b6b6b;
+$bg_color_43: #dbdbdb;
+$bg_color_44: #36bb6f;
+$bg_color_45: #189b51;
+$bg_color_46: rgba(0,0,0,0.32);
+$bg_color_48: rgba(0,0,0,0.00);
+$bg_color_49: rgba(158,158,158,.2);
+$bg_color_50: #edf1f3;
+$bg_color_51: rgba(0,0,0,0.06);
+$bg_color_53: hsla(206, 100%, 41%, 1);
+$bg_color_54: hsla(206, 100%, 37%, 1);
+$bg_color_55: hsla(206, 100%, 33%, 1);
+$bg_color_56: hsla(206, 100%, 30%, 1);
+$bg_color_57: #f4f6f7;
+$bg_color_58: #202020;
+$bg_color_59: #fafafa;
+$bg_color_60: #f2f7fa;
+$bg_color_61: rgb(0, 121, 211);
+$bg_color_62: #c3cfd6;
+$bg_color_63: #f9f9f9;
+$bg_color_64: #2e2f31;
+$bg_color_65: rgba(43, 51, 58, 0.64);
+$bg_color_66: #516ae8;
+$bg_color_67: #667df0;
+$bg_color_68: #006b6b;
+$bg_color_69: #800000;
+$bg_color_70: #f3f3f3;
+$bg_color_71: #800080;
+$bg_color_72: #ffd700;
+$bg_color_73: #af6025;
+$bg_color_74: #db8516;
+$bg_color_75: red;
+$bg_color_76: #ffff77;
+$bg_color_77: #88f;
+$bg_color_78: #c8c8c8;
+$bg_color_79: #add5ab;
+$bg_color_80: #7bb850;
+
+
+// border-colors
+$border_color_0: #c3cfd6;
+$border_color_1: #738491;
+$border_color_2: #24a0ed;
+$border_color_3: #edeeee;
+$border_color_4: #e9e9e9;
+$border_color_5: #0079d3;
+$border_color_6: #edf1f3;
+$border_color_7: #ea4876;
+$border_color_8: #fb797e;
+$border_color_9: #fc535a;
+$border_color_10: #dddddd;
+$border_color_11: #ececec;
+$border_color_12: #1ecd97;
+$border_color_13: #22e1a6;
+$border_color_14: #f2f2f2;
+$border_color_15: #27b062;
+$border_color_16: #f7f7f7;
+$border_color_17: #ededed;
+$border_color_18: #d7d9dc;
+$border_color_19: #e5e5e5;
+$border_color_20: #4f8ef7;
+$border_color_21: rgba(0, 0, 0, 0.08);
+$border_color_22: #333;
+$border_color_23: #cccccc;
+$border_color_24: hsla(206, 100%, 16%, 1);
+$border_color_25: #d4d4d4;
+$border_color_26: #d8d8d8;
+$border_color_27: rgba(0, 0, 0, 0.06);
+$border_color_28: #d8e0e5;
+$border_color_29: #98abba;
+$border_color_30: #fff;
+$border_color_31: #4258ca;
+$border_color_32: #000;
+$border_color_33: #9b0000;
+
+// box-shadow-colors
+$boxshadow_color_0: rgba(0,0,0,.12);
+$boxshadow_color_1: rgba(0,0,0,.14);
+$boxshadow_color_2: rgba(0,0,0,.2);
+$boxshadow_color_3: rgba(0, 0, 0, 0.15);
+$boxshadow_color_4: rgba(0, 0, 0, 0.24);
+$boxshadow_color_5: rgba(0, 0, 0, 0.48);
+$boxshadow_color_6: rgba(0, 0, 0, 0.76);
+$boxshadow_color_7: rgba(0, 0, 0, 0.12);
+$boxshadow_color_8: rgba(0, 0, 0, 0.25);
+$boxshadow_color_9: #ddd;
+$boxshadow_color_10: rgba(0, 0, 0, 0.00);
+$boxshadow_color_11: rgba(0,0,0,0.14);
+$boxshadow_color_12: rgba(0,0,0,0.0);
+$boxshadow_color_13: rgba(0,0,0,0.24);
+$boxshadow_color_14: #fff;
+$boxshadow_color_15: rgba(0, 0, 0, 0.2);
+$boxshadow_color_16: rgba(0, 0, 0, 0.16);
+
+
+// text-shadows
+$text_shadow_01: 0px 1px 12px rgba(0, 0, 0, 0.2);
+$text_shadow_02: 0px -1px 2px rgba(223, 207, 153, 0.2),1px 0px 2px rgba(223, 207, 153, 0.2),0px 1px 2px rgba(223, 207, 153, 0.2),-1px 0px 2px rgba(223, 207, 153, 0.2);
+$text_shadow_03: 1px 1px 2px black, 0 0 1em green, 0 0 0.2em green;
+$text_shadow_04: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+$text_shadow_05: 0px 0px 2px #000000;
