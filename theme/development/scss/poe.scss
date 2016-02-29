@@ -14,7 +14,7 @@
 body {
 	overflow-x: hidden;
 	min-width: 920px;
-	background: #eee $url_headerimage no-repeat 50% 0%;
+	background: $bg_color_0 $url_headerimage no-repeat 50% 0%;
 	background-size: auto 200px;
 	> .content {
 		animation-name: fadein;
@@ -29,14 +29,14 @@ body {
 /* General Styles - Links / Buttons / Inputs */
 
 a {
-	color: #24a0ed;
+	color: $font_color_0;
 	transition: color 0.15s ease;
 }
 
 ::-moz-selection, ::selection {
-	background-color: #0079d3;
+	background-color: $bg_color_1;
 	text-shadow: none;
-	color: #fff;
+	color: $font_color_1;
 }
 
 :focus {
@@ -45,18 +45,18 @@ a {
 
 body .content {
 	.text, textarea {
-		background-color: #fff;
-		border: 1px solid #c3cfd6;
-		color: #738491;
+		background-color: $bg_color_2;
+		border: 1px solid $border_color_0;
+		color: $font_color_2;
 		box-shadow: none;
 		transition: border-color 0.15s ease, color 0.15s ease;
 		padding: 6px 12px;
 	}
 	input {
 		&[type=text], &[type=password] {
-			background-color: #fff;
-			border: 1px solid #c3cfd6;
-			color: #738491;
+			background-color: $bg_color_2;
+			border: 1px solid $border_color_0;
+			color: $font_color_2;
 			box-shadow: none;
 			transition: border-color 0.15s ease, color 0.15s ease;
 			padding: 6px 12px;
@@ -65,9 +65,9 @@ body .content {
 }
 
 .side .spacer input {
-	background-color: #fff;
-	border: 1px solid #c3cfd6;
-	color: #738491;
+	background-color: $bg_color_2;
+	border: 1px solid $border_color_0;
+	color: $font_color_2;
 	box-shadow: none;
 	transition: border-color 0.15s ease, color 0.15s ease;
 	padding: 6px 12px;
@@ -75,80 +75,80 @@ body .content {
 
 body .content {
 	input[type=url] {
-		background-color: #fff;
-		border: 1px solid #c3cfd6;
-		color: #738491;
+		background-color: $bg_color_2;
+		border: 1px solid $border_color_0;
+		color: $font_color_2;
 		box-shadow: none;
 		transition: border-color 0.15s ease, color 0.15s ease;
 		padding: 6px 12px;
 	}
 	.text:hover, textarea:hover {
-		border-color: #738491;
+		border-color: $border_color_1;
 	}
 	input {
 		&[type=text]:hover, &[type=password]:hover {
-			border-color: #738491;
+			border-color: $border_color_1;
 		}
 	}
 }
 
 .side .spacer input:hover {
-	border-color: #738491;
+	border-color: $border_color_1;
 }
 
 body .content {
 	input[type=url]:hover {
-		border-color: #738491;
+		border-color: $border_color_1;
 	}
 	.text:focus, textarea:focus {
-		border-color: #24a0ed;
-		color: #292f34;
+		border-color: $border_color_2;
+		color: $font_color_3;
 	}
 	input {
 		&[type=text]:focus, &[type=password]:focus {
-			border-color: #24a0ed;
-			color: #292f34;
+			border-color: $border_color_2;
+			color: $font_color_3;
 		}
 	}
 }
 
 .side .spacer input:active {
-	border-color: #24a0ed;
-	color: #292f34;
+	border-color: $border_color_2;
+	color: $font_color_3;
 }
 
 body {
 	.content input[type=url]:focus {
-		border-color: #24a0ed;
-		color: #292f34;
+		border-color: $border_color_2;
+		color: $font_color_3;
 	}
 	.btn, button {
 		margin: 4px 16px 4px 0px;
 		padding: 2px 18px;
-		background-color: #0079d3;
+		background-color: $bg_color_1;
 		border: none;
 		border-radius: 2px;
-		color: #fff;
+		color: $font_color_1;
 		text-transform: uppercase;
 		font-weight: bold;
 		cursor: default;
 		height: 32px;
 		font-size: 12px;
-		box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+		box-shadow: $boxshadow_01;
 		transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
 .btn:hover, button:hover {
-	color: #fff;
-	background-color: #158be2;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	color: $font_color_1;
+	background-color: $bg_color_3;
+	box-shadow: $boxshadow_06;
 }
 
 .btn:active, button:active {
-	color: #fff;
-	background-color: #0066b2;
-	box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+	color: $font_color_1;
+	background-color: $bg_color_4;
+	box-shadow: $boxshadow_01;
 }
 
 /* Header */
@@ -164,7 +164,7 @@ body {
 	background: transparent none no-repeat 50% 50%;
 	&:before {
 		content: "";
-		background: rgba(0, 0, 0, 0.3);
+		background: $bg_color_5;
 		height: 40px;
 		width: 100%;
 		position: absolute;
@@ -177,7 +177,7 @@ body {
 /* Subreddits Bar */
 
 #sr-header-area {
-	background-color: rgba(0, 0, 0, 0.08);
+	background-color: $bg_color_6;
 	border: none;
 	transition: all 0.15s ease;
 	height: 24px;
@@ -197,26 +197,26 @@ body:not(.loggedin) #sr-header-area .width-clip {
 	}
 	.sr-bar a {
 		background-color: transparent;
-		color: rgba(255, 255, 255, 0.4);
+		color: $font_color_4;
 		transition: all 0.15s ease;
 	}
 }
 
 #sr-more-link {
 	background-color: transparent;
-	color: rgba(255, 255, 255, 0.4);
+	color: $font_color_4;
 	transition: all 0.15s ease;
 }
 
 #sr-header-area {
 	.separator, .dropdown.srdrop .selected {
 		background-color: transparent;
-		color: rgba(255, 255, 255, 0.4);
+		color: $font_color_4;
 		transition: all 0.15s ease;
 	}
 	&:hover {
 		.sr-bar a, #sr-more-link, .seperator, .dropdown.srdrop .selected {
-			color: rgba(255, 255, 255, 0.8);
+			color: $font_color_5;
 		}
 	}
 	.sr-bar a:hover {
@@ -256,16 +256,16 @@ a.random.choice {
 	}
 	.drop-choices {
 		&.srdrop {
-			background-color: #fff;
+			background-color: $bg_color_2;
 			border: none;
-			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+			box-shadow: $boxshadow_02;
 		}
 		a.choice {
-			border-bottom: 1px solid #edeeee;
-			color: #4D5763;
+			border-bottom: 1px solid $border_color_3;
+			color: $font_color_6;
 			padding: 2px;
 			&:hover {
-				background-color: #f1f1f1;
+				background-color: $bg_color_7;
 			}
 		}
 	}
@@ -292,7 +292,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 #header-bottom-right a {
-	color: rgba(255, 255, 255, 0.7);
+	color: $font_color_7;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -308,14 +308,14 @@ body:not(.loggedin) #header-bottom-right {
 
 .user .userkarma {
 	font-weight: normal;
-	color: rgba(255, 255, 255, 0.4);
+	color: $font_color_4;
 	border: none;
 	font-size: 9px;
 	transition: all 0.15s ease;
 }
 
 .separator, .user {
-	color: rgba(255, 255, 255, 0.4);
+	color: $font_color_4;
 }
 
 #mail, #modmail {
@@ -340,10 +340,10 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 .message-count {
-	background-color: #f50;
+	background-color: $bg_color_8;
 	position: relative;
 	top: -1px;
-	color: #fff !important;
+	color: $font_color_1 !important;
 }
 
 #mail.havemail {
@@ -353,28 +353,28 @@ body:not(.loggedin) #header-bottom-right {
 		bottom: 24px;
 		z-index: 100;
 		border-radius: 2px;
-		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
-		color: #fff;
+		box-shadow: $boxshadow_03;
+		color: $font_color_1;
 		width: 300px;
 		height: 48px;
 		left: 32px;
 		content: "You have new messages!";
 		text-indent: 0px;
 		font-size: 14px;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		line-height: 1;
 		-webkit-transform: translateY(112px);
 		transform: translateY(112px);
 		transition: background-color 0.25s ease, box-shadow 0.25s ease;
-		background: #EA4848 $url_spritesheet no-repeat 269px -120px;
+		background: $bg_color_9 $url_spritesheet no-repeat 269px -120px;
 	}
 	&:hover:before {
-		background-color: #ec5b5b;
-		box-shadow: 0 3px 12px rgba(0, 0, 0, 0.48);
+		background-color: $bg_color_10;
+		box-shadow: $boxshadow_07;
 	}
 	&:active:before {
-		background-color: #c73d3d;
-		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.76);
+		background-color: $bg_color_11;
+		box-shadow: $boxshadow_08;
 	}
 }
 
@@ -454,7 +454,7 @@ body:not(.loggedin) #header-bottom-right {
 	font-size: 0;
 	a {
 		display: inline-block;
-		text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
+		text-shadow: $text_shadow_01;
 		background: $url_logo 0px 0px;
 		width: 127px;
 		height: 98px;
@@ -481,21 +481,15 @@ body:not(.loggedin) #header-bottom-right {
 	height: 42px;
 	line-height: 42px;
 	border: none;
-	/*
-  background: rgba(0,0,0,.4);
-  margin: -6px 20px -8px 0px;
-  padding-left: 10px;
-  border-radius: 2px;
-  */
+
 	&:before {
 		content: "";
 		position: absolute;
 		left: -16px;
 		right: -384px;
-		background-color: rgba(0, 0, 0, 0.24);
+		background-color: $bg_color_13;
 		height: 42px;
 		z-index: -1;
-		/* test */
 		display: none;
 	}
 	ul li {}
@@ -506,18 +500,18 @@ body:not(.loggedin) #header-bottom-right {
 			text-transform: uppercase;
 			font-weight: normal;
 			font-size: 14px;
-			font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+			font-family: $font_stack_serif;
 			display: inline-block;
 			line-height: 32px;
-			color: rgba(232, 186, 127, 0.7);
-			text-shadow: 0px -1px 2px rgba(223, 207, 153, 0.2), 1px 0px 2px rgba(223, 207, 153, 0.2), 0px 1px 2px rgba(223, 207, 153, 0.2), -1px 0px 2px rgba(223, 207, 153, 0.2);
+			color: $font_color_8;
+			text-shadow: $text_shadow_02;
 			position: relative;
 			&:hover {
-				color: rgba(232, 186, 127, 1);
-				text-shadow: 0px -1px 2px rgba(223, 207, 153, 0.2), 1px 0px 2px rgba(223, 207, 153, 0.2), 0px 1px 2px rgba(223, 207, 153, 0.2), -1px 0px 2px rgba(223, 207, 153, 0.2);
+				color: $font_color_8;
+				text-shadow: $text_shadow_02;
 				&:before {
 					width: 100%;
-					background: rgba(232, 186, 127, 1);
+					background: $font_color_9;
 					transition: width .3s ease;
 				}
 			}
@@ -527,9 +521,9 @@ body:not(.loggedin) #header-bottom-right {
 		}
 		&.selected a {
 			padding-bottom: 4px;
-			color: rgba(232, 186, 127, 1);
+			color: $font_color_9;
 			border-bottom: 2px solid;
-			text-shadow: 0px -1px 2px rgba(223, 207, 153, 0.2), 1px 0px 2px rgba(223, 207, 153, 0.2), 0px 1px 2px rgba(223, 207, 153, 0.2), -1px 0px 2px rgba(223, 207, 153, 0.2);
+			text-shadow: $text_shadow_02;
 		}
 		a {
 			&:before, &:after {
@@ -594,7 +588,7 @@ body {
 
 body {
 	&:not(.comments-page) .link:hover {
-		background-color: #f2f2f2;
+		background-color: $bg_color_15;
 	}
 	> .content .link .rank {
 		display: none;
@@ -622,10 +616,10 @@ body {
 		text-align: center;
 		margin: 1px -100% 1px -100%;
 		&.likes {
-			color: #ff6422;
+			color: $font_color_10;
 		}
 		&.dislikes {
-			color: #5c5bd7;
+			color: $font_color_11;
 		}
 	}
 }
@@ -638,7 +632,7 @@ body {
 	border-radius: 2px;
 	transition: background-color 0.25s ease;
 	&:hover {
-		background-color: rgba(0, 0, 0, 0.04);
+		background-color: $bg_color_16;
 	}
 	&.up {
 		height: 20px;
@@ -658,7 +652,7 @@ body {
 			opacity: 1;
 			z-index: 100;
 			content: " ";
-			background-color: #ff5500;
+			background-color: $bg_color_17;
 			border-radius: 28px;
 			animation: upvote 0.35s ease-out forwards;
 			-webkit-animation: upvote 0.35s ease-out forwards;
@@ -682,10 +676,10 @@ body {
 			margin-top: -6px;
 			margin-left: 32px;
 			padding: 12px;
-			background-color: rgba(79, 77, 192, 0);
+			background-color: $bg_color_18;
 			border: none;
 			border-radius: 2px;
-			color: rgba(255, 255, 255, 0);
+			color: $font_color_1;
 			content: "For content that does not contribute to any discussion.";
 			text-align: center;
 			letter-spacing: 1px;
@@ -696,8 +690,8 @@ body {
 		}
 		&:hover:after {
 			visibility: visible;
-			background-color: rgba(79, 77, 192, 0.9);
-			color: #FFF;
+			background-color: $bg_color_19;
+			color: $font_color_1;
 			margin-left: 48px;
 		}
 	}
@@ -794,7 +788,7 @@ a.thumbnail[href*="reddit.com"] {
 	.title {
 		margin: 0px 0px 0px 0px;
 		font-size: 13.5pt;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		font-weight: 700;
 		transition: all 0.15s ease;
 		overflow: visible;
@@ -804,23 +798,23 @@ a.thumbnail[href*="reddit.com"] {
 /* Submission Title */
 
 body .content .sitetable .link .title a:hover {
-	color: #24a0ed;
+	color: $font_color_0;
 }
 
 /*Unvisited*/
 
 .thing .title {
 	&.loggedin.click, &.click, &.loggedin {
-		color: #24a0ed;
+		color: $font_color_0;
 	}
-	color: #24a0ed;
+	color: $font_color_0;
 }
 
 /*Visited  */
 
 .content .thing {
 	.title:visited, &.visited .title {
-		color: #738491;
+		color: $font_color_2;
 	}
 }
 
@@ -828,7 +822,7 @@ body .content .sitetable .link .title a:hover {
 
 .thing .title {
 	&.loggedin.click:visited, &.click:visited {
-		color: #24a0ed;
+		color: $font_color_0;
 	}
 }
 
@@ -840,10 +834,10 @@ body .content .sitetable .link .title a:hover {
 		visibility: visible;
 		position: relative;
 		top: -1px;
-		color: #98abba;
+		color: $font_color_12;
 		transition: all 0.15s ease;
 		&:hover {
-			color: #24a0ed;
+			color: $font_color_0;
 			text-decoration: none;
 		}
 	}
@@ -863,7 +857,7 @@ body .content .sitetable .link .title a:hover {
 	height: 16px;
 	border-radius: 2px;
 	background: transparent $url_spritesheet !important;
-	border: 1px solid #e9e9e9;
+	border: 1px solid $border_color_4;
 	cursor: pointer;
 	&.image, &.video-muted {
 		position: relative;
@@ -873,12 +867,12 @@ body .content .sitetable .link .title a:hover {
 		height: 16px;
 		border-radius: 2px;
 		background: transparent $url_spritesheet !important;
-		border: 1px solid #e9e9e9;
+		border: 1px solid $border_color_4;
 		cursor: pointer;
 	}
 	&:hover {
-		background-color: #0079d3;
-		border-color: #0079d3;
+		background-color: $bg_color_1;
+		border-color: $border_color_5;
 	}
 	&.selftext {
 		&.collapsed {
@@ -961,23 +955,23 @@ body .content .sitetable .link .title a:hover {
 	padding-left: 0;
 	background-color: transparent;
 	border: 0px solid;
-	border-top: 1px solid #edf1f3;
+	border-top: 1px solid $border_color_6;
 	border-radius: 0px;
-	color: #292f34;
+	color: $font_color_3;
 }
 
 /* Submitted X ago by.. */
 
 .entry .tagline {
 	margin-top: 3px;
-	color: #98abba;
+	color: $font_color_12;
 	font-size: 12px;
-	font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+	font-family: $font_stack_sans;
 }
 
 .link .entry .tagline {
 	a {
-		color: #292f34;
+		color: $font_color_3;
 	}
 	&:first-letter {
 		text-transform: capitalize;
@@ -987,7 +981,7 @@ body .content .sitetable .link .title a:hover {
 	}
 	a {
 		&:hover {
-			color: #24a0ed;
+			color: $font_color_0;
 			text-decoration: none;
 		}
 		&.author {
@@ -1001,13 +995,13 @@ body .content .sitetable .link .title a:hover {
 			font-size: 10px;
 			padding: 1px 3px 1px 2px;
 			margin-left: 2px;
-			background-color: #f00;
-			color: #fff !important;
+			background-color: $bg_color_20;
+			color: $font_color_1 !important;
 			position: relative;
 			top: -1px;
 			cursor: help;
 			&.moderator {
-				background-color: #27b062;
+				background-color: $bg_color_21;
 			}
 		}
 	}
@@ -1040,17 +1034,17 @@ body .content .sitetable .link .title a:hover {
 	line-height: normal;
 	a {
 		padding: 0 1px;
-		color: #98abba;
+		color: $font_color_12;
 		font-weight: normal;
 		font-size: 13px;
-		font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+		font-family: $font_stack_sans;
 		transition: all 0.15s ease;
 	}
 }
 
 .link {
 	.entry .buttons li a:hover {
-		color: #24a0ed;
+		color: $font_color_0;
 		text-decoration: none;
 	}
 	&:hover {
@@ -1078,17 +1072,17 @@ body .content .sitetable .link .title a:hover {
 		position: relative;
 		top: -1px;
 		padding: 2px 3px;
-		background-color: #ea4876;
-		border-color: #ea4876;
+		background-color: $bg_color_22;
+		border-color: $border_color_7;
 		border-radius: 0px;
-		color: #fff;
+		color: $font_color_1;
 		cursor: help;
 	}
 }
 
 .link .entry {
 	.buttons li a.comments {
-		color: #24a0ed;
+		color: $font_color_0;
 		font-weight: bold !important;
 		transition: all 0.25s ease-in-out !important;
 	}
@@ -1107,14 +1101,14 @@ body .content .sitetable .link .title a:hover {
 	left: 40%;
 	margin: 0;
 	padding: 24px;
-	background-color: #fff;
+	background-color: $bg_color_2;
 	z-index: 100;
-	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_09;
 	border: none;
 	border-radius: 2px;
 	.reason-prompt {
 		font-size: 16px;
-		color: #4D5763;
+		color: $font_color_6;
 		padding-bottom: 8px;
 		display: block;
 		&:first-letter {
@@ -1129,10 +1123,10 @@ body .content .sitetable .link .title a:hover {
 		padding: 4px 4px 4px 0px;
 		cursor: pointer;
 		display: block;
-		color: #4D5763;
+		color: $font_color_6;
 		text-transform: capitalize;
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.04);
+			background-color: $bg_color_16;
 		}
 	}
 	input[name="other_reason"] {
@@ -1140,20 +1134,20 @@ body .content .sitetable .link .title a:hover {
 	}
 }
 
-/*	.link .entry li .comments:hover .newComments {color: #fff !important;} */
+/*	.link .entry li .comments:hover .newComments {color: $font_color_1 !important;} */
 
 /* Flair */
 
 .link .entry .buttons li {
 	a.flairselectbtn {
-		color: #24a0ed;
+		color: $font_color_0;
 	}
 	.redditSingleClick {
 		padding: 0 1px;
-		color: #98abba;
+		color: $font_color_12;
 		font-weight: normal;
 		font-size: 13px;
-		font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+		font-family: $font_stack_sans;
 		transition: all 0.15s ease;
 	}
 }
@@ -1167,26 +1161,26 @@ body .content .sitetable .link .title a:hover {
 	height: 18px;
 	border-radius: 1px;
 	border: 0px solid;
-	color: #fff;
+	color: $font_color_1;
 	font-weight: bold;
 	font-style: normal;
 	font-variant: normal;
 	font-size: 13px;
-	font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+	font-family: $font_stack_sans;
 	cursor: default;
 	vertical-align: middle;
 	position: relative;
 	top: -2px;
-	background-color: #738491;
+	background-color: $bg_color_23;
 }
 
 .linkflair-mod {
 	.linkflairlabel {
-		background-color: #27b062;
-		color: #fff;
+		background-color: $bg_color_21;
+		color: $font_color_1;
 	}
 	a {
-		color: #27b062 !important;
+		color: $font_color_13 !important;
 	}
 	.thumbnail {
 		&.default, &.self {
@@ -1198,14 +1192,14 @@ body .content .sitetable .link .title a:hover {
 /* Reported & Spam/Remove/Approves */
 
 body .content .thing.spam {
-	background-color: #FFE9E6;
+	background-color: $bg_color_24;
 }
 
 .entry .buttons li.reported-stamp {
 	background-color: transparent;
-	border: 1px solid #EDEEEE !important;
+	border: 1px solid $border_color_3 !important;
 	border-radius: 2px;
-	color: #292f34;
+	color: $font_color_3;
 	line-height: 17px;
 }
 
@@ -1213,50 +1207,50 @@ a.pretty-button {
 	&.negative, &.neutral, &.positive {
 		background-image: none;
 		border-radius: 2px;
-		box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.25);
-		color: #fff;
+		box-shadow: $boxshadow_19;
+		color: $font_color_1;
 		line-height: 15px;
 		transition: all 0.1s ease;
 	}
 	&.negative {
-		background-color: #fb797e;
-		border-color: #fb797e;
+		background-color: $bg_color_25;
+		border-color: $border_color_8;
 		&:hover {
-			background-color: #fc535a;
-			border-color: #fc535a;
+			background-color: $bg_color_26;
+			border-color: $border_color_9;
 		}
 	}
 	&.neutral {
-		background-color: #dddddd;
-		border-color: #dddddd;
-		color: #4A4F57;
+		background-color: $bg_color_27;
+		border-color: $border_color_10;
+		color: $font_color_14;
 		&:hover {
-			background-color: #ececec;
-			border-color: #ececec;
+			background-color: $bg_color_28;
+			border-color: $border_color_11;
 		}
 	}
 	&.positive {
-		background-color: #1ecd97;
-		border-color: #1ecd97;
+		background-color: $bg_color_81;
+		border-color: $border_color_12;
 		&:hover {
-			background-color: #22e1a6;
-			border-color: #22e1a6;
+			background-color: $bg_color_29;
+			border-color: $border_color_13;
 		}
 		&.pressed {
 			background-image: none;
-			box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.15);
+			box-shadow: $boxshadow_20;
 		}
 	}
 	&.neutral.pressed, &.negative.pressed {
 		background-image: none;
-		box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.15);
+		box-shadow: $boxshadow_20;
 	}
 }
 
 ul.report-reasons {
 	border-radius: 2px;
 	background-color: transparent;
-	border: 1px solid #edf1f3;
+	border: 1px solid $border_color_6;
 	padding: 8px;
 	font-size: 12px;
 	margin-top: 4px;
@@ -1265,17 +1259,13 @@ ul.report-reasons {
 /* Last Clicked */
 
 .link.last-clicked {
-	//left: -16px;
-	//margin-right: -32px;
-	//padding-left: 16px;
-	//background-color: rgba(0, 0, 0, 0.04);
 	border: none;
 }
 
 /* Sticky Post */
 
 .stickied {
-	border-bottom: 1px solid #f2f2f2;
+	border-bottom: 1px solid $border_color_14;
 	.midcol {
 		display: none;
 	}
@@ -1284,21 +1274,21 @@ ul.report-reasons {
 .thing.link.stickied {
 	a {
 		&.title {
-			color: #27b062 !important;
+			color: $font_color_13 !important;
 		}
-		color: #27b062 !important;
+		color: $font_color_13 !important;
 	}
 	.entry li .comments {
-		color: #27b062 !important;
+		color: $font_color_13 !important;
 	}
 	.expando-button:hover {
-		background-color: #27b062 !important;
-		border-color: #27b062 !important;
+		background-color: $bg_color_21 !important;
+		border-color: $border_color_15 !important;
 	}
 }
 
 .tagline .stickied-tagline {
-	color: #b3b3b3;
+	color: $font_color_15;
 	cursor: help;
 }
 
@@ -1306,7 +1296,7 @@ ul.report-reasons {
 
 .stickied.comment {
 	> .entry a, .tagline .stickied-tagline {
-		color: #27b062 !important;
+		color: $font_color_13 !important;
 	}
 }
 
@@ -1317,7 +1307,7 @@ ul.report-reasons {
 }
 
 .link.promotedlink.promoted {
-	background-color: #EFF7FF;
+	background-color: $bg_color_31;
 	padding: 16px 0;
 	.thumbnail {
 		height: auto;
@@ -1331,7 +1321,7 @@ ul.report-reasons {
 }
 
 .organic-listing {
-	background-color: white !important;
+	background-color: $bg_color_32 !important;
 	padding: 0;
 	position: relative;
 	margin-bottom: 0px;
@@ -1340,19 +1330,19 @@ ul.report-reasons {
 	.link {
 		padding: 16px;
 		background-color: transparent;
-		border: 1px solid #edf1f3;
+		border: 1px solid $border_color_6;
 		border-radius: 3px;
 		&.compressed, &.promotedlink {
 			padding: 16px;
 			background-color: transparent;
-			border: 1px solid #edf1f3;
+			border: 1px solid $border_color_6;
 			border-radius: 3px;
 		}
 	}
 	.help, .sponsored-tagline {
 		margin-bottom: 20px;
 		margin-right: 16px;
-		color: #98abba;
+		color: $font_color_12;
 	}
 }
 
@@ -1382,14 +1372,14 @@ body > .content .link.compressed .midcol {
 	padding: 32px !important;
 	border: none;
 	border-radius: 2px;
-	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_09;
 	&.drop-choices.active {
-		border: 1px solid #e2e2e2;
+		border: 1px solid $border_color_34;
 	}
 	h2 {
 		margin-bottom: 4px;
 		background-color: transparent;
-		color: #24a0ed;
+		color: $font_color_0;
 		text-align: left;
 		text-transform: capitalize;
 		font-weight: normal;
@@ -1410,13 +1400,13 @@ body > .content .link.compressed .midcol {
 	text-align: left;
 	padding: 0px;
 	&:hover {
-		background-color: #F5F8F9;
+		background-color: $bg_color_33;
 		border: 0px solid;
 	}
 }
 
 .flairselector li:hover {
-	background-color: #F5F8F9;
+	background-color: $bg_color_33;
 	border: 0px solid;
 }
 
@@ -1428,25 +1418,25 @@ body > .content .link.compressed .midcol {
 	a.title {
 		font-size: 18px !important;
 		opacity: 100 !important;
-		color: #24a0ed !important;
+		color: $font_color_0 !important;
 	}
 }
 
 .flairselector {
 	form {
 		padding-top: 12px;
-		border-top: 1px solid #F7F7F7;
+		border-top: 1px solid $border_color_16;
 		.flairselection {
 			text-align: left;
 			&:before {
 				display: block;
 				content: "Selected Flair:";
-				color: #738491;
+				color: $font_color_2;
 			}
 			.linkflair a.title {
 				font-size: 18px !important;
 				opacity: 100 !important;
-				color: #24a0ed !important;
+				color: $font_color_0 !important;
 				cursor: default;
 			}
 			.flairremove {
@@ -1457,7 +1447,7 @@ body > .content .link.compressed .midcol {
 				a {
 					visibility: visible;
 					opacity: 100;
-					color: #24a0ed;
+					color: $font_color_0;
 					margin-left: -4px;
 					text-transform: capitalize;
 					&:first-letter {
@@ -1477,7 +1467,7 @@ body > .content .link.compressed .midcol {
 		}
 		&:after {
 			display: block;
-			color: #b3b3b3;
+			color: $font_color_15;
 			content: "Go to /r/.../about/flair";
 		}
 	}
@@ -1499,7 +1489,7 @@ body > .content .link.compressed .midcol {
 		border: none;
 	}
 	li a, form .flairselection a.author {
-		color: #738491 !important;
+		color: $font_color_2 !important;
 		font-size: 11px;
 	}
 }
@@ -1508,7 +1498,7 @@ body > .content .link.compressed .midcol {
 
 .unvotable-message {
 	border: 0px solid;
-	color: #738491;
+	color: $font_color_2;
 	&:first-letter {
 		text-transform: capitalize;
 	}
@@ -1572,12 +1562,12 @@ div {
 
 .RESDialogSmall {
 	border: none;
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_10;
 	margin-top: 8px;
 	> h3 {
-		color: #4F8EF7;
-		background-color: #FFF;
-		border-bottom: 1px solid #EDEDED;
+		color: $font_color_16;
+		background-color: $bg_color_2;
+		border-bottom: 1px solid $border_color_17;
 		height: 36px;
 		padding: 8px;
 		margin: 0px;
@@ -1594,7 +1584,7 @@ div {
 	width: 22px;
 	transition: all 0.15s ease;
 	&:hover {
-		border: 1px solid #D7D9DC;
+		border: 1px solid $border_color_18;
 	}
 }
 
@@ -1602,7 +1592,7 @@ div {
 	input[type=text], select {
 		line-height: 22px;
 		padding-left: 4px;
-		border: 1px solid #E5E5E5 !important;
+		border: 1px solid $border_color_19 !important;
 	}
 }
 
@@ -1610,14 +1600,14 @@ div {
 	line-height: 0.8;
 	.toggleOn {
 		border-radius: 0px;
-		border: 1px solid #4F8EF7;
-		background-color: #4F8EF7;
-		color: #fff;
+		border: 1px solid $border_color_20;
+		background-color: $bg_color_34;
+		color: $font_color_1;
 		text-transform: capitalize;
 	}
 	.toggleOff {
 		border-radius: 0px;
-		border: 1px solid #D7D9DC;
+		border: 1px solid $border_color_18;
 		background-color: transparent;
 		text-transform: capitalize;
 	}
@@ -1633,20 +1623,20 @@ div {
 	margin: 16px 0 24px 0;
 	padding: 0;
 	border: none;
-	color: #738491;
+	color: $font_color_2;
 	overflow: visible;
 }
 
 .dropdown.lightdrop .selected {
-	color: #292f34;
+	color: $font_color_3;
 	text-decoration: none;
 	cursor: pointer;
 	padding: 8px 12px;
-	border: 1px solid #edf1f3;
+	border: 1px solid $border_color_6;
 	border-radius: 2px;
 	background-image: none;
 	&:hover {
-		background-color: rgba(0, 0, 0, 0.04);
+		background-color: $bg_color_16;
 	}
 	&:after {
 		content: " ▼";
@@ -1661,20 +1651,20 @@ div {
 
 .guider {
 	border: none;
-	box-shadow: 0px 2px 3px #DDD;
+	box-shadow: $boxshadow_11;
 }
 
 .guider_content h1 {
-	color: #4F8EF7;
+	color: $font_color_16;
 }
 
 .guider_button {
 	font-size: 11px;
 	border: none;
-	background: #4F8EF7 none;
+	background: $bg_color_34 none;
 	transition: all 0.15s ease;
 	&:hover {
-		background-color: rgba(79, 142, 247, 0.75);
+		background-color: $bg_color_35;
 	}
 }
 
@@ -1682,9 +1672,9 @@ div {
 
 .x_button {
 	transition: all 0.25s ease;
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+	box-shadow: $boxshadow_12;
 	&:hover {
-		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+		box-shadow: $boxshadow_13;
 	}
 }
 
@@ -1695,13 +1685,13 @@ div {
 	padding: 8px 16px;
 	line-height: 26px;
 	border: none;
-	background-color: #0079d3;
-	color: #fff;
+	background-color: $bg_color_1;
+	color: $font_color_1;
 	border-radius: 2px;
 }
 
 .infobar .md {
-	color: #fff;
+	color: $font_color_1;
 }
 
 .content .infobar {
@@ -1712,7 +1702,7 @@ div {
 		line-height: inherit;
 		height: 86px;
 		h1 {
-			color: #4d5763;
+			color: $font_color_6;
 		}
 	}
 }
@@ -1723,7 +1713,7 @@ div {
 	line-height: 18px;
 	margin: 8px 0 16px 0;
 	a {
-		color: rgba(0, 0, 0, 0.64);
+		color: $font_color_17;
 		font-weight: bold;
 	}
 }
@@ -1732,24 +1722,24 @@ div {
 
 .reddit-infobar.with-icon {
 	border: none;
-	background: #fff;
-	box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+	background: $bg_color_2;
+	box-shadow: $boxshadow_01;
 	margin: 0 0 16px 0;
 	.md {
-		color: #000;
+		color: $font_color_18;
 		font-size: 14px;
 	}
 	&.locked-infobar {
-		background-color: #27B062;
+		background-color: $bg_color_21;
 		.md {
-			color: #fff;
+			color: $font_color_1;
 		}
 		p:after {
 			content: " Sort comments by new to find out more.";
 		}
 		&:before {
-			background-color: #27B062;
-			border-right: 1px solid rgba(0, 0, 0, 0.08);
+			background-color: $bg_color_21;
+			border-right: 1px solid $border_color_21;
 		}
 	}
 }
@@ -1783,18 +1773,18 @@ div {
 
 .nav-buttons {
 	padding: 16px;
-	color: #738491;
+	color: $font_color_2;
 	.nextprev {
-		color: #738491;
+		color: $font_color_2;
 		font-size: 14px;
 		a {
 			padding: 8px 16px;
 			background-color: transparent;
-			border: 1px solid #edf1f3;
+			border: 1px solid $border_color_6;
 			transition: background-color 0.15s ease;
 			&:hover {
 				text-decoration: none;
-				background-color: rgba(0, 0, 0, 0.04);
+				background-color: $bg_color_16;
 			}
 		}
 	}
@@ -1809,7 +1799,7 @@ div {
 	width: 320px;
 	.md {
 		a:visited {
-			color: #24a0ed;
+			color: $font_color_0;
 		}
 		h6:first-of-type {
 			width: 270px;
@@ -1822,25 +1812,25 @@ div {
 				border-radius: 50%;
 				display: inline-block;
 				margin: 0 2px;
-				background: rgba(0, 0, 0, 0.2) $url_mediaicons;
+				background: $bg_color_36 $url_mediaicons;
 				transition: .3s background-color ease;
 				&[href*="https://twitter.com"]:hover {
-					background-color: #00a0d2;
+					background-color: $bg_color_37;
 				}
 				&[href*="www.facebook.com"]:hover {
-					background-color: #3b5999;
+					background-color: $bg_color_38;
 				}
 				&[href*="twitch.tv"]:hover {
-					background-color: #64459c;
+					background-color: $bg_color_39;
 				}
 				&[href*="www.youtube.com"]:hover {
-					background-color: #c4302c;
+					background-color: $bg_color_40;
 				}
 				&[href*="mumble://thebwt.com"]:hover {
-					background-color: #000;
+					background-color: $bg_color_41;
 				}
 				&[href*="http://webchat.freenode.net"]:hover {
-					background-color: #6b6b6b;
+					background-color: $bg_color_42;
 				}
 				&[href*="www.facebook.com"] {
 					background-position: -30px 0;
@@ -1861,10 +1851,10 @@ div {
 		}
 	}
 	.titlebox .md h4 a[href*="/message/compose"] {
-		color: #737373;
+		color: $font_color_19;
 		font-size: 11px;
 		&:visited {
-			color: #737373;
+			color: $font_color_19;
 		}
 	}
 	.spacer {
@@ -1872,16 +1862,16 @@ div {
 	}
 	&:before {
 		height: 192px;
-		background: #DBDBDB $url_sidebarimg;
+		background: $bg_color_43 $url_sidebarimg;
 		content: "";
 		display: block;
 		position: absolute;
 		top: 48px;
-		border: 1px solid #333;
+		border: 1px solid $border_color_22;
 		width: 320px;
 		z-index: 1;
 		border-radius: 2px;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		box-shadow: $boxshadow_14;
 	}
 	.titlebox h1.redditname {
 		&:before {
@@ -1893,20 +1883,18 @@ div {
 			height: 74px;
 			margin-top: -16px;
 			margin-left: -16px;
-			background-color: #fff;
+			background-color: $bg_color_2;
 			border-radius: 0px 0px 2px 2px;
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+			box-shadow: $boxshadow_15;
 		}
 		margin-bottom: 6px;
 		position: absolute;
 		top: 256px;
-		/*
-    top: 308px;
-    */
+
 		z-index: 100;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		a {
-			color: #333;
+			color: $font_color_20;
 		}
 	}
 }
@@ -1918,12 +1906,9 @@ div {
 .titlebox span.subscribers {
 	position: absolute;
 	z-index: 100;
-	color: #333;
+	color: $font_color_20;
 	font-size: 11px;
 	top: 284px;
-	/*
-  top: 336px;
-  */
 }
 
 div.titlebox span.word {
@@ -1969,7 +1954,7 @@ div.titlebox span.number:after {
 		margin-left: 208px;
 		top: 249px;
 		z-index: 100;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		.active {
 			display: block;
 			border: none;
@@ -1979,37 +1964,37 @@ div.titlebox span.number:after {
 			background-image: none !important;
 			padding: 0 12px;
 			text-transform: capitalize;
-			box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: $boxshadow_01;
 			transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), padding 0.2s ease, margin 0.2s ease;
 			&:hover {
-				box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+				box-shadow: $boxshadow_06;
 			}
 			&:active {
-				box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+				box-shadow: none;
 			}
 			&.add {
-				background-color: #27b062;
-				color: #fff;
+				background-color: $bg_color_21;
+				color: $font_color_1;
 				&:hover {
-					background-color: #36bb6f;
+					background-color: $bg_color_44;
 				}
 				&:active {
-					background-color: #189b51;
+					background-color: $bg_color_45;
 					padding-left: 24px;
 					margin-left: -13px;
 					text-align: center;
 				}
 			}
 			&.remove {
-				background-color: rgba(0, 0, 0, 0.24);
-				color: #fff;
+				background-color: $bg_color_13;
+				color: $font_color_1;
 				margin-left: -14px;
 				box-shadow: none;
 				&:hover {
-					background-color: rgba(0, 0, 0, 0.32);
+					background-color: $bg_color_46;
 				}
 				&:active {
-					background-color: rgba(0, 0, 0, 0.4);
+					background-color: $bg_color_12;
 				}
 			}
 		}
@@ -2028,12 +2013,12 @@ div.titlebox span.number:after {
 	height: auto;
 	top: 162px;
 	padding: 11px 11px 11px 16px;
-	background-color: #FFF;
-	color: #4D5763;
+	background-color: $bg_color_2;
+	color: $font_color_6;
 	border-radius: 2px 2px 0 0;
 	margin: 0;
 	line-height: 1;
-	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+	font-family: $font_stack_serif;
 	font-weight: 700;
 	font-size: 16px;
 }
@@ -2046,7 +2031,7 @@ div.titlebox span.number:after {
 	}
 	&.anchor-right:before {
 		right: -19px;
-		border-left-color: #CCCCCC;
+		border-left-color: $border_color_23;
 	}
 }
 
@@ -2065,16 +2050,16 @@ div.titlebox span.number:after {
 			width: 320px;
 			height: 30px;
 			line-height: 30px;
-			background-color: #fff;
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+			background-color: $bg_color_2;
+			box-shadow: $boxshadow_15;
 			transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+				box-shadow: $boxshadow_06;
 			}
 			&:focus {
 				border-radius: 2px 2px 0px 0px;
 				&:hover {
-					box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24) !important;
+					box-shadow: $boxshadow_03 !important;
 				}
 			}
 		}
@@ -2091,7 +2076,7 @@ div.titlebox span.number:after {
 		}
 		&[type=text] {
 			&::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
-				color: #B3B3B3;
+				color: $font_color_15;
 			}
 		}
 		&[type=submit] {
@@ -2100,28 +2085,28 @@ div.titlebox span.number:after {
 			margin-left: -38px;
 			border: none !important;
 			border-radius: 16px;
-			background: rgba(0, 0, 0, 0) $url_spritesheet no-repeat -64px -96px;
+			background: $url_spritesheet no-repeat -64px -96px;
 			transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				background: rgba(158, 158, 158, 0.2) $url_spritesheet no-repeat -64px -96px;
+				background: $bg_color_49 $url_spritesheet no-repeat -64px -96px;
 			}
 		}
 	}
 	#searchexpando {
-		background-color: #edf1f3;
+		background-color: $bg_color_50;
 		border: none;
 		border-radius: 0px 0px 2px 2px;
 		margin: 0;
 		padding: 4px;
 		height: 54px;
 		line-height: 50px;
-		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+		box-shadow: $boxshadow_15;
 		label {
 			padding: 21px 8px 17px 8px;
 			cursor: pointer;
 			transition: all 0.1s ease;
 			&:active {
-				background-color: rgba(0, 0, 0, 0.06);
+				background-color: $bg_color_51;
 			}
 		}
 		p {
@@ -2137,8 +2122,8 @@ div.titlebox span.number:after {
 .morelink {
 	position: absolute;
 	top: 374px;
-	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
-	background-color: #0079d3;
+	font-family: $font_stack_serif;
+	background-color: $bg_color_1;
 	background-image: none !important;
 	width: 152px;
 	height: 30px;
@@ -2147,15 +2132,15 @@ div.titlebox span.number:after {
 	border: none;
 	text-align: center;
 	padding: 0px 0px;
-	box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_01;
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
-		background-color: #158be2;
-		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+		background-color: $bg_color_3;
+		box-shadow: $boxshadow_06;
 	}
 	&:active {
-		background-color: #0066b2;
-		box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+		background-color: $bg_color_4;
+		box-shadow: $boxshadow_01;
 	}
 }
 
@@ -2164,7 +2149,7 @@ div.titlebox span.number:after {
 }
 
 .morelink a {
-	color: #fff;
+	color: $font_color_1;
 	font-weight: normal;
 	font-size: 0px;
 	letter-spacing: 0px;
@@ -2188,9 +2173,9 @@ div.titlebox span.number:after {
 		left: -168px;
 		top: 0px;
 		width: 152px;
-		color: rgba(0, 0, 0, 0.32);
+		color: $font_color_21;
 		border-radius: 2px;
-		background-color: rgba(0, 0, 0, 0.08);
+		background-color: $bg_color_6;
 		font-weight: normal;
 		z-index: -1;
 	}
@@ -2199,9 +2184,9 @@ div.titlebox span.number:after {
 		position: absolute;
 		top: 0;
 		width: 152px;
-		color: rgba(0, 0, 0, 0.32);
+		color: $font_color_21;
 		border-radius: 2px;
-		background-color: rgba(0, 0, 0, 0.08);
+		background-color: $bg_color_6;
 		font-weight: normal;
 		z-index: -1;
 		left: 168px;
@@ -2212,10 +2197,10 @@ div.titlebox span.number:after {
 
 .disabled .morelink {
 	box-shadow: none !important;
-	background-color: rgba(0, 0, 0, 0.08);
+	background-color: $bg_color_6;
 	width: 320px;
 	a {
-		color: rgba(0, 0, 0, 0.32);
+		color: $font_color_21;
 		font-size: 14px;
 	}
 }
@@ -2228,7 +2213,7 @@ div.titlebox span.number:after {
 
 .login-form-side {
 	border: none;
-	border-bottom: 1px solid #edf1f3;
+	border-bottom: 1px solid $border_color_6;
 	padding-bottom: 8px;
 	input {
 		&[type=text], &[type=password] {
@@ -2254,8 +2239,8 @@ div.titlebox span.number:after {
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 24px;
-		color: #292f34;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		color: $font_color_3;
+		font-family: $font_stack_serif;
 		margin: 1px 0px 6px 0;
 	}
 	.tagline {
@@ -2267,12 +2252,12 @@ div.titlebox span.number:after {
 		&:after {
 			content: "";
 			height: 2px;
-			background-color: #f2f2f2;
+			background-color: $bg_color_15;
 			display: block;
 			margin-top: 16px;
 		}
 		a.flairselectbtn {
-			color: #24a0ed;
+			color: $font_color_0;
 		}
 	}
 }
@@ -2309,8 +2294,8 @@ div.titlebox span.number:after {
 .side {
 	.md {
 		.-blocks, .-lists, pre, blockquote, table, p, ul, ol {
-			font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
-			color: #292f34;
+			font-family: $font_stack_sans;
+			color: $font_color_3;
 			line-height: 1.45;
 			font-size: 13px;
 		}
@@ -2319,7 +2304,7 @@ div.titlebox span.number:after {
 			width: 289px;
 			margin-left: -5px;
 			thead tr {
-				background-color: rgba(0, 0, 0, 0.2);
+				background-color: $bg_color_36;
 			}
 		}
 		th, td {
@@ -2327,7 +2312,7 @@ div.titlebox span.number:after {
 			border: none;
 		}
 		tbody tr:nth-child(odd) {
-			background-color: rgba(0, 0, 0, 0.04);
+			background-color: $bg_color_16;
 		}
 	}
 	.titlebox .md {
@@ -2342,32 +2327,32 @@ div.titlebox span.number:after {
 			padding: 0 16px;
 			width: 100%;
 			border-radius: 2px;
-			background-color: #0079d3;
-			font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
-			color: #fff;
+			background-color: $bg_color_1;
+			font-family: $font_stack_serif;
+			color: $font_color_1;
 			display: block;
 			margin: 1.5em 0em;
 			font-size: 12px;
 			line-height: 42px;
-			box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: $boxshadow_01;
 			transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 		h2 {
 			position: relative;
-			color: #fff;
+			color: $font_color_1;
 			text-shadow: none;
 			padding: 6px 16px;
 			margin: 6px -26px 10px -25px;
 			border: none;
 			font-size: 15px;
-			font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+			font-family: $font_stack_serif;
 			font-weight: 700;
-			background: hsla(206, 100%, 41%, 1);
-			background: -moz-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-			background: -webkit-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-			background: -o-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-			background: -ms-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-			background: linear-gradient(to bottom, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
+			background: $lineargradient_bg;
+			background: -moz-linear-gradient(top, $lineargradient_01);
+			background: -webkit-linear-gradient(top, $lineargradient_01);
+			background: -o-linear-gradient(top, $lineargradient_01);
+			background: -ms-linear-gradient(top, $lineargradient_01);
+			background: linear-gradient(to bottom, $lineargradient_01);
 			border-radius: 4px 4px 2px 2px;
 		}
 	}
@@ -2377,40 +2362,40 @@ div.titlebox span.number:after {
 
 .sidecontentbox .title h1 {
 	position: relative;
-	color: #fff;
+	color: $font_color_1;
 	text-shadow: none;
 	padding: 6px 16px;
 	margin: 6px -26px 10px -25px;
 	border: none;
 	font-size: 15px;
-	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+	font-family: $font_stack_serif;
 	font-weight: 700;
-	background: hsla(206, 100%, 41%, 1);
-	background: -moz-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-	background: -webkit-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-	background: -o-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-	background: -ms-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-	background: linear-gradient(to bottom, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
+	background: $lineargradient_bg;
+	background: -moz-linear-gradient(top, $lineargradient_01);
+	background: -webkit-linear-gradient(top, $lineargradient_01);
+	background: -o-linear-gradient(top, $lineargradient_01);
+	background: -ms-linear-gradient(top, $lineargradient_01);
+	background: linear-gradient(to bottom, $lineargradient_01);
 	border-radius: 4px 4px 2px 2px;
 }
 
 .side {
 	#moderation_tools .title h1 {
 		position: relative;
-		color: #fff;
+		color: $font_color_1;
 		text-shadow: none;
 		padding: 6px 16px;
 		margin: 6px -26px 10px -25px;
 		border: none;
 		font-size: 15px;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		font-weight: 700;
-		background: hsla(206, 100%, 41%, 1);
-		background: -moz-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-		background: -webkit-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-		background: -o-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-		background: -ms-linear-gradient(top, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
-		background: linear-gradient(to bottom, hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%);
+		background: $lineargradient_bg;
+		background: -moz-linear-gradient(top, $lineargradient_01);
+		background: -webkit-linear-gradient(top, $lineargradient_01);
+		background: -o-linear-gradient(top, $lineargradient_01);
+		background: -ms-linear-gradient(top, $lineargradient_01);
+		background: linear-gradient(to bottom, $lineargradient_01);
 		border-radius: 4px 4px 2px 2px;
 	}
 	.titlebox .md h2:before {
@@ -2419,7 +2404,7 @@ div.titlebox span.number:after {
 		height: 0;
 		border-top: 6px solid transparent;
 		border-bottom: 6px solid transparent;
-		border-left: 6px solid hsla(206, 100%, 16%, 1);
+		border-left: 6px solid $border_color_24;
 		transform: rotate(-45deg);
 		position: absolute;
 		left: 4px;
@@ -2433,7 +2418,7 @@ div.titlebox span.number:after {
 	height: 0;
 	border-top: 6px solid transparent;
 	border-bottom: 6px solid transparent;
-	border-left: 6px solid hsla(206, 100%, 16%, 1);
+	border-left: 6px solid $border_color_24;
 	transform: rotate(-45deg);
 	position: absolute;
 	left: 4px;
@@ -2447,7 +2432,7 @@ div.titlebox span.number:after {
 	height: 0;
 	border-top: 6px solid transparent;
 	border-bottom: 6px solid transparent;
-	border-right: 6px solid hsla(206, 100%, 16%, 1);
+	border-right: 6px solid $border_color_24;
 	transform: rotate(45deg);
 	position: absolute;
 	right: 4px;
@@ -2462,7 +2447,7 @@ div.titlebox span.number:after {
 		height: 0;
 		border-top: 6px solid transparent;
 		border-bottom: 6px solid transparent;
-		border-right: 6px solid hsla(206, 100%, 16%, 1);
+		border-right: 6px solid $border_color_24;
 		transform: rotate(45deg);
 		position: absolute;
 		right: 4px;
@@ -2508,17 +2493,17 @@ div.titlebox span.number:after {
 				transition: all .2s ease;
 			}
 			&:first-of-type li:first-of-type, &:nth-of-type(2) li:first-of-type, &:nth-of-type(3) li, &:nth-of-type(4) li, &:nth-of-type(5) li, &:nth-of-type(6) li {
-				background-color: #FFF;
-				border: 1px solid #D4D4D4;
+				background-color: $bg_color_2;
+				border: 1px solid $border_color_25;
 				border-radius: 2px;
 				padding: 8px 16px 7px 16px;
 				cursor: pointer;
 				margin: 0;
 				position: relative;
-				color: #737373;
+				color: $font_color_19;
 				font-weight: 700;
 				font-size: 11px;
-				box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+				box-shadow: $boxshadow_01;
 				transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 			&:nth-of-type(3) {
@@ -2534,7 +2519,7 @@ div.titlebox span.number:after {
 				width: 100%;
 			}
 			&:nth-of-type(3) li:hover, &:nth-of-type(4) li:hover, &:nth-of-type(5) li:hover, &:nth-of-type(6) li:hover {
-				background-color: rgba(0, 0, 0, 0.04);
+				background-color: $bg_color_16;
 			}
 			&:nth-of-type(4):before, &:nth-of-type(5):before {
 				content: "";
@@ -2542,7 +2527,7 @@ div.titlebox span.number:after {
 				width: 300px;
 				position: relative;
 				top: 118px;
-				box-shadow: -55px 40px 32px 30px #fff;
+				box-shadow: -55px 40px 32px 30px $font_color_1;
 				pointer-events: none;
 				opacity: 1;
 				transition: all .2s ease;
@@ -2565,7 +2550,7 @@ div.titlebox span.number:after {
 				padding-top: 10px;
 			}
 			&:first-of-type li:first-of-type:hover, &:nth-of-type(2) li:first-of-type:hover {
-				box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+				box-shadow: $boxshadow_06;
 			}
 			&:first-of-type li:first-of-type p, &:nth-of-type(2) li:first-of-type p {
 				margin: 0;
@@ -2603,26 +2588,26 @@ div.titlebox span.number:after {
 		}
 		h3 a {
 			&:hover {
-				background-color: #158be2;
-				box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+				background-color: $bg_color_3;
+				box-shadow: $boxshadow_06;
 			}
 			&:active {
-				background-color: #0066b2;
-				box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+				background-color: $bg_color_4;
+				box-shadow: $boxshadow_01;
 			}
 		}
 		h4 a {
 			padding: 0 16px;
-			background-color: #FFF;
+			background-color: $bg_color_2;
 			border: none;
 			border-radius: 2px;
-			color: #24a0ed;
+			color: $font_color_0;
 			font-weight: 700;
 			display: block;
 			margin: 1.5em 0em;
 			font-size: 12px;
 			line-height: 42px;
-			box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: $boxshadow_01;
 			transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
@@ -2630,16 +2615,16 @@ div.titlebox span.number:after {
 
 .wiki-page .wiki-page-content .md.wiki h4 {
 	padding: 0 16px;
-	background-color: #FFF;
+	background-color: $bg_color_2;
 	border: none;
 	border-radius: 2px;
-	color: #24a0ed;
+	color: $font_color_0;
 	font-weight: 700;
 	display: block;
 	margin: 1.5em 0em;
 	font-size: 12px;
 	line-height: 42px;
-	box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_01;
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2648,27 +2633,27 @@ div.titlebox span.number:after {
 		margin: 0;
 		padding: 4px 16px;
 		position: relative;
-		font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+		font-family: $font_stack_sans;
 		font-weight: 700;
 		line-height: 22px;
-		border: 1px solid #D4D4D4;
+		border: 1px solid $border_color_25;
 	}
 	h4 a:hover {
-		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+		box-shadow: $boxshadow_06;
 	}
 }
 
 .wiki-page .wiki-page-content .md.wiki h4:hover {
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	box-shadow: $boxshadow_06;
 }
 
 .side .titlebox h4 a:active, .wiki-page .wiki-page-content .md.wiki h4:active {
-	background-color: #f4f6f7;
-	box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+	background-color: $bg_color_57;
+	box-shadow: $boxshadow_01;
 }
 
 .md hr {
-	border: solid 1px #e5e5e5;
+	border: solid 1px $border_color_19;
 }
 
 .side {
@@ -2678,14 +2663,14 @@ div.titlebox span.number:after {
 				text-align: center;
 				font-size: 10px;
 				font-weight: 900;
-				font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+				font-family: $font_stack_serif;
 				border-radius: 2px;
 				width: 80px;
 				height: 18px;
 				transition: .25s ease;
-				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
-				background: #202020;
-				color: #ECF0F1;
+				box-shadow: $boxshadow_03;
+				background: $bg_color_58;
+				color: $font_color_22;
 				margin: 0 auto;
 				position: absolute;
 				top: 286px;
@@ -2698,7 +2683,7 @@ div.titlebox span.number:after {
 		}
 		a {
 			&[href^="https://dd.reddit.com/r/poeblackmarket/"], &[href^="https://www.reddit.com/r/poeblackmarket/"]:hover {
-				box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+				box-shadow: $boxshadow_17;
 			}
 		}
 	}
@@ -2725,13 +2710,13 @@ div.titlebox span.number:after {
 	#moderation_tools .title {
 		h1 {
 			text-transform: capitalize;
-			color: #fff;
+			color: $font_color_1;
 		}
 		.collapse-button {
-			color: #4D5763;
+			color: $font_color_6;
 			vertical-align: middle;
 			border-radius: 1px;
-			border: 1px solid #d8d8d8;
+			border: 1px solid $border_color_26;
 		}
 	}
 	.sidecontentbox .content {
@@ -2769,10 +2754,10 @@ div.titlebox span.number:after {
 		position: relative;
 		top: 0px;
 		width: 100%;
-		background-color: #fff;
+		background-color: $bg_color_2;
 		a {
 			font-size: 14px;
-			color: #24a0ed;
+			color: $font_color_0;
 		}
 	}
 	.spacer {
@@ -2792,14 +2777,14 @@ div.titlebox span.number:after {
 	display: block;
 	margin: 0px 0px;
 	padding: 10px 0px;
-	color: #24A0ED;
+	color: $font_color_0;
 	content: "This subreddit uses the /r/Naut theme.";
 	text-transform: none;
 	font-size: 16px;
-	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+	font-family: $font_stack_serif;
 	position: absolute;
 	width: 320px;
-	border: 1px solid rgba(0, 0, 0, 0.06);
+	border: 1px solid $border_color_27;
 	text-align: center;
 }
 
@@ -2819,14 +2804,14 @@ body.comments-page > .content {
 		border-bottom: 0;
 		padding-left: 16px;
 		.title {
-			color: #4D5763;
+			color: $font_color_6;
 		}
 	}
 	.menuarea {
 		margin: 0 0 0 0px;
 		padding-left: 16px;
 		span.dropdown-title.lightdrop {
-			color: #98abba;
+			color: $font_color_12;
 			&:first-letter {
 				text-transform: capitalize;
 			}
@@ -2837,11 +2822,11 @@ body.comments-page > .content {
 			background-image: none;
 			padding-right: 0px;
 			font-weight: normal;
-			color: #98abba;
+			color: $font_color_12;
 			border: none;
 			padding-left: 0px;
 			&:hover {
-				color: #4F8EF7;
+				color: $font_color_16;
 			}
 			&:after {
 				content: "▼";
@@ -2854,33 +2839,33 @@ body.comments-page > .content {
 	&.lightdrop {
 		border: none;
 		z-index: 1001;
-		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+		box-shadow: $boxshadow_15;
 	}
 	a.choice {
 		padding: 12px 24px 12px 12px;
 		transition: all 0.1s ease;
-		border-bottom: 1px solid #edf1f3;
+		border-bottom: 1px solid $border_color_6;
 	}
 	form:last-of-type a.choice {
 		border-bottom: none;
 	}
 	a.choice:hover {
-		background-color: #0079d3;
-		color: #fff;
+		background-color: $bg_color_1;
+		color: $font_color_1;
 	}
 }
 
 .commentarea .menuarea .toggle a, .help-hoverable {
-	color: #98abba;
+	color: $font_color_12;
 	font-weight: normal;
 }
 
 .commentarea .menuarea .toggle a:hover, .help-hoverable:hover {
-	color: #24a0ed;
+	color: $font_color_0;
 }
 
 .commentarea > .usertext {
-	background-color: #FAFAFA !important;
+	background-color: $bg_color_59 !important;
 	margin: -58px 0 16px 0;
 	padding: 64px 16px 16px 16px !important;
 	overflow: visible;
@@ -2908,16 +2893,16 @@ body.comments-page > .content {
 .usertext .bottom-area {
 	width: 504px;
 	a.reddiquette {
-		color: #24a0ed;
+		color: $font_color_0;
 	}
 }
 
 .gold-accent.comment-visits-box {
 	margin: 0px 0px 12px 0px;
 	border-radius: 2px;
-	background-color: #edf1f3;
-	border: 1px solid #d8e0e5;
-	color: #292f34;
+	background-color: $bg_color_50;
+	border: 1px solid $border_color_28;
+	color: $font_color_3;
 }
 
 /* Comments */
@@ -2949,7 +2934,7 @@ body.comments-page > .content {
 
 .comment {
 	.child, .showreplies {
-		border-left: 1px solid #edf1f3;
+		border-left: 1px solid $border_color_6;
 		margin-top: 0px;
 	}
 	.midcol {
@@ -2961,18 +2946,18 @@ body.comments-page > .content {
 		}
 	}
 	.entry .tagline {
-		color: #98abba;
+		color: $font_color_12;
 		font-size: 11px;
-		font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+		font-family: $font_stack_sans;
 	}
 	.expand {
 		background-color: transparent;
 		transition: all 0.15s ease;
-		color: #98abba;
+		color: $font_color_12;
 		&:hover {
-			color: #98abba;
+			color: $font_color_12;
 			text-decoration: none;
-			background-color: #edf1f3;
+			background-color: $bg_color_50;
 		}
 	}
 	&.collapsed a.expand {
@@ -2981,7 +2966,7 @@ body.comments-page > .content {
 			position: absolute;
 			display: block;
 			width: calc(100% - 368px);
-			background-color: rgba(0, 0, 0, 0);
+			background-color: $bg_color_48;
 			left: 16px;
 			margin-top: -34px;
 			height: 50px;
@@ -2990,15 +2975,15 @@ body.comments-page > .content {
 			transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 		&:hover:after {
-			background-color: rgba(0, 0, 0, 0.04);
+			background-color: $bg_color_16;
 		}
 	}
 	.author {
-		color: #292f34;
+		color: $font_color_3;
 		margin-right: 0;
 		font-weight: 700;
 		&:hover {
-			color: #24a0ed;
+			color: $font_color_0;
 			text-decoration: none;
 		}
 	}
@@ -3007,13 +2992,13 @@ body.comments-page > .content {
 /* Vote arrows */
 
 .tagline .moderator, .green {
-	color: #27b062 !important;
+	color: $font_color_13 !important;
 	font-weight: 700;
 }
 
 .tagline .submitter {
 	font-weight: 700;
-	color: #24a0ed;
+	color: $font_color_0;
 }
 
 /* RES Fixes */
@@ -3021,12 +3006,12 @@ body.comments-page > .content {
 .res .thing .tagline .author.submitter {
 	padding: 1px 4px;
 	border-radius: 1px;
-	background-color: #4F8EF7 !important;
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	background-color: $bg_color_34 !important;
+	box-shadow: 0px 0px 0px $bg_color_48;
 	transition: all 0.15s ease;
 	&:hover {
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-		background-color: #4F8EF7 !important;
+		box-shadow: $boxshadow_21;
+		background-color: $bg_color_34 !important;
 	}
 }
 
@@ -3034,7 +3019,7 @@ body.comments-page > .content {
 	.score {
 		font-size: inherit;
 		font-weight: 700;
-		color: #738491;
+		color: $font_color_2;
 		&:before {
 			content: "• ";
 			margin: 0 2px;
@@ -3043,7 +3028,7 @@ body.comments-page > .content {
 		}
 	}
 	.usertext .md {
-		color: #292f34;
+		color: $font_color_3;
 	}
 }
 
@@ -3051,25 +3036,25 @@ body.comments-page > .content {
 
 .md {
 	a {
-		color: #24a0ed;
+		color: $font_color_0;
 		&:visited {
-			color: #7D5D8A;
+			color: $font_color_23;
 		}
 	}
 	pre {
 		padding: 8px;
 	}
 	blockquote {
-		border-left: 2px solid #edf1f3;
-		color: #738491;
+		border-left: 2px solid $border_color_6;
+		color: $font_color_2;
 	}
 	h1, h2 {
 		margin: 0.5em 0 0.25em 0;
 		border: none;
-		color: #292f34;
+		color: $font_color_3;
 	}
 	h3 {
-		color: #292f34;
+		color: $font_color_3;
 		margin: 16px 0 0 0;
 	}
 }
@@ -3085,26 +3070,26 @@ body.comments-page > .content {
 /* Reply / Share / report */
 
 .comment .flat-list li a {
-	color: #98abba;
+	color: $font_color_12;
 	font-weight: normal;
 	font-size: 10px;
 	&:hover {
-		color: #24a0ed;
+		color: $font_color_0;
 		text-decoration: none;
 	}
 	&[onclick*="reply"] {
-		color: #24a0ed;
+		color: $font_color_0;
 		font-weight: 700;
 		font-size: 11px;
 	}
 }
 
 .deepthread a {
-	color: #24a0ed;
+	color: $font_color_0;
 }
 
 .morecomments a {
-	color: #738491;
+	color: $font_color_2;
 }
 
 /* Sidebar stuff */
@@ -3116,18 +3101,18 @@ body.comments-page > .content {
 		top: 419px;
 		padding: 16px;
 		width: 320px;
-		background-color: #fff;
+		background-color: $bg_color_2;
 		border-radius: 2px;
-		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+		box-shadow: $boxshadow_22;
 		border: none;
 		.date {
-			color: #98abba;
+			color: $font_color_12;
 			&:first-letter {
 				text-transform: capitalize;
 			}
 		}
 		.score {
-			color: #292f34;
+			color: $font_color_3;
 		}
 	}
 }
@@ -3141,21 +3126,21 @@ body.comments-page > .content {
 .read-next {
 	width: 320px;
 	height: 128px;
-	border: 1px solid #edf1f3;
+	border: 1px solid $border_color_6;
 	border-radius: 2px 2px 0 0;
 	.read-next-header {
-		border-bottom: 1px solid #edf1f3;
-		color: #738491;
+		border-bottom: 1px solid $border_color_6;
+		color: $font_color_2;
 		padding: 8px 16px;
-		background-color: #f2f7fa;
+		background-color: $bg_color_60;
 	}
 	.read-next-nav {
 		top: 8px;
 	}
 	.read-next-button {
 		background-color: rgb(0, 121, 211);
-		color: #fff;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		color: $font_color_1;
+		font-family: $font_stack_serif;
 		line-height: 16px;
 		font-size: 10px;
 		height: 16px;
@@ -3172,7 +3157,7 @@ body.comments-page > .content {
 		padding: 8px 16px;
 	}
 	.read-next-meta {
-		color: #738491;
+		color: $font_color_2;
 		line-height: 2;
 	}
 }
@@ -3210,9 +3195,9 @@ body.comments-page > .content {
 			position: relative;
 			padding: 0;
 			border: none;
-			background-color: #0079D3;
+			background-color: $bg_color_1;
 			border-radius: 2px;
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+			box-shadow: $boxshadow_15;
 		}
 		.tabmenu.formtab {
 			a {
@@ -3220,7 +3205,7 @@ body.comments-page > .content {
 				width: 262px;
 				display: inline-block;
 				text-align: center;
-				color: rgba(255, 255, 255, 0.7);
+				color: $font_color_7;
 				text-transform: uppercase;
 				font-weight: 700;
 				transition: all 0.15s ease;
@@ -3231,11 +3216,11 @@ body.comments-page > .content {
 			.selected a {
 				font-size: 16px;
 				background-color: transparent;
-				color: #fff;
+				color: $font_color_1;
 				border-bottom: 4px solid;
 			}
 			a:hover {
-				color: #fff;
+				color: $font_color_1;
 			}
 		}
 	}
@@ -3246,23 +3231,23 @@ body.comments-page > .content {
 	.roundfield {
 		padding: 16px;
 		width: 524px;
-		background-color: #fff;
+		background-color: $bg_color_2;
 		border: none;
 		.title {
-			color: #292f34;
+			color: $font_color_3;
 			text-transform: capitalize;
 		}
 	}
 	#url-field button {
-		background-color: #c3cfd6;
+		background-color: $bg_color_62;
 	}
 }
 
 .submit_text {
 	&.enabled.roundfield {
-		background-color: #0079D3;
+		background-color: $bg_color_1;
 		.md {
-			color: #fff;
+			color: $font_color_1;
 		}
 	}
 	ol, ul {
@@ -3275,7 +3260,7 @@ body.comments-page > .content {
 }
 
 .content.submit .info-notice {
-	background-color: #edf1f3;
+	background-color: $bg_color_50;
 	padding: 16px;
 	border: none;
 	margin-bottom: 0px;
@@ -3288,7 +3273,7 @@ body.comments-page > .content {
 		margin-top: 16px;
 		cursor: pointer;
 		text-transform: capitalize;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		font-size: 17px;
 		padding: 16px;
 		text-align: center;
@@ -3298,7 +3283,7 @@ body.comments-page > .content {
 			text-transform: none;
 		}
 		&:hover {
-			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.48);
+			box-shadow: $boxshadow_16;
 		}
 	}
 	.footer-parent {
@@ -3353,7 +3338,7 @@ body.comments-page > .content {
 	border-radius: 50%;
 	transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
-		background-color: rgba(158, 158, 158, 0.2);
+		background-color: $bg_color_49;
 	}
 	.search-icon {
 		display: none;
@@ -3365,10 +3350,10 @@ body.comments-page > .content {
 		position: absolute;
 		width: 100%;
 		padding: 12px;
-		background: #f9f9f9;
+		background: $bg_color_63;
 		z-index: -1;
 		border-radius: 0px 0px 2px 2px;
-		box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+		box-shadow: $boxshadow_01;
 		cursor: pointer;
 		margin: -2px 0 0;
 	}
@@ -3405,15 +3390,15 @@ body.comments-page > .content {
 		}
 		.search-header-label {
 			text-transform: capitalize;
-			color: #738491;
-			font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+			color: $font_color_2;
+			font-family: $font_stack_serif;
 			font-size: 18px;
 			padding-bottom: 2px;
 		}
 		.search-menu {
 			margin-right: 16px;
 			.dropdown.lightdrop .selected {
-				color: #738491;
+				color: $font_color_2;
 				text-decoration: none;
 				cursor: pointer;
 				display: inline-block;
@@ -3430,7 +3415,7 @@ body.comments-page > .content {
 		padding: 16px;
 		border-radius: 2px;
 		vertical-align: top;
-		border: 1px solid #edf1f3;
+		border: 1px solid $border_color_6;
 		overflow: hidden;
 		&:last-of-type {
 			margin-right: -20px;
@@ -3457,44 +3442,44 @@ body.comments-page > .content {
 	.search-result {
 		margin: 16px 0 20px 0;
 		.search-result-header .search-title {
-			color: #24a0ed;
+			color: $font_color_0;
 		}
 		.search-result-meta {
-			color: #738491;
+			color: $font_color_2;
 		}
 		a {
-			color: #24a0ed;
+			color: $font_color_0;
 			> mark {
-				color: #24a0ed;
+				color: $font_color_0;
 			}
 		}
 	}
 	.search-result-subreddit .search-subscribe-button {
 		border-radius: 2px;
 		.add {
-			background-color: #0079d3;
+			background-color: $bg_color_1;
 			border: none;
 			border-radius: 2px;
 			&:active {
-				background-color: #0079d3;
+				background-color: $bg_color_1;
 				border: none;
 				border-radius: 2px;
 			}
 		}
 		.remove {
 			background-color: transparent;
-			border: 1px solid #98abba;
-			color: #738491;
+			border: 1px solid $border_color_29;
+			color: $font_color_2;
 			&:active {
 				background-color: transparent;
-				border: 1px solid #98abba;
-				color: #738491;
+				border: 1px solid $border_color_29;
+				color: $font_color_2;
 			}
 		}
 	}
 	.search-result {
 		.search-comments {
-			color: #24a0ed;
+			color: $font_color_0;
 		}
 		&.has-thumbnail > .thumbnail {
 			margin-left: 0px;
@@ -3509,16 +3494,16 @@ body.comments-page > .content {
 /* Item */
 
 .nextprev, .next-suggestions {
-	color: #738491;
+	color: $font_color_2;
 }
 
 /* More subreddits */
 
 .search-page .searchfacets {
-	border: 1px solid #edf1f3;
+	border: 1px solid $border_color_6;
 	padding: 16px;
 	margin: 0;
-	background-color: #fff;
+	background-color: $bg_color_2;
 	border-radius: 0px 0px 2px 2px;
 	max-width: none;
 }
@@ -3528,7 +3513,7 @@ body.comments-page > .content {
 		margin: 0;
 	}
 	h4.title {
-		color: #738491;
+		color: $font_color_2;
 		margin: 0 0 8px 0;
 		&:first-letter {
 			text-transform: capitalize;
@@ -3538,7 +3523,7 @@ body.comments-page > .content {
 		margin: 0;
 	}
 	.facet.count {
-		color: #98abba;
+		color: $font_color_12;
 		font-weight: normal;
 		&:hover {
 			text-decoration: none;
@@ -3559,58 +3544,58 @@ body.comments-page > .content {
 
 .wiki-page {
 	.wikititle {
-		background-color: #fff;
+		background-color: $bg_color_2;
 		padding: 9px 16px 10px 16px;
 		border-radius: 2px;
-		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+		box-shadow: $boxshadow_22;
 		font-size: 16px;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 		text-transform: capitalize;
 		margin: 0;
 	}
 	.pageactions {
-		background-color: #fff;
+		background-color: $bg_color_2;
 		margin-left: 16px;
 		border-radius: 2px;
 		padding: 0px 16px;
 		border: none;
-		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+		box-shadow: $boxshadow_22;
 		.wikiaction {
 			margin: 0;
 			background-color: transparent;
 			border-radius: 0px;
 			padding: 10px 16px 11px 16px;
-			color: #98abba;
+			color: $font_color_12;
 		}
 		.wikiaction-current {
 			padding: 10px 16px 9px 16px;
-			border-bottom: 2px solid #24a0ed;
-			color: #24a0ed;
+			border-bottom: 2px solid $border_color_2;
+			color: $font_color_0;
 		}
 		.wikiaction:hover, .wikiaction-current:hover {
-			background-color: rgba(0, 0, 0, 0.04);
+			background-color: $bg_color_16;
 		}
 	}
 	.wiki-page-content {
 		margin: 16px 0px 16px 0px;
-		background-color: #fff;
+		background-color: $bg_color_2;
 		padding: 8px 0;
 		.wiki {
 			> .toc > ul {
 				border: none;
 			}
 			&.md {
-				color: #292f34;
+				color: $font_color_3;
 				h2 {
-					color: #292f34;
+					color: $font_color_3;
 				}
 			}
 		}
 		hr {
-			border: solid #edf1f3;
+			border: solid $border_color_6;
 		}
 		em {
-			color: #98abba;
+			color: $font_color_12;
 		}
 	}
 }
@@ -3618,13 +3603,13 @@ body.comments-page > .content {
 /* Subreddit Settings Page + Flair Page + Stylesheet Page */
 
 .linefield {
-	background-color: #fff;
-	color: #98abba;
+	background-color: $bg_color_2;
+	color: $font_color_12;
 	margin: 0 0 16px 0;
 	width: 528px;
 	padding: 8px 0;
 	.title {
-		color: #24a0ed;
+		color: $font_color_0;
 		text-transform: capitalize;
 		padding: 0;
 	}
@@ -3637,9 +3622,9 @@ body.comments-page > .content {
 }
 
 .usertext .bottom-area a {
-	color: #98abba;
+	color: $font_color_12;
 	&:hover {
-		color: #24a0ed;
+		color: $font_color_0;
 	}
 }
 
@@ -3648,26 +3633,26 @@ body.comments-page > .content {
 }
 
 .fancy-settings h1, .create-promotion h1 {
-	color: rgba(255, 255, 255, 0.8);
+	color: $font_color_5;
 }
 
 .fancy-settings h1 strong {
-	color: #fff;
+	color: $font_color_1;
 }
 
 .tabmenu {
-	border-bottom: 1px solid #edf1f3;
+	border-bottom: 1px solid $border_color_6;
 	margin-bottom: 12px;
 	li {
 		margin: 0px !important;
 		a {
 			background-color: transparent;
-			color: #292f34;
+			color: $font_color_3;
 			border: none;
 			font-size: 14px;
 		}
 		&.selected a {
-			color: #24a0ed;
+			color: $font_color_0;
 			background-color: transparent;
 			border: none;
 		}
@@ -3677,10 +3662,10 @@ body.comments-page > .content {
 .tabpane-content {
 	border: none;
 	.flairrow a.author {
-		color: #98abba;
+		color: $font_color_12;
 	}
 	.tagline a {
-		color: #292f34;
+		color: $font_color_3;
 	}
 	.thing .title {
 		overflow: visible;
@@ -3715,7 +3700,7 @@ body.comments-page > .content {
 
 #images {
 	padding: 8px 0;
-	background-color: #fff;
+	background-color: $bg_color_2;
 	height: 800px;
 	position: relative;
 	#image-upload {
@@ -3725,10 +3710,10 @@ body.comments-page > .content {
 		position: fixed;
 		width: 100%;
 		padding: 16px;
-		color: #fff;
+		color: $font_color_1;
 		left: 0px;
 		bottom: 0px;
-		background-color: #2E2F31;
+		background-color: $bg_color_64;
 		content: "Hey! There's a FAQ if you just scroll down a little.";
 		font-size: 18px;
 		z-index: 100;
@@ -3741,7 +3726,7 @@ body.comments-page > .content {
 		left: 0px;
 		bottom: -1200px;
 		z-index: 100;
-		background: #fff $url_faq no-repeat 50% 50%;
+		background: $bg_color_2 $url_faq no-repeat 50% 50%;
 	}
 }
 
@@ -3753,10 +3738,10 @@ body.comments-page > .content {
 	border: none;
 	border-radius: 0px;
 	font-size: 12px;
-	font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+	font-family: $font_stack_sans;
 	font-weight: normal;
 	background-color: transparent;
-	color: #98abba;
+	color: $font_color_12;
 	padding-left: 0px;
 	margin-right: inherit;
 }
@@ -3773,7 +3758,7 @@ body.comments-page > .content {
 /* Comments (/r/.../comments) */
 
 .listing-page .comment {
-	background-color: #fff;
+	background-color: $bg_color_2;
 	margin-left: 0px;
 	padding: 12px 0;
 	.midcol {
@@ -3802,7 +3787,7 @@ body.comments-page > .content {
 .footer {
 	border: 0;
 	border-radius: 2px;
-	background-color: rgba(43, 51, 58, 0.64);
+	background-color: $bg_color_65;
 	padding: 16px;
 	max-width: 640px;
 	.col {
@@ -3812,13 +3797,13 @@ body.comments-page > .content {
 }
 
 .flat-vert.title {
-	color: rgba(255, 255, 255, 0.7);
+	color: $font_color_7;
 }
 
 .footer {
-	font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+	font-family: $font_stack_serif;
 	.flat-vert.title {
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 	}
 }
 
@@ -3833,7 +3818,7 @@ body.comments-page > .content {
 		background-color: transparent !important;
 	}
 	.thing .tagline .author.moderator {
-		background-color: #27b062 !important;
+		background-color: $bg_color_21 !important;
 		padding: 1px 4px;
 		border-radius: 1px;
 	}
@@ -3845,7 +3830,7 @@ body.comments-page > .content {
 
 .res {
 	.srSep {
-		color: rgba(255, 255, 255, 0.45);
+		color: $font_color_27;
 	}
 	#RESShortcutsViewport {
 		margin-right: 381px;
@@ -3853,14 +3838,14 @@ body.comments-page > .content {
 	#RESShortcutsEditContainer {
 		margin-right: 312px;
 		background-color: transparent !important;
-		color: rgba(255, 255, 255, 0.45) !important;
+		color: $font_color_27 !important;
 		top: 1px !important;
 	}
 }
 
 #RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
 	background-color: transparent !important;
-	color: rgba(255, 255, 255, 0.45) !important;
+	color: $font_color_27 !important;
 	top: 1px !important;
 }
 
@@ -3891,7 +3876,7 @@ body.comments-page > .content {
 		top: 0px;
 		background-image: $url_headerimage;
 		height: 84px;
-		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+		box-shadow: $boxshadow_03;
 	}
 }
 
@@ -3907,7 +3892,7 @@ body.comments-page > .content {
 	}
 	#userbarToggle {
 		background-color: transparent;
-		color: rgba(255, 255, 255, 0.45);
+		color: $font_color_27;
 		border-radius: 0px;
 		border: none;
 		left: -32px;
@@ -3925,8 +3910,8 @@ body.comments-page > .content {
 		}
 	}
 	#sr-header-area a.RESShortcutsCurrentSub, #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
-		color: #fff !important;
-		border-bottom: 2px solid #fff;
+		color: $font_color_1 !important;
+		border-bottom: 2px solid $border_color_30;
 	}
 }
 
@@ -3940,7 +3925,7 @@ body.comments-page > .content {
 		max-width: 98px;
 		overflow: hidden;
 		max-height: 15px;
-		background-color: #FAFAFA;
+		background-color: $bg_color_59;
 		transition: all 0.35s ease;
 		&:hover {
 			max-width: 100%;
@@ -3951,13 +3936,13 @@ body.comments-page > .content {
 		padding-top: 80px !important;
 	}
 	.content .RESBigEditorPop {
-		background-color: rgba(0, 0, 0, 0);
+		background-color: $bg_color_48;
 		line-height: inherit;
 		font-size: 11px;
-		font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+		font-family: $font_stack_sans;
 		box-shadow: none;
 		font-weight: normal;
-		color: #4D5763;
+		color: $font_color_6;
 		border: none;
 		padding: 0;
 		height: inherit;
@@ -3981,7 +3966,7 @@ html.res-commentBoxes .comment {
 	.RESshortcutside, .RESDashboardToggle {
 		background-image: none !important;
 		border: none;
-		color: #4D5763;
+		color: $font_color_6;
 		text-transform: uppercase;
 		text-decoration: none;
 		border-radius: 0px;
@@ -3992,7 +3977,7 @@ html.res-commentBoxes .comment {
 	}
 	.RESshortcutside:hover, .RESDashboardToggle:hover {
 		background-color: transparent;
-		color: #24a0ed;
+		color: $font_color_0;
 	}
 	#progressIndicator {
 		width: inherit;
@@ -4000,17 +3985,17 @@ html.res-commentBoxes .comment {
 		border: none;
 		padding: 16px;
 		margin: 16px 0px 16px 0px;
-		color: #b3b3b3;
-		background-color: #fff;
+		color: $font_color_15;
+		background-color: $bg_color_2;
 		height: inherit;
 		h2 {
-			color: #4D5763;
+			color: $font_color_6;
 		}
 	}
 	.NERPageMarker {
 		border-radius: 0px;
 		border: none;
-		background-color: #fff;
+		background-color: $bg_color_2;
 		padding: 16px 0px;
 		margin: 0px;
 	}
@@ -4018,7 +4003,7 @@ html.res-commentBoxes .comment {
 		margin-right: 0px;
 	}
 	#search #searchexpando {
-		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+		box-shadow: $boxshadow_18;
 		height: auto;
 		label {
 			padding-top: 13px;
@@ -4050,46 +4035,46 @@ html.res-commentBoxes .comment {
 }
 
 #RESMainGearOverlay {
-	background-color: #516ae8;
+	background-color: $bg_color_66;
 	top: 0px !important;
 	height: 26px !important;
 	border-radius: 0px !important;
 }
 
 .RESDropdownList {
-	border-color: #4258ca;
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
+	border-color: $border_color_31;
+	box-shadow: $boxshadow_03;
 	margin-top: 4px;
 	margin-right: 8px;
 	li {
-		background-color: #516ae8;
-		color: #fff;
-		border-color: #4258ca;
+		background-color: $bg_color_66;
+		color: $font_color_1;
+		border-color: $border_color_31;
 		transition: all 0.15s ease;
 		&:first-letter {
 			text-transform: capitalize;
 		}
 	}
 	a {
-		color: #fff;
+		color: $font_color_1;
 		&:visited {
-			color: #fff;
+			color: $font_color_1;
 		}
 	}
 	li {
 		&:hover, a:hover {
-			color: #fff;
-			background-color: #667df0;
+			color: $font_color_1;
+			background-color: $bg_color_67;
 		}
 	}
 }
 
 #RESSearchMenuItem {
-	border: 1px solid #4258ca;
+	border: 1px solid $border_color_31;
 	border-radius: 1px;
-	background-color: #667df0;
+	background-color: $bg_color_67;
 	&:hover {
-		background-color: #667df0;
+		background-color: $bg_color_67;
 	}
 }
 
@@ -4103,8 +4088,8 @@ html.res-commentBoxes .comment {
 
 .moduleToggle:not(.enabled) .toggleOn, .toggleButton:not(.enabled) .toggleOn, .moduleToggle.enabled .toggleOff, .toggleButton.enabled .toggleOff {
 	background-color: transparent;
-	color: rgba(255, 255, 255, 0.6);
-	border: 1px solid #4258ca;
+	color: $font_color_29;
+	border: 1px solid $border_color_31;
 	transition: all 0.15s ease;
 	border-radius: 2px;
 }
@@ -4112,10 +4097,10 @@ html.res-commentBoxes .comment {
 /* Toggle on */
 
 .moduleToggle.enabled .toggleOn, .toggleButton.enabled .toggleOn, .moduleToggle:not(.enabled) .toggleOff, .toggleButton:not(.enabled) .toggleOff {
-	background-color: #fff;
-	color: #516AE8;
+	background-color: $bg_color_2;
+	color: $font_color_30;
 	font-weight: bolder;
-	border: 1px solid #fff;
+	border: 1px solid $border_color_30;
 	transition: all 0.15s ease;
 	border-radius: 2px;
 }
@@ -4123,25 +4108,25 @@ html.res-commentBoxes .comment {
 .markdownEditor .edit-btn:not(.btn-macro) {
 	border: 0px solid !important;
 	border-radius: 1px;
-	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: $boxshadow_04;
 }
 
 /* Shadows and cards */
 
 body {
 	&.listing-page > .content, &.other-discussions-page > .content {
-		background-color: #fff;
+		background-color: $bg_color_2;
 		padding: 16px;
 		border-radius: 2px;
-		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+		box-shadow: $boxshadow_05;
 	}
 }
 
 .comments-page .link, .commentarea > .sitetable > .comment, #images, .combined-search-page > .content, .sponsorshipbox, .commentarea > .usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
-	background-color: #fff;
+	background-color: $bg_color_2;
 	padding: 16px;
 	border-radius: 2px;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	box-shadow: $boxshadow_05;
 }
 
 body.listing-page > .content {
@@ -4447,70 +4432,70 @@ body.listing-page > .content {
 
 .side a {
 	&[href^="//#ambush"] {
-		background: #006B6B;
-		border: 1px solid #000;
+		background: $bg_color_68;
+		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: #fff;
+		color: $font_color_1;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#invasion"] {
-		background: #800000;
-		border: 1px solid #000;
+		background: $bg_color_69;
+		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: #fff;
+		color: $font_color_1;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#sdl"] {
-		color: #fff;
+		color: $font_color_1;
 		font-size: 10px;
 		font-weight: 700;
-		text-shadow: 1px 1px 2px #000, 0 0 1em green, 0 0 0.2em green;
+		text-shadow: $text_shadow_06;
 		pointer-events: none;
 	}
 	&[href^="//#hcl"] {
-		color: #fff;
+		color: $font_color_1;
 		font-size: 10px;
 		font-weight: 700;
-		text-shadow: 1px 1px 2px #000, 0 0 1em red, 0 0 0.2em red;
+		text-shadow: $text_shadow_07;
 		pointer-events: none;
 	}
 	&[href^="//#n7"] {
-		background: #f3f3f3;
-		border: 1px solid #000;
+		background: $bg_color_70;
+		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: #000;
+		color: $font_color_18;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#hardcore"] {
-		background: #800080;
-		border: 1px solid #000;
+		background: $bg_color_71;
+		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: #fff;
+		color: $font_color_1;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#op"] {
-		background: #FFD700;
-		color: #000;
+		background: $bg_color_72;
+		color: $font_color_18;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
 	}
 	&[href^="//#ggg"] {
-		color: red;
+		color: $font_color_32;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
 	}
 	&[href^="//#gggmod"] {
-		color: #3BB9FF;
+		color: $font_color_33;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
@@ -4520,7 +4505,7 @@ body.listing-page > .content {
 	}
 	&[href="/smallText"] {
 		font-size: smaller;
-		color: #737373;
+		color: $font_color_19;
 	}
 }
 
@@ -4556,17 +4541,17 @@ a {
 		background-position: 0 -180px;
 	}
 	&[href$="/spoiler"] {
-		background: #000;
-		color: #000;
-		border: 1px solid #000;
+		background: $bg_color_41;
+		color: $font_color_18;
+		border: 1px solid $border_color_32;
 		padding-right: 1px;
 		border-radius: 2px;
 		&:hover {
-			color: #fff;
+			color: $font_color_1;
 		}
 		&::before {
-			background: #fff;
-			color: #000;
+			background: $bg_color_2;
+			color: $font_color_18;
 			padding: 0 1px;
 			margin: 0 1px 0 0;
 			content: "";
@@ -4577,7 +4562,7 @@ a {
 	}
 	&[href$="#spoiler"], &[href$="/s"], &[href$="#s"] {}
 	&[href$="/spoiler"]:hover, &[href$="#spoiler"]:hover, &[href$="/s"]:hover, &[href$="#s"]:hover {
-		color: #fff;
+		color: $font_color_1;
 	}
 }
 
@@ -4591,33 +4576,33 @@ a {
 	vertical-align: bottom;
 	background: $url_flair-classes no-repeat -9999px -9999px;
 	margin: 1px;
-	font-family: Verdana, 'DejaVu Sans', sans-serif;
+	font-family: $font_stack_sans;
 	border-radius: 2px;
 	font-size: 10px;
 }
 
 .flair-ggg {
 	padding: 0 2px 0 2px;
-	color: red;
+	color: $font_color_32;
 	font-weight: 700;
 }
 
 .flair-duelistn, .flair-maraudern, .flair-rangern, .flair-scionn, .flair-shadown, .flair-templarn, .flair-witchn, .flair-duelisthc, .flair-marauderhc, .flair-rangerhc, .flair-scionhc, .flair-shadowhc, .flair-templarhc, .flair-witchhc {
 	padding: 0 2px 0 32px;
-	background-color: #f3f3f3;
-	color: #000;
+	background-color: $bg_color_70;
+	color: $font_color_18;
 	text-indent: 0;
-	border: 1px solid #000;
+	border: 1px solid $border_color_32;
 	border-radius: 2px;
 	font-weight: 200;
 }
 
 .flair-duelisthc, .flair-marauderhc, .flair-rangerhc, .flair-scionhc, .flair-shadowhc, .flair-templarhc, .flair-witchhc {
 	padding: 0 2px 0 32px;
-	background-color: #800080;
-	color: #fff;
+	background-color: $bg_color_71;
+	color: $font_color_1;
 	text-indent: 0;
-	border: 1px solid #000;
+	border: 1px solid $border_color_32;
 	border-radius: 2px;
 	font-weight: 200;
 }
@@ -4682,9 +4667,9 @@ a {
 	margin-right: 0;
 	margin-left: 2px;
 	padding: 2px;
-	color: #fff;
+	color: $font_color_1;
 	text-indent: 0;
-	border: 1px solid #000;
+	border: 1px solid $border_color_32;
 	font-weight: 200;
 	background-image: none;
 	line-height: 11px;
@@ -4692,25 +4677,25 @@ a {
 }
 
 .flair-hardcore {
-	background: #800080;
+	background: $bg_color_71;
 }
 
 .flair-n7 {
-	background: #f3f3f3;
-	color: #000;
+	background: $bg_color_70;
+	color: $font_color_18;
 }
 
 .flair-ambush {
-	background: #006b6b;
+	background: $bg_color_68;
 }
 
 .flair-invasion {
-	background: #800000;
+	background: $bg_color_69;
 }
 
 .flair-n0 {
-	background: #800080;
-	color: #000;
+	background: $bg_color_71;
+	color: $font_color_18;
 }
 
 span {
@@ -4801,7 +4786,7 @@ span {
 		background: $url_flair-asc no-repeat scroll 0 0 transparent;
 		background-size: 91px;
 		border-radius: 2px;
-		border: 1px solid #000;
+		border: 1px solid $border_color_32;
 		font-size: 0;
 	}
 	&.flair-asc-slayer {
@@ -4867,63 +4852,63 @@ span {
 }
 
 .linkflair-meta .linkflairlabel, .linkflair-ggg .linkflairlabel, .linkflair-patch .linkflairlabel, .linkflair-guide .linkflairlabel, .linkflair-discussion .linkflairlabel, .linkflair-question .linkflairlabel, .linkflair-pvp .linkflairlabel, .linkflair-gwsc .linkflairlabel, .linkflair-gwhc .linkflairlabel, .linkflair-psa .linkflairlabel {
-	background-color: #af6025;
+	background-color: $bg_color_73;
 	font-size: 11px !important;
-	color: #000 !important;
-	border: 1px #000 solid !important;
+	color: $font_color_18 !important;
+	border: 1px $border_color_32 solid !important;
 	border-radius: 3px;
 }
 
 .linkflair-spoiler .linkflairlabel {
 	font-size: 11px !important;
-	color: #000 !important;
-	border: 1px #000 solid !important;
+	color: $font_color_18 !important;
+	border: 1px $border_color_32 solid !important;
 	border-radius: 3px;
-	background-color: #db8516;
+	background-color: $bg_color_74;
 	max-width: 13em;
 }
 
 .linkflair-ggg .linkflairlabel {
-	background-color: red;
-	border-color: #9b0000;
+	background-color: $bg_color_75;
+	border-color: $border_color_33;
 }
 
 .linkflair-guide .linkflairlabel {
-	background-color: #ffff77;
+	background-color: $bg_color_76;
 }
 
 .linkflair-discussion .linkflairlabel {
-	background-color: #88f;
+	background-color: $bg_color_77;
 }
 
 .linkflair-question .linkflairlabel {
-	background-color: #c8c8c8;
+	background-color: $bg_color_78;
 }
 
 .linkflair-pvp .linkflairlabel {
-	background-color: #fff;
+	background-color: $bg_color_2;
 }
 
 .linkflair-gwsc .linkflairlabel, .linkflair-gwhc .linkflairlabel {
-	background-color: #add5ab;
+	background-color: $bg_color_79;
 }
 
 .linkflair-psa .linkflairlabel {
-	background-color: #7bb850;
+	background-color: $bg_color_80;
 }
 
 a {
 	&.author {
 		&[href$="/slowmyrole19"], &[href$="/grangelov"], &[href$="/poe_ladder_bot"], &[href$="/AutoModerator"], &[href$="/Phenxx"], &[href$="/lakattack0221"], &[href$="/GoogaNautGod"], &[href$="/Msmit71"], &[href$="/MeanwhileInSAfrica"], &[href$="/Oos-PoE"] {
-			color: #AF6025;
+			color: $font_color_34;
 			font-weight: 700;
 		}
 		&[href$="/Invalesco_POE"], &[href$="/Schnaeble"], &[href$="/SpudOfDoom"], &[href$="/Metronomyy"], &[href$="/C4r1b0u"] {
-			color: #3BB9FF;
+			color: $font_color_33;
 			font-weight: 700;
 		}
 		&[href$="/chris_wilson"], &[href$="/Bex_GGG"], &[href$="/Negitivefrags"], &[href$="/qarldev"], &[href$="/BrianWeissman_GGG"], &[href$="/Rory_Rackham"], &[href$="/Omnitect"], &[href$="/Mark_GGG"], &[href$="/Daniel_GGG"], &[href$="/Blake_GGG"], &[href$="/RhysGGG"], &[href$="/Dan_GGG"], &[href$="/PantherNZ"], &[href$="/Novynn"] {
-			color: red;
+			color: $font_color_32;
 			font-weight: 700;
 		}
 	}
@@ -4936,11 +4921,11 @@ a {
 		width: 318px;
 		right: 17px;
 		font-size: 18px;
-		text-shadow: 0px 0px 2px #000000;
+		text-shadow: $text_shadow_05;
 		padding: 110px 15px 15px;
-		color: #DFCF99;
+		color: $font_color_35;
 		line-height: 20px;
-		font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+		font-family: $font_stack_serif;
 	}
 }
 
@@ -5011,7 +4996,7 @@ html .RES-keyNav-activeElement {
 	overflow:auto;
 	display:block;
 	margin-left:18px;
-	border-left:1px solid #EAEAEA;
+	border-left:1px solid $border_color_35;
 	font-family:monospace;
 	line-height: 16px;
 	padding-left: 10px !important;
@@ -5019,7 +5004,7 @@ html .RES-keyNav-activeElement {
 
 .link .md pre code:before, .md pre code:before{
 	height:100%;
-	color:#BABABA;
+	color: $font_color_35;
 	position:absolute;
 	left:2px;
 	width:22px;

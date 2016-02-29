@@ -15,7 +15,6 @@ $url_flair-forum: 	url(%%flair-forum%%);
 $url_flair-asc: 	url(%%flair-asc%%);
 $url_thumb: 		url(%%poe-thumb%%);
 
-
 // font-colors
 $font_color_0: #24a0ed;
 $font_color_1: #fff;
@@ -50,11 +49,11 @@ $font_color_32: red;
 $font_color_33: #3bb9ff;
 $font_color_34: #af6025;
 $font_color_35: #dfcf99;
+$font_color_36: #BABABA;
 
 // font-stacks
 $font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
 $font_stack_sans: #{Verdana, 'DejaVu Sans', sans-serif};
-
 
 // background-colors
 $bg_color_0: #eee;
@@ -135,7 +134,11 @@ $bg_color_77: #88f;
 $bg_color_78: #c8c8c8;
 $bg_color_79: #add5ab;
 $bg_color_80: #7bb850;
+$bg_color_81: #1ecd97;
 
+
+$lineargradient_01: hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%;
+$lineargradient_bg: hsla(206, 100%, 41%, 1);
 
 // border-colors
 $border_color_0: #c3cfd6;
@@ -172,25 +175,32 @@ $border_color_30: #fff;
 $border_color_31: #4258ca;
 $border_color_32: #000;
 $border_color_33: #9b0000;
+$border_color_34: #e2e2e2;
+$border_color_35: #EAEAEA;
 
-// box-shadow-colors
-$boxshadow_color_0: rgba(0,0,0,.12);
-$boxshadow_color_1: rgba(0,0,0,.14);
-$boxshadow_color_2: rgba(0,0,0,.2);
-$boxshadow_color_3: rgba(0, 0, 0, 0.15);
-$boxshadow_color_4: rgba(0, 0, 0, 0.24);
-$boxshadow_color_5: rgba(0, 0, 0, 0.48);
-$boxshadow_color_6: rgba(0, 0, 0, 0.76);
-$boxshadow_color_7: rgba(0, 0, 0, 0.12);
-$boxshadow_color_8: rgba(0, 0, 0, 0.25);
-$boxshadow_color_9: #ddd;
-$boxshadow_color_10: rgba(0, 0, 0, 0.00);
-$boxshadow_color_11: rgba(0,0,0,0.14);
-$boxshadow_color_12: rgba(0,0,0,0.0);
-$boxshadow_color_13: rgba(0,0,0,0.24);
-$boxshadow_color_14: #fff;
-$boxshadow_color_15: rgba(0, 0, 0, 0.2);
-$boxshadow_color_16: rgba(0, 0, 0, 0.16);
+// box-shadows
+$boxshadow_01: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
+$boxshadow_02: 0px 2px 3px rgba(0, 0, 0, 0.15);
+$boxshadow_03: 0px 1px 5px rgba(0, 0, 0, 0.24);
+$boxshadow_04: 0px 1px 2px rgba(0, 0, 0, 0.12);
+$boxshadow_05: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+$boxshadow_06: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+$boxshadow_07: 0 3px 12px rgba(0, 0, 0, 0.48);
+$boxshadow_08: 0 4px 14px rgba(0, 0, 0, 0.76);
+$boxshadow_09: 0px 0px 16px rgba(0, 0, 0, 0.12);
+$boxshadow_10: 0 2px 3px rgba(0, 0, 0, 0.12);
+$boxshadow_11: 0px 2px 3px #ddd;
+$boxshadow_12: 0px 1px 4px rgba(0, 0, 0, 0);
+$boxshadow_13: 0px 1px 4px rgba(0, 0, 0, 0.15);
+$boxshadow_14: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+$boxshadow_15: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+$boxshadow_16: 0px 2px 12px rgba(0, 0, 0, 0.48);
+$boxshadow_17: 0 2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+$boxshadow_18: 0px 2px 6px rgba(0, 0, 0, 0.2);
+$boxshadow_19: inset 0px 0px 0px rgba(0, 0, 0, 0.25);
+$boxshadow_20: inset 0px 3px 1px rgba(0, 0, 0, 0.15);
+$boxshadow_21: 0px 2px 4px rgba(0, 0, 0, 0.2);
+$boxshadow_22: 0px 1px 5px rgba(0, 0, 0, 0.16);
 
 
 // text-shadows
@@ -199,3 +209,5 @@ $text_shadow_02: 0px -1px 2px rgba(223, 207, 153, 0.2),1px 0px 2px rgba(223, 207
 $text_shadow_03: 1px 1px 2px black, 0 0 1em green, 0 0 0.2em green;
 $text_shadow_04: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
 $text_shadow_05: 0px 0px 2px #000000;
+$text_shadow_06: 1px 1px 2px $font_color_18, 0 0 1em green, 0 0 0.2em green;
+$text_shadow_07: 1px 1px 2px $font_color_18, 0 0 1em $font_color_32, 0 0 0.2em $font_color_32;

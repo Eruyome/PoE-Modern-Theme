@@ -207,7 +207,7 @@ a.random.choice {
 
 #sr-header-area .drop-choices a.choice {
   border-bottom: 1px solid #edeeee;
-  color: #4D5763;
+  color: #4d5763;
   padding: 2px; }
   #sr-header-area .drop-choices a.choice:hover {
     background-color: #f1f1f1; }
@@ -287,12 +287,12 @@ body:not(.loggedin) #header-bottom-right {
   content: "You have new messages!";
   text-indent: 0px;
   font-size: 14px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   line-height: 1;
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
-  background: #EA4848 url(%%spritesheet%%) no-repeat 269px -120px; }
+  background: #ea4848 url(%%spritesheet%%) no-repeat 269px -120px; }
 
 #mail.havemail:hover:before {
   background-color: #ec5b5b;
@@ -387,13 +387,7 @@ body:not(.loggedin) #header-bottom-right {
   display: block;
   height: 42px;
   line-height: 42px;
-  border: none;
-  /*
-  background: rgba(0,0,0,.4);
-  margin: -6px 20px -8px 0px;
-  padding-left: 10px;
-  border-radius: 2px;
-  */ }
+  border: none; }
   #header .tabmenu:before {
     content: "";
     position: absolute;
@@ -402,7 +396,6 @@ body:not(.loggedin) #header-bottom-right {
     background-color: rgba(0, 0, 0, 0.24);
     height: 42px;
     z-index: -1;
-    /* test */
     display: none; }
   #header .tabmenu li a {
     margin: 0 16px;
@@ -410,14 +403,14 @@ body:not(.loggedin) #header-bottom-right {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 14px;
-    font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+    font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
     display: inline-block;
     line-height: 32px;
     color: rgba(232, 186, 127, 0.7);
     text-shadow: 0px -1px 2px rgba(223, 207, 153, 0.2), 1px 0px 2px rgba(223, 207, 153, 0.2), 0px 1px 2px rgba(223, 207, 153, 0.2), -1px 0px 2px rgba(223, 207, 153, 0.2);
     position: relative; }
     #header .tabmenu li a:hover {
-      color: #e8ba7f;
+      color: rgba(232, 186, 127, 0.7);
       text-shadow: 0px -1px 2px rgba(223, 207, 153, 0.2), 1px 0px 2px rgba(223, 207, 153, 0.2), 0px 1px 2px rgba(223, 207, 153, 0.2), -1px 0px 2px rgba(223, 207, 153, 0.2); }
       #header .tabmenu li a:hover:before {
         width: 100%;
@@ -547,7 +540,7 @@ body > .content .link .rank {
     background-color: rgba(79, 77, 192, 0);
     border: none;
     border-radius: 2px;
-    color: rgba(255, 255, 255, 0);
+    color: #fff;
     content: "For content that does not contribute to any discussion.";
     text-align: center;
     letter-spacing: 1px;
@@ -558,7 +551,7 @@ body > .content .link .rank {
   .arrow.down:hover:after {
     visibility: visible;
     background-color: rgba(79, 77, 192, 0.9);
-    color: #FFF;
+    color: #fff;
     margin-left: 48px; }
 
 /* Upvotes */
@@ -626,7 +619,7 @@ a.thumbnail[href*="reddit.com"] {
 .link .title {
   margin: 0px 0px 0px 0px;
   font-size: 13.5pt;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-weight: 700;
   transition: all 0.15s ease;
   overflow: visible; }
@@ -747,7 +740,7 @@ body .content .sitetable .link .title a:hover {
   margin-top: 3px;
   color: #98abba;
   font-size: 12px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif; }
+  font-family: Verdana, DejaVu Sans, sans-serif; }
 
 .link .entry .tagline a {
   color: #292f34; }
@@ -805,7 +798,7 @@ body .content .sitetable .link .title a:hover {
     color: #98abba;
     font-weight: normal;
     font-size: 13px;
-    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-family: Verdana, DejaVu Sans, sans-serif;
     transition: all 0.15s ease; }
 
 .link .entry .buttons li a:hover {
@@ -861,7 +854,7 @@ body .content .sitetable .link .title a:hover {
   border-radius: 2px; }
   .action-form .reason-prompt {
     font-size: 16px;
-    color: #4D5763;
+    color: #4d5763;
     padding-bottom: 8px;
     display: block; }
     .action-form .reason-prompt:first-letter {
@@ -873,14 +866,14 @@ body .content .sitetable .link .title a:hover {
     padding: 4px 4px 4px 0px;
     cursor: pointer;
     display: block;
-    color: #4D5763;
+    color: #4d5763;
     text-transform: capitalize; }
     .action-form li label:hover {
       background-color: rgba(0, 0, 0, 0.04); }
   .action-form input[name="other_reason"] {
     padding: 8px; }
 
-/*	.link .entry li .comments:hover .newComments {color: #fff !important;} */
+/*	.link .entry li .comments:hover .newComments {color: $font_color_1 !important;} */
 /* Flair */
 .link .entry .buttons li a.flairselectbtn {
   color: #24a0ed; }
@@ -890,7 +883,7 @@ body .content .sitetable .link .title a:hover {
   color: #98abba;
   font-weight: normal;
   font-size: 13px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   transition: all 0.15s ease; }
 
 /* RES L+C */
@@ -905,7 +898,7 @@ body .content .sitetable .link .title a:hover {
   font-style: normal;
   font-variant: normal;
   font-size: 13px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   cursor: default;
   vertical-align: middle;
   position: relative;
@@ -924,11 +917,11 @@ body .content .sitetable .link .title a:hover {
 
 /* Reported & Spam/Remove/Approves */
 body .content .thing.spam {
-  background-color: #FFE9E6; }
+  background-color: #ffe9e6; }
 
 .entry .buttons li.reported-stamp {
   background-color: transparent;
-  border: 1px solid #EDEEEE !important;
+  border: 1px solid #edeeee !important;
   border-radius: 2px;
   color: #292f34;
   line-height: 17px; }
@@ -951,7 +944,7 @@ a.pretty-button.negative {
 a.pretty-button.neutral {
   background-color: #dddddd;
   border-color: #dddddd;
-  color: #4A4F57; }
+  color: #4a4f57; }
   a.pretty-button.neutral:hover {
     background-color: #ececec;
     border-color: #ececec; }
@@ -1013,7 +1006,7 @@ ul.report-reasons {
   margin: 0; }
 
 .link.promotedlink.promoted {
-  background-color: #EFF7FF;
+  background-color: #eff7ff;
   padding: 16px 0; }
   .link.promotedlink.promoted .thumbnail {
     height: auto; }
@@ -1088,11 +1081,11 @@ body > .content .link.compressed .midcol {
   text-align: left;
   padding: 0px; }
   .flairoptionpane ul li .linkflair:hover {
-    background-color: #F5F8F9;
+    background-color: #f5f8f9;
     border: 0px solid; }
 
 .flairselector li:hover {
-  background-color: #F5F8F9;
+  background-color: #f5f8f9;
   border: 0px solid; }
 
 .flairoptionpane ul li .linkflair span.linkflairlabel {
@@ -1106,7 +1099,7 @@ body > .content .link.compressed .midcol {
 
 .flairselector form {
   padding-top: 12px;
-  border-top: 1px solid #F7F7F7; }
+  border-top: 1px solid #f7f7f7; }
   .flairselector form .flairselection {
     text-align: left; }
     .flairselector form .flairselection:before {
@@ -1215,9 +1208,9 @@ div.commentarea div.RES-keyNav-activeElement .md {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
   margin-top: 8px; }
   .RESDialogSmall > h3 {
-    color: #4F8EF7;
-    background-color: #FFF;
-    border-bottom: 1px solid #EDEDED;
+    color: #4f8ef7;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
     height: 36px;
     padding: 8px;
     margin: 0px; }
@@ -1231,24 +1224,24 @@ div.commentarea div.RES-keyNav-activeElement .md {
   width: 22px;
   transition: all 0.15s ease; }
   .RESCloseButton:hover {
-    border: 1px solid #D7D9DC; }
+    border: 1px solid #d7d9dc; }
 
 #userTaggerToolTip input[type=text], #userTaggerToolTip select {
   line-height: 22px;
   padding-left: 4px;
-  border: 1px solid #E5E5E5 !important; }
+  border: 1px solid #e5e5e5 !important; }
 
 .toggleButton {
   line-height: 0.8; }
   .toggleButton .toggleOn {
     border-radius: 0px;
-    border: 1px solid #4F8EF7;
-    background-color: #4F8EF7;
+    border: 1px solid #4f8ef7;
+    background-color: #4f8ef7;
     color: #fff;
     text-transform: capitalize; }
   .toggleButton .toggleOff {
     border-radius: 0px;
-    border: 1px solid #D7D9DC;
+    border: 1px solid #d7d9dc;
     background-color: transparent;
     text-transform: capitalize; }
 
@@ -1282,15 +1275,15 @@ div.commentarea div.RES-keyNav-activeElement .md {
 /* RES Popup */
 .guider {
   border: none;
-  box-shadow: 0px 2px 3px #DDD; }
+  box-shadow: 0px 2px 3px #ddd; }
 
 .guider_content h1 {
-  color: #4F8EF7; }
+  color: #4f8ef7; }
 
 .guider_button {
   font-size: 11px;
   border: none;
-  background: #4F8EF7 none;
+  background: #4f8ef7 none;
   transition: all 0.15s ease; }
   .guider_button:hover {
     background-color: rgba(79, 142, 247, 0.75); }
@@ -1341,13 +1334,13 @@ div.commentarea div.RES-keyNav-activeElement .md {
     color: #000;
     font-size: 14px; }
   .reddit-infobar.with-icon.locked-infobar {
-    background-color: #27B062; }
+    background-color: #27b062; }
     .reddit-infobar.with-icon.locked-infobar .md {
       color: #fff; }
     .reddit-infobar.with-icon.locked-infobar p:after {
       content: " Sort comments by new to find out more."; }
     .reddit-infobar.with-icon.locked-infobar:before {
-      background-color: #27B062;
+      background-color: #27b062;
       border-right: 1px solid rgba(0, 0, 0, 0.08); }
 
 /* Locked Post */
@@ -1436,7 +1429,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
     margin: 0 0 16px 0; }
   .side:before {
     height: 192px;
-    background: #DBDBDB url(%%sidebarimg%%);
+    background: #dbdbdb url(%%sidebarimg%%);
     content: "";
     display: block;
     position: absolute;
@@ -1450,11 +1443,8 @@ div.commentarea div.RES-keyNav-activeElement .md {
     margin-bottom: 6px;
     position: absolute;
     top: 256px;
-    /*
-    top: 308px;
-    */
     z-index: 100;
-    font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif; }
+    font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
     .side .titlebox h1.redditname:before {
       content: " ";
       position: absolute;
@@ -1477,10 +1467,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   z-index: 100;
   color: #333;
   font-size: 11px;
-  top: 284px;
-  /*
-  top: 336px;
-  */ }
+  top: 284px; }
 
 div.titlebox span.word {
   display: none; }
@@ -1516,7 +1503,7 @@ div.titlebox span.number:after {
   margin-left: 208px;
   top: 249px;
   z-index: 100;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif; }
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
   .titlebox .fancy-toggle-button .active {
     display: block;
     border: none;
@@ -1531,7 +1518,7 @@ div.titlebox span.number:after {
     .titlebox .fancy-toggle-button .active:hover {
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
     .titlebox .fancy-toggle-button .active:active {
-      box-shadow: 0px 0px 0px transparent; }
+      box-shadow: none; }
     .titlebox .fancy-toggle-button .active.add {
       background-color: #27b062;
       color: #fff; }
@@ -1561,12 +1548,12 @@ div.titlebox span.number:after {
   height: auto;
   top: 162px;
   padding: 11px 11px 11px 16px;
-  background-color: #FFF;
-  color: #4D5763;
+  background-color: #fff;
+  color: #4d5763;
   border-radius: 2px 2px 0 0;
   margin: 0;
   line-height: 1;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-weight: 700;
   font-size: 16px; }
 
@@ -1577,7 +1564,7 @@ div.titlebox span.number:after {
 
 .hover-bubble.anchor-right:before {
   right: -19px;
-  border-left-color: #CCCCCC; }
+  border-left-color: #cccccc; }
 
 /* Search */
 #search {
@@ -1609,14 +1596,14 @@ div.titlebox span.number:after {
     position: relative;
     top: 1px; }
   #search input[type=text]::-webkit-input-placeholder, #search input[type=text]:-moz-placeholder, #search input[type=text]::-moz-placeholder, #search input[type=text]:-ms-input-placeholder {
-    color: #B3B3B3; }
+    color: #b3b3b3; }
   #search input[type=submit] {
     height: 32px;
     width: 32px;
     margin-left: -38px;
     border: none !important;
     border-radius: 16px;
-    background: transparent url(%%spritesheet%%) no-repeat -64px -96px;
+    background: url(%%spritesheet%%) no-repeat -64px -96px;
     transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
     #search input[type=submit]:hover {
       background: rgba(158, 158, 158, 0.2) url(%%spritesheet%%) no-repeat -64px -96px; }
@@ -1643,7 +1630,7 @@ div.titlebox span.number:after {
 .morelink {
   position: absolute;
   top: 374px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   background-color: #0079d3;
   background-image: none !important;
   width: 152px;
@@ -1737,7 +1724,7 @@ div.titlebox span.number:after {
   font-weight: 700;
   line-height: 24px;
   color: #292f34;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   margin: 1px 0px 6px 0; }
 
 .titlebox .tagline {
@@ -1776,7 +1763,7 @@ div.titlebox span.number:after {
 
 /* Sidebar Description */
 .side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   color: #292f34;
   line-height: 1.45;
   font-size: 13px; }
@@ -1807,7 +1794,7 @@ div.titlebox span.number:after {
   width: 100%;
   border-radius: 2px;
   background-color: #0079d3;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   color: #fff;
   display: block;
   margin: 1.5em 0em;
@@ -1824,7 +1811,7 @@ div.titlebox span.number:after {
   margin: 6px -26px 10px -25px;
   border: none;
   font-size: 15px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-weight: 700;
   background: #0076d1;
   background: -moz-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
@@ -1843,7 +1830,7 @@ div.titlebox span.number:after {
   margin: 6px -26px 10px -25px;
   border: none;
   font-size: 15px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-weight: 700;
   background: #0076d1;
   background: -moz-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
@@ -1861,7 +1848,7 @@ div.titlebox span.number:after {
   margin: 6px -26px 10px -25px;
   border: none;
   font-size: 15px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-weight: 700;
   background: #0076d1;
   background: -moz-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
@@ -1955,8 +1942,8 @@ div.titlebox span.number:after {
     height: 35px;
     transition: all .2s ease; }
   .side .md > ul:first-of-type li:first-of-type, .side .md > ul:nth-of-type(2) li:first-of-type, .side .md > ul:nth-of-type(3) li, .side .md > ul:nth-of-type(4) li, .side .md > ul:nth-of-type(5) li, .side .md > ul:nth-of-type(6) li {
-    background-color: #FFF;
-    border: 1px solid #D4D4D4;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
     border-radius: 2px;
     padding: 8px 16px 7px 16px;
     cursor: pointer;
@@ -2038,7 +2025,7 @@ div.titlebox span.number:after {
 
 .side .titlebox .md h4 a {
   padding: 0 16px;
-  background-color: #FFF;
+  background-color: #fff;
   border: none;
   border-radius: 2px;
   color: #24a0ed;
@@ -2052,7 +2039,7 @@ div.titlebox span.number:after {
 
 .wiki-page .wiki-page-content .md.wiki h4 {
   padding: 0 16px;
-  background-color: #FFF;
+  background-color: #fff;
   border: none;
   border-radius: 2px;
   color: #24a0ed;
@@ -2068,10 +2055,10 @@ div.titlebox span.number:after {
   margin: 0;
   padding: 4px 16px;
   position: relative;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   font-weight: 700;
   line-height: 22px;
-  border: 1px solid #D4D4D4; }
+  border: 1px solid #d4d4d4; }
 
 .side .titlebox h4 a:hover {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
@@ -2090,14 +2077,14 @@ div.titlebox span.number:after {
   text-align: center;
   font-size: 10px;
   font-weight: 900;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   border-radius: 2px;
   width: 80px;
   height: 18px;
   transition: .25s ease;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
   background: #202020;
-  color: #ECF0F1;
+  color: #ecf0f1;
   margin: 0 auto;
   position: absolute;
   top: 286px;
@@ -2128,7 +2115,7 @@ div.titlebox span.number:after {
   color: #fff; }
 
 .side #moderation_tools .title .collapse-button {
-  color: #4D5763;
+  color: #4d5763;
   vertical-align: middle;
   border-radius: 1px;
   border: 1px solid #d8d8d8; }
@@ -2176,11 +2163,11 @@ div.titlebox span.number:after {
   display: block;
   margin: 0px 0px;
   padding: 10px 0px;
-  color: #24A0ED;
+  color: #24a0ed;
   content: "This subreddit uses the /r/Naut theme.";
   text-transform: none;
   font-size: 16px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   position: absolute;
   width: 320px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2198,7 +2185,7 @@ body.comments-page > .content {
   border-bottom: 0;
   padding-left: 16px; }
   .commentarea .panestack-title .title {
-    color: #4D5763; }
+    color: #4d5763; }
 
 .commentarea .menuarea {
   margin: 0 0 0 0px;
@@ -2217,7 +2204,7 @@ body.comments-page > .content {
     border: none;
     padding-left: 0px; }
     .commentarea .menuarea .dropdown.lightdrop .selected:hover {
-      color: #4F8EF7; }
+      color: #4f8ef7; }
     .commentarea .menuarea .dropdown.lightdrop .selected:after {
       content: "▼"; }
 
@@ -2246,7 +2233,7 @@ body.comments-page > .content {
   color: #24a0ed; }
 
 .commentarea > .usertext {
-  background-color: #FAFAFA !important;
+  background-color: #fafafa !important;
   margin: -58px 0 16px 0;
   padding: 64px 16px 16px 16px !important;
   overflow: visible; }
@@ -2312,7 +2299,7 @@ body.comments-page > .content {
 .comment .entry .tagline {
   color: #98abba;
   font-size: 11px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif; }
+  font-family: Verdana, DejaVu Sans, sans-serif; }
 
 .comment .expand {
   background-color: transparent;
@@ -2360,12 +2347,12 @@ body.comments-page > .content {
 .res .thing .tagline .author.submitter {
   padding: 1px 4px;
   border-radius: 1px;
-  background-color: #4F8EF7 !important;
+  background-color: #4f8ef7 !important;
   box-shadow: 0px 0px 0px transparent;
   transition: all 0.15s ease; }
   .res .thing .tagline .author.submitter:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #4F8EF7 !important; }
+    background-color: #4f8ef7 !important; }
 
 .comment .score {
   font-size: inherit;
@@ -2384,7 +2371,7 @@ body.comments-page > .content {
 .md a {
   color: #24a0ed; }
   .md a:visited {
-    color: #7D5D8A; }
+    color: #7d5d8a; }
 
 .md pre {
   padding: 8px; }
@@ -2465,7 +2452,7 @@ body.comments-page > .content {
   .read-next .read-next-button {
     background-color: #0079d3;
     color: #fff;
-    font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+    font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
     line-height: 16px;
     font-size: 10px;
     height: 16px;
@@ -2507,7 +2494,7 @@ body.comments-page > .content {
     position: relative;
     padding: 0;
     border: none;
-    background-color: #0079D3;
+    background-color: #0079d3;
     border-radius: 2px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
   .submit-page #newlink.submit.content .tabmenu.formtab a {
@@ -2547,7 +2534,7 @@ body.comments-page > .content {
   background-color: #c3cfd6; }
 
 .submit_text.enabled.roundfield {
-  background-color: #0079D3; }
+  background-color: #0079d3; }
   .submit_text.enabled.roundfield .md {
     color: #fff; }
 
@@ -2569,7 +2556,7 @@ body.comments-page > .content {
   margin-top: 16px;
   cursor: pointer;
   text-transform: capitalize;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   font-size: 17px;
   padding: 16px;
   text-align: center;
@@ -2665,7 +2652,7 @@ body.comments-page > .content {
   .combined-search-page .search-result-group .search-header-label {
     text-transform: capitalize;
     color: #738491;
-    font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+    font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
     font-size: 18px;
     padding-bottom: 2px; }
   .combined-search-page .search-result-group .search-menu {
@@ -2784,7 +2771,7 @@ body.comments-page > .content {
   border-radius: 2px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
   font-size: 16px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif;
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif;
   text-transform: capitalize;
   margin: 0; }
 
@@ -2910,7 +2897,7 @@ body.comments-page > .content {
     color: #fff;
     left: 0px;
     bottom: 0px;
-    background-color: #2E2F31;
+    background-color: #2e2f31;
     content: "Hey! There's a FAQ if you just scroll down a little.";
     font-size: 18px;
     z-index: 100; }
@@ -2930,7 +2917,7 @@ body.comments-page > .content {
   border: none;
   border-radius: 0px;
   font-size: 12px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   font-weight: normal;
   background-color: transparent;
   color: #98abba;
@@ -2980,9 +2967,9 @@ body.comments-page > .content {
   color: rgba(255, 255, 255, 0.7); }
 
 .footer {
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif; }
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
   .footer .flat-vert.title {
-    font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif; }
+    font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
 
 .debuginfo, #hsts_pixel {
   display: none; }
@@ -3039,7 +3026,7 @@ body.comments-page > .content {
   top: 0px;
   background-image: url(%%headerimg%%);
   height: 84px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24); }
 
 .res.search-page #header .tabmenu {
   display: none !important; }
@@ -3079,7 +3066,7 @@ body.comments-page > .content {
   max-width: 98px;
   overflow: hidden;
   max-height: 15px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   transition: all 0.35s ease; }
   .res #REScommentNavToggle:hover {
     max-width: 100%; }
@@ -3092,10 +3079,10 @@ body.comments-page > .content {
   background-color: transparent;
   line-height: inherit;
   font-size: 11px;
-  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   box-shadow: none;
   font-weight: normal;
-  color: #4D5763;
+  color: #4d5763;
   border: none;
   padding: 0;
   height: inherit;
@@ -3115,7 +3102,7 @@ html.res-commentBoxes .comment {
 .res .RESshortcutside, .res .RESDashboardToggle {
   background-image: none !important;
   border: none;
-  color: #4D5763;
+  color: #4d5763;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 0px;
@@ -3138,7 +3125,7 @@ html.res-commentBoxes .comment {
   background-color: #fff;
   height: inherit; }
   .res #progressIndicator h2 {
-    color: #4D5763; }
+    color: #4d5763; }
 
 .res .NERPageMarker {
   border-radius: 0px;
@@ -3224,7 +3211,7 @@ html.res-commentBoxes .comment {
 /* Toggle on */
 .moduleToggle.enabled .toggleOn, .toggleButton.enabled .toggleOn, .moduleToggle:not(.enabled) .toggleOff, .toggleButton:not(.enabled) .toggleOff {
   background-color: #fff;
-  color: #516AE8;
+  color: #516ae8;
   font-weight: bolder;
   border: 1px solid #fff;
   transition: all 0.15s ease;
@@ -3448,7 +3435,7 @@ body.listing-page > .content {
   background-color: transparent; }
 
 .side a[href^="//#ambush"] {
-  background: #006B6B;
+  background: #006b6b;
   border: 1px solid #000;
   border-radius: 2px;
   font-size: x-small;
@@ -3498,7 +3485,7 @@ body.listing-page > .content {
   pointer-events: none; }
 
 .side a[href^="//#op"] {
-  background: #FFD700;
+  background: #ffd700;
   color: #000;
   font-size: small;
   font-weight: 700;
@@ -3511,7 +3498,7 @@ body.listing-page > .content {
   pointer-events: none; }
 
 .side a[href^="//#gggmod"] {
-  color: #3BB9FF;
+  color: #3bb9ff;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
@@ -3583,7 +3570,7 @@ a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover, a[href$="/s"]:hover, a[hre
   vertical-align: bottom;
   background: url(%%flair-classes%%) no-repeat -9999px -9999px;
   margin: 1px;
-  font-family: Verdana, 'DejaVu Sans', sans-serif;
+  font-family: Verdana, DejaVu Sans, sans-serif;
   border-radius: 2px;
   font-size: 10px; }
 
@@ -3869,11 +3856,11 @@ span.flair-asc-unannounced {
   background-color: #7bb850; }
 
 a.author[href$="/slowmyrole19"], a.author[href$="/grangelov"], a.author[href$="/poe_ladder_bot"], a.author[href$="/AutoModerator"], a.author[href$="/Phenxx"], a.author[href$="/lakattack0221"], a.author[href$="/GoogaNautGod"], a.author[href$="/Msmit71"], a.author[href$="/MeanwhileInSAfrica"], a.author[href$="/Oos-PoE"] {
-  color: #AF6025;
+  color: #af6025;
   font-weight: 700; }
 
 a.author[href$="/Invalesco_POE"], a.author[href$="/Schnaeble"], a.author[href$="/SpudOfDoom"], a.author[href$="/Metronomyy"], a.author[href$="/C4r1b0u"] {
-  color: #3BB9FF;
+  color: #3bb9ff;
   font-weight: 700; }
 
 a.author[href$="/chris_wilson"], a.author[href$="/Bex_GGG"], a.author[href$="/Negitivefrags"], a.author[href$="/qarldev"], a.author[href$="/BrianWeissman_GGG"], a.author[href$="/Rory_Rackham"], a.author[href$="/Omnitect"], a.author[href$="/Mark_GGG"], a.author[href$="/Daniel_GGG"], a.author[href$="/Blake_GGG"], a.author[href$="/RhysGGG"], a.author[href$="/Dan_GGG"], a.author[href$="/PantherNZ"], a.author[href$="/Novynn"] {
@@ -3891,9 +3878,9 @@ a[href^='https://pathofexile.com/shop/'] {
   font-size: 18px;
   text-shadow: 0px 0px 2px #000000;
   padding: 110px 15px 15px;
-  color: #DFCF99;
+  color: #dfcf99;
   line-height: 20px;
-  font-family: Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif; }
+  font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
 
 html .RES-keyNav-activeElement {
   background-color: transparent !important; }
@@ -3949,7 +3936,7 @@ html .RES-keyNav-activeElement {
 
 .link .md pre code:before, .md pre code:before {
   height: 100%;
-  color: #BABABA;
+  color: #dfcf99;
   position: absolute;
   left: 2px;
   width: 22px;
