@@ -1997,9 +1997,9 @@ div.titlebox span.number:after {
     height: 110px;
     overflow: hidden; }
   .side .md > ul:nth-of-type(4):hover {
-    height: 209px; }
+    height: 227px; }
   .side .md > ul:nth-of-type(5):hover {
-    height: 188px; }
+    height: 204px; }
   .side .md > ul:first-of-type li:nth-of-type(2), .side .md > ul:nth-of-type(2) li:nth-of-type(2) {
     padding-top: 10px; }
   .side .md > ul:first-of-type li:first-of-type:hover, .side .md > ul:nth-of-type(2) li:first-of-type:hover {
@@ -4157,15 +4157,15 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
   .res-nightmode .res-nightmode .RES-keyNav-activeElement, .res-nightmode .res-nightmode .RES-keyNav-activeElement .md-container, html[lang="dd"] .res-nightmode .RES-keyNav-activeElement, html[lang="dd"] .res-nightmode .RES-keyNav-activeElement .md-container {
     background-color: transparent !important; }
   .res-nightmode .sidecontentbox .content, html[lang="dd"] .sidecontentbox .content {
-    background-color: transparent; }
+    background-color: transparent !important; }
   .res-nightmode body .content, html[lang="dd"] body .content {
-    background-color: #1a1a1a; }
+    background-color: #1a1a1a !important; }
   .res-nightmode .side .titlebox h1.redditname a, .res-nightmode .titlebox:before, html[lang="dd"] .side .titlebox h1.redditname a, html[lang="dd"] .titlebox:before {
-    color: #DFCF99; }
+    color: #DFCF99 !important; }
   .res-nightmode .link .entry .tagline a, html[lang="dd"] .link .entry .tagline a {
-    color: #d6d0cb; }
+    color: #d6d0cb !important; }
   .res-nightmode body a.voteWeight, html[lang="dd"] body a.voteWeight {
-    color: #fff; }
+    color: #fff !important; }
   .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode #images, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode .account-activity-box, .res-nightmode .combined-search-page > .content,
   .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode .commentarea > .usertext, .res-nightmode .comments-page .link, .res-nightmode .linefield, .res-nightmode .login-form-side,
   .res-nightmode .side .sidecontentbox, .res-nightmode .side .titlebox, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form,
@@ -4173,20 +4173,20 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
   html[lang="dd"] .commentarea > .sitetable > .comment, html[lang="dd"] .commentarea > .usertext, html[lang="dd"] .comments-page .link, html[lang="dd"] .linefield, html[lang="dd"] .login-form-side,
   html[lang="dd"] .side .sidecontentbox, html[lang="dd"] .side .titlebox, html[lang="dd"] .sponsorshipbox, html[lang="dd"] .stylesheet-customize-container .pretty-form,
   html[lang="dd"] .submit-page .roundfield, html[lang="dd"] .wiki-page .wiki-page-content, html[lang="dd"] body.listing-page > .content, html[lang="dd"] body.other-discussions-page > .content {
-    background-color: #1a1a1a;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+    background-color: #1a1a1a !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !important; }
   .res-nightmode .side .titlebox .md h5:first-of-type, .res-nightmode .side .titlebox h1.redditname:before, .res-nightmode #search input[type="text"],
   .res-nightmode .side .titlebox .md h4 a, .res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .side .md > ul:first-of-type li:first-of-type,
   .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .titlebox .md h5:first-of-type, html[lang="dd"] .side .titlebox h1.redditname:before, html[lang="dd"] #search input[type="text"],
   html[lang="dd"] .side .titlebox .md h4 a, html[lang="dd"] .wiki-page .wiki-page-content .md.wiki h4, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type,
   html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(3) li {
-    background-color: #1a1a1a; }
+    background-color: #1a1a1a !important; }
   .res-nightmode body:not(.comments-page) .link:hover, html[lang="dd"] body:not(.comments-page) .link:hover {
-    background-color: #272727; }
+    background-color: #272727 !important; }
   .res-nightmode .stickied, html[lang="dd"] .stickied {
-    border-bottom-color: #272727; }
+    border-bottom-color: #272727 !important; }
   .res-nightmode #search #searchexpando, html[lang="dd"] #search #searchexpando {
-    background-color: #120e0c; }
+    background-color: #120e0c !important; }
   .res-nightmode .res-nightmode .read-next .read-next-header, .res-nightmode .res-nightmode .flairselector h2,
   .res-nightmode .res-nightmode .flairselector li:hover, html[lang="dd"] .res-nightmode .read-next .read-next-header, html[lang="dd"] .res-nightmode .flairselector h2,
   html[lang="dd"] .res-nightmode .flairselector li:hover {
@@ -4196,49 +4196,59 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
   html[lang="dd"] .res-nightmode .side .md ul {
     background-color: transparent !important; }
   .res-nightmode .side .md > ul:nth-of-type(4):before, .res-nightmode .side .md > ul:nth-of-type(5):before, html[lang="dd"] .side .md > ul:nth-of-type(4):before, html[lang="dd"] .side .md > ul:nth-of-type(5):before {
-    box-shadow: -55px 40px 32px 30px #1a1a1a; }
+    box-shadow: -55px 40px 32px 30px #1a1a1a !important; }
   .res-nightmode .arrow.upmod, html[lang="dd"] .arrow.upmod {
-    background-position: -32px -80px; }
+    background-position: -32px -80px !important; }
   .res-nightmode .arrow.up, html[lang="dd"] .arrow.up {
-    background-position: -0px -80px; }
+    background-position: -0px -80px !important; }
     .res-nightmode .arrow.up:hover, html[lang="dd"] .arrow.up:hover {
-      background-position: -0px -80px; }
+      background-position: -0px -80px !important; }
   .res-nightmode .arrow.down, html[lang="dd"] .arrow.down {
-    background-position: -64px -80px; }
+    background-position: -64px -80px !important; }
     .res-nightmode .arrow.down:hover, html[lang="dd"] .arrow.down:hover {
-      background-position: -64px -80px; }
+      background-position: -64px -80px !important; }
   .res-nightmode .arrow.downmod, html[lang="dd"] .arrow.downmod {
-    background-position: -0px -100px; }
+    background-position: -0px -100px !important; }
   .res-nightmode .side .md h6:first-of-type a, html[lang="dd"] .side .md h6:first-of-type a {
-    background-color: #333a4d; }
+    background-color: #333a4d !important; }
   .res-nightmode .side .titlebox .md h5:first-of-type, html[lang="dd"] .side .titlebox .md h5:first-of-type {
-    color: #fff; }
+    color: #fff !important; }
   .res-nightmode .thing .title.loggedin.click, .res-nightmode .thing .title.click, .res-nightmode .thing .title.loggedin, .res-nightmode .thing .title, .res-nightmode .link .entry .buttons li a.comments,
   .res-nightmode .link .entry .buttons li a.flairselectbtn, .res-nightmode .link .entry .buttons li a:hover, .res-nightmode .titlebox .tagline a.flairselectbtn, .res-nightmode .md a,
   .res-nightmode .side .titlebox .md h4 a, .res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .sidebox.create .morelink a, .res-nightmode a, .res-nightmode .side:after, .res-nightmode .usertext .bottom-area a.reddiquette,
   .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .tagline .submitter, .res-nightmode .combined-search-page .search-result .search-result-header .search-title,
   .res-nightmode .combined-search-page .search-result a, .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .combined-search-page .search-result .search-comments,
-  .res-nightmode .flairselector h2, .res-nightmode .linefield .title, .res-nightmode body .content .sitetable .link .title a:hover, .res-nightmode .link .entry .tagline a:hover, .res-nightmode .comment .author:hover,
-  .res-nightmode a, .res-nightmode .md a, .res-nightmode .share-button .option, .res-nightmode #subscribe a, .res-nightmode .share .option, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .link .score.dislikes,
-  .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, .res-nightmode #authorInfoToolTip h3 a, .res-nightmode .reddiquette,
-  .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .combined-search-page .search-result a,
-  .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .hoverHelp, .res-nightmode .deepthread a, .res-nightmode .policy-page .md h1 a,
-  .res-nightmode .policy-page .md h3 a, html[lang="dd"] .thing .title.loggedin.click, html[lang="dd"] .thing .title.click, html[lang="dd"] .thing .title.loggedin, html[lang="dd"] .thing .title, html[lang="dd"] .link .entry .buttons li a.comments,
+  .res-nightmode .flairselector h2, .res-nightmode .linefield .title, .res-nightmode body .content .sitetable .link .title a:hover, .res-nightmode .link .entry .tagline a:hover, .res-nightmode .comment .author:hover, html[lang="dd"] .thing .title.loggedin.click, html[lang="dd"] .thing .title.click, html[lang="dd"] .thing .title.loggedin, html[lang="dd"] .thing .title, html[lang="dd"] .link .entry .buttons li a.comments,
   html[lang="dd"] .link .entry .buttons li a.flairselectbtn, html[lang="dd"] .link .entry .buttons li a:hover, html[lang="dd"] .titlebox .tagline a.flairselectbtn, html[lang="dd"] .md a,
   html[lang="dd"] .side .titlebox .md h4 a, html[lang="dd"] .wiki-page .wiki-page-content .md.wiki h4, html[lang="dd"] .sidebox.create .morelink a, html[lang="dd"] a, html[lang="dd"] .side:after, html[lang="dd"] .usertext .bottom-area a.reddiquette,
   html[lang="dd"] .wiki-page .pageactions .wikiaction-current, html[lang="dd"] .tagline .submitter, html[lang="dd"] .combined-search-page .search-result .search-result-header .search-title,
   html[lang="dd"] .combined-search-page .search-result a, html[lang="dd"] .combined-search-page .search-result a > mark, html[lang="dd"] .combined-search-page .search-result .search-comments,
-  html[lang="dd"] .flairselector h2, html[lang="dd"] .linefield .title, html[lang="dd"] body .content .sitetable .link .title a:hover, html[lang="dd"] .link .entry .tagline a:hover, html[lang="dd"] .comment .author:hover,
-  html[lang="dd"] a, html[lang="dd"] .md a, html[lang="dd"] .share-button .option, html[lang="dd"] #subscribe a, html[lang="dd"] .share .option, html[lang="dd"] .wired a, html[lang="dd"] .side a, html[lang="dd"] .link .score.dislikes,
+  html[lang="dd"] .flairselector h2, html[lang="dd"] .linefield .title, html[lang="dd"] body .content .sitetable .link .title a:hover, html[lang="dd"] .link .entry .tagline a:hover, html[lang="dd"] .comment .author:hover {
+    color: #DFCF99; }
+  .res-nightmode .md a, .res-nightmode .share-button .option, .res-nightmode #subscribe a, .res-nightmode .share .option, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .link .score.dislikes,
+  .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, .res-nightmode #authorInfoToolTip h3 a, .res-nightmode .reddiquette,
+  .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .combined-search-page .search-result a,
+  .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .hoverHelp, .res-nightmode .deepthread a, .res-nightmode .policy-page .md h1 a,
+  .res-nightmode .policy-page .md h3 a, html[lang="dd"] .md a, html[lang="dd"] .share-button .option, html[lang="dd"] #subscribe a, html[lang="dd"] .share .option, html[lang="dd"] .wired a, html[lang="dd"] .side a, html[lang="dd"] .link .score.dislikes,
   html[lang="dd"] .linkcompressed .score.dislikes, html[lang="dd"] a[rel="tag"], html[lang="dd"] .dsq-help, html[lang="dd"] #authorInfoToolTip h3 a, html[lang="dd"] .reddiquette,
   html[lang="dd"] .parent .author, html[lang="dd"] .parent .subreddit, html[lang="dd"] .combined-search-page .search-result a,
   html[lang="dd"] .combined-search-page .search-result a > mark, html[lang="dd"] .hoverHelp, html[lang="dd"] .deepthread a, html[lang="dd"] .policy-page .md h1 a,
   html[lang="dd"] .policy-page .md h3 a {
     color: #DFCF99; }
+  .res-nightmode .res-nightmode .side .md a, .res-nightmode[href^="/r/poeblackmarket/about/moderators"], .res-nightmode .gadget a, .res-nightmode[href^="/r/poeblackmarket/about/moderators"], html[lang="dd"] .res-nightmode .side .md a, html[lang="dd"][href^="/r/poeblackmarket/about/moderators"], html[lang="dd"] .gadget a, html[lang="dd"][href^="/r/poeblackmarket/about/moderators"] {
+    color: #DFCF99 !important; }
+  .res-nightmode a.pretty-button.neutral, .res-nightmode a.pretty-button.negative, html[lang="dd"] a.pretty-button.neutral, html[lang="dd"] a.pretty-button.negative {
+    color: #000 !important; }
+  .res-nightmode .link .domain a, html[lang="dd"] .link .domain a {
+    color: #98abba !important; }
+  .res-nightmode:not(.res-nightMode-coloredLinks) .thing .title:visited, html[lang="dd"]:not(.res-nightMode-coloredLinks) .thing .title:visited {
+    color: #a6a6a6 !important; }
+  .res-nightmode:not(.res-nightMode-coloredLinks) .thing .title, html[lang="dd"]:not(.res-nightMode-coloredLinks) .thing .title {
+    color: #DFCF99 !important; }
   .res-nightmode .comment .flat-list li a[onclick*=reply], .res-nightmode .tagline .submitter, .res-nightmode .tagline .submitter:visited, html[lang="dd"] .comment .flat-list li a[onclick*=reply], html[lang="dd"] .tagline .submitter, html[lang="dd"] .tagline .submitter:visited {
-    color: #DFCF99; }
+    color: #DFCF99 !important; }
   .res-nightmode .side .md a:visited, .res-nightmode .side .md > ul:first-of-type li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .md a:visited, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(3) li {
-    color: #DFCF99; }
+    color: #DFCF99 !important; }
   .res-nightmode .side #moderation_tools .title h1, .res-nightmode .side .titlebox .md h2, .res-nightmode .sidecontentbox .title h1, html[lang="dd"] .side #moderation_tools .title h1, html[lang="dd"] .side .titlebox .md h2, html[lang="dd"] .sidecontentbox .title h1 {
     background: #333a4d;
     background: -moz-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
@@ -4247,78 +4257,78 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
     background: -ms-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
     background: linear-gradient(to bottom, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%); }
   .res-nightmode .side .titlebox .md h2:before, .res-nightmode .sidecontentbox .title h1:before, html[lang="dd"] .side .titlebox .md h2:before, html[lang="dd"] .sidecontentbox .title h1:before {
-    border-left-color: #181c25; }
+    border-left-color: #181c25 !important; }
   .res-nightmode .side .titlebox .md h2:after, .res-nightmode .sidecontentbox .title h1:after, html[lang="dd"] .side .titlebox .md h2:after, html[lang="dd"] .sidecontentbox .title h1:after {
-    border-right-color: #181c25; }
+    border-right-color: #181c25 !important; }
   .res-nightmode .titlebox .tagline:after, html[lang="dd"] .titlebox .tagline:after {
-    border-color: #1f5cab; }
+    border-color: #1f5cab !important; }
   .res-nightmode .side .titlebox .md h4:first-of-type a:after, .res-nightmode .side .md > ul:first-of-type li:first-of-type:after,
   .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type:after, html[lang="dd"] .side .titlebox .md h4:first-of-type a:after, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type:after,
   html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type:after {
-    background-image: url(%%sidebaricons-dark%%); }
+    background-image: url(%%sidebaricons-dark%%) !important; }
   .res-nightmode #noresults, html[lang="dd"] #noresults {
-    background-image: url(%%noresults-dark%%); }
+    background-image: url(%%noresults-dark%%) !important; }
   .res-nightmode .side .md > ul:first-of-type li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type,
   .res-nightmode .side .md > ul:nth-of-type(3) li, .res-nightmode .side .titlebox .md h4 a, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type,
   html[lang="dd"] .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .titlebox .md h4 a {
-    border-color: #272727; }
+    border-color: #272727 !important; }
   .res-nightmode .expando-button, .res-nightmode .expando-button.image, .res-nightmode .expando-button.video-muted, html[lang="dd"] .expando-button, html[lang="dd"] .expando-button.image, html[lang="dd"] .expando-button.video-muted {
-    border-color: #5a5a5a; }
+    border-color: #5a5a5a !important; }
   .res-nightmode .titlebox .tagline:after, html[lang="dd"] .titlebox .tagline:after {
-    background-color: #272727; }
+    background-color: #272727 !important; }
   .res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type=text], .res-nightmode body .content input[type=password], html[lang="dd"] body .content .text, html[lang="dd"] body .content textarea, html[lang="dd"] body .content input[type=text], html[lang="dd"] body .content input[type=password] {
-    background-color: #1a1a1a; }
+    background-color: #1a1a1a !important; }
   .res-nightmode .side .spacer input, .res-nightmode body .content input[type=url], html[lang="dd"] .side .spacer input, html[lang="dd"] body .content input[type=url] {
-    background-color: #1a1a1a; }
+    background-color: #1a1a1a !important; }
   .res-nightmode ul.image-preview-list .description pre, html[lang="dd"] ul.image-preview-list .description pre {
-    color: #fff; }
+    color: #fff !important; }
   .res-nightmode .entry .buttons li.reported-stamp, .res-nightmode .submit-page .roundfield .title, .res-nightmode body .content textarea, html[lang="dd"] .entry .buttons li.reported-stamp, html[lang="dd"] .submit-page .roundfield .title, html[lang="dd"] body .content textarea {
-    color: #fff; }
+    color: #fff !important; }
   .res-nightmode .RESUserTagImage, html[lang="dd"] .RESUserTagImage {
-    opacity: .6; }
+    opacity: .6 !important; }
   .res-nightmode .btn, .res-nightmode button, .res-nightmode .morelink, .res-nightmode .nav-buttons a, .res-nightmode .titlebox .fancy-toggle-button .active.remove,
   .res-nightmode .submit-page #newlink.submit.content ul.tabmenu.formtab, html[lang="dd"] .btn, html[lang="dd"] button, html[lang="dd"] .morelink, html[lang="dd"] .nav-buttons a, html[lang="dd"] .titlebox .fancy-toggle-button .active.remove,
   html[lang="dd"] .submit-page #newlink.submit.content ul.tabmenu.formtab {
-    background-color: #333a4d;
-    border-color: #181c25;
-    color: #fff; }
+    background-color: #333a4d !important;
+    border-color: #181c25 !important;
+    color: #fff !important; }
   .res-nightmode .dropdown.lightdrop .selected, html[lang="dd"] .dropdown.lightdrop .selected {
-    border-color: #181c25;
-    color: #fff; }
+    border-color: #181c25 !important;
+    color: #fff !important; }
   .res-nightmode .morelink a, html[lang="dd"] .morelink a {
-    color: #fff; }
+    color: #fff !important; }
     .res-nightmode .morelink a:hover, html[lang="dd"] .morelink a:hover {
-      color: #e6e6e6; }
+      color: #e6e6e6 !important; }
   .res-nightmode .btn:hover, .res-nightmode button:hover, html[lang="dd"] .btn:hover, html[lang="dd"] button:hover {
-    background-color: #47526b; }
+    background-color: #47526b !important; }
   .res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a, html[lang="dd"] .submit-page #newlink.submit.content .tabmenu.formtab .selected a {
     border-bottom-color: white; }
   .res-nightmode #newlink-with-image-upload .clear-input-button, html[lang="dd"] #newlink-with-image-upload .clear-input-button {
-    background-color: #af6025; }
+    background-color: #af6025 !important; }
   .res-nightmode .side .md table thead tr, html[lang="dd"] .side .md table thead tr {
-    background-color: rgba(255, 255, 255, 0.2); }
+    background-color: rgba(255, 255, 255, 0.2) !important; }
   .res-nightmode .md h1, .res-nightmode .md h2, .res-nightmode .md h3, html[lang="dd"] .md h1, html[lang="dd"] .md h2, html[lang="dd"] .md h3 {
-    color: #dddddd; }
+    color: #dddddd !important; }
   .res-nightmode .gold-accent.comment-visits-box, html[lang="dd"] .gold-accent.comment-visits-box {
-    background-color: #1a1a1a;
-    border-color: #181c25;
-    color: #fff; }
+    background-color: #1a1a1a !important;
+    border-color: #181c25 !important;
+    color: #fff !important; }
   .res-nightmode .comment .expand:hover, html[lang="dd"] .comment .expand:hover {
-    background-color: #120e0c; }
+    background-color: #120e0c !important; }
   .res-nightmode .comments-page .side .linkinfo, html[lang="dd"] .comments-page .side .linkinfo {
-    background-color: #1a1a1a;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+    background-color: #1a1a1a !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !important; }
     .res-nightmode .comments-page .side .linkinfo .score, html[lang="dd"] .comments-page .side .linkinfo .score {
-      color: #fff; }
+      color: #fff !important; }
   .res-nightmode .side .spacer input, .res-nightmode body .content .text, .res-nightmode body .content input[type=password], .res-nightmode body .content input[type=text],
   .res-nightmode body .content input[type=url], .res-nightmode body .content textarea, html[lang="dd"] .side .spacer input, html[lang="dd"] body .content .text, html[lang="dd"] body .content input[type=password], html[lang="dd"] body .content input[type=text],
   html[lang="dd"] body .content input[type=url], html[lang="dd"] body .content textarea {
-    color: #fff; }
+    color: #fff !important; }
   .res-nightmode .wiki-page .pageactions, .res-nightmode .wiki-page .wikititle, html[lang="dd"] .wiki-page .pageactions, html[lang="dd"] .wiki-page .wikititle {
-    background-color: #333a4d;
-    color: #fff; }
+    background-color: #333a4d !important;
+    color: #fff !important; }
   .res-nightmode body .content input[type=text], .res-nightmode .search-page #search input[type=text], html[lang="dd"] body .content input[type=text], html[lang="dd"] .search-page #search input[type=text] {
     color: #fff !important;
-    border: 1px solid #333a4d; }
+    border: 1px solid #333a4d !important; }
 
 /* --- End Addon --- */

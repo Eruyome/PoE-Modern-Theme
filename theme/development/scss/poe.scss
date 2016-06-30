@@ -2568,12 +2568,12 @@ div.titlebox span.number:after {
 			}
 			&:nth-of-type(4):hover {
 				$entry_count: 9;
-				$height_per_entry: 21px;
+				$height_per_entry: 23px;
 				height: $entry_count * $height_per_entry + 20px;
 			}
 			&:nth-of-type(5):hover {
 				$entry_count: 8;
-				$height_per_entry: 21px;
+				$height_per_entry: 23px;
 				height: $entry_count * $height_per_entry + 20px;
 			}
 			&:first-of-type li:nth-of-type(2), &:nth-of-type(2) li:nth-of-type(2) {
@@ -5304,24 +5304,24 @@ html[lang="dd"]{
 		}
 
 		.sidecontentbox .content {
-			background-color: transparent;
+			background-color: transparent !important;
 		}
 
 		body .content {
-			background-color: $bg_color_86;
+			background-color: $bg_color_86 !important;
 		}
 
 		.side .titlebox h1.redditname a, .titlebox:before
 		{
-			color: $font_color_37;
+			color: $font_color_37 !important;
 		}
 
 		.link .entry .tagline a {
-			color: invert($font_color_3);
+			color: invert($font_color_3) !important;
 		}
 
 		body a.voteWeight {
-			color: $font_color_1;
+			color: $font_color_1 !important;
 		}
 
 		#ad-frame, #ad_main, #images, #previoussearch #moresearchinfo, .account-activity-box, .combined-search-page > .content,
@@ -5329,26 +5329,26 @@ html[lang="dd"]{
 		.side .sidecontentbox, .side .titlebox, .sponsorshipbox, .stylesheet-customize-container .pretty-form,
 		.submit-page .roundfield, .wiki-page .wiki-page-content, body.listing-page > .content, body.other-discussions-page > .content
 		{
-			background-color: lighten(invert($bg_color_2),10%);
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+			background-color: lighten(invert($bg_color_2),10%) !important;
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14) !important;
 		}
 
 		.side .titlebox .md h5:first-of-type, .side .titlebox h1.redditname:before, #search input[type="text"],
 		.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .side .md>ul:first-of-type li:first-of-type,
 		.side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
 		{
-			background-color: lighten(invert($bg_color_2),10%);
+			background-color: lighten(invert($bg_color_2),10%) !important;
 		}
 
 		body:not(.comments-page) .link:hover {
-			background-color: lighten(invert($bg_color_15),10%);
+			background-color: lighten(invert($bg_color_15),10%) !important;
 		}
 		.stickied {
-			border-bottom-color: lighten(invert($bg_color_15),10%);
+			border-bottom-color: lighten(invert($bg_color_15),10%) !important;
 		}
 
 		#search #searchexpando {
-			background-color: invert($bg_color_50);
+			background-color: invert($bg_color_50) !important;
 		}
 
 		.res-nightmode .read-next .read-next-header, .res-nightmode .flairselector h2,
@@ -5365,34 +5365,34 @@ html[lang="dd"]{
 
 		.side .md>ul:nth-of-type(4):before, .side .md>ul:nth-of-type(5):before
 		{
-			box-shadow: -55px 40px 32px 30px lighten(invert($bg_color_2),10%);
+			box-shadow: -55px 40px 32px 30px lighten(invert($bg_color_2),10%) !important;
 		}
 
 		.arrow.upmod {
-			background-position: -32px -80px;
+			background-position: -32px -80px !important;
 		}
 		.arrow.up {
-			background-position: -0px -80px;
+			background-position: -0px -80px !important;
 			&:hover {
-				background-position: -0px -80px;
+				background-position: -0px -80px !important;
 			}
 		}
 		.arrow.down {
-			background-position: -64px -80px;
+			background-position: -64px -80px !important;
 			&:hover {
-				background-position: -64px -80px;
+				background-position: -64px -80px !important;
 			}
 		}
 		.arrow.downmod {
-			background-position: -0px -100px;
+			background-position: -0px -100px !important;
 		}
 
 		.side .md h6:first-of-type a {
-			background-color: $lineargradient_bg_02;
+			background-color: $lineargradient_bg_02 !important;
 		}
 
 		.side .titlebox .md h5:first-of-type {
-			color: $font_color_1;
+			color: $font_color_1 !important;
 		}
 
 		/* Links */
@@ -5401,8 +5401,11 @@ html[lang="dd"]{
 		.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,
 		.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,
 		.combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments,
-		.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover,
-		a,  .md a,  .share-button .option,  #subscribe a,  .share .option,  .wired a,  .side a,  .link .score.dislikes,
+		.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover
+		{
+			color: $font_color_37;
+		}
+		.md a,  .share-button .option,  #subscribe a,  .share .option,  .wired a,  .side a,  .link .score.dislikes,
 		.linkcompressed .score.dislikes,  a[rel="tag"],  .dsq-help,  #authorInfoToolTip h3 a,  .reddiquette,
 		.parent .author,  .parent .subreddit,  .combined-search-page .search-result a,
 		.combined-search-page .search-result a > mark,  .hoverHelp,  .deepthread a,  .policy-page .md h1 a,
@@ -5410,12 +5413,34 @@ html[lang="dd"]{
 		{
 			color: $font_color_37;
 		}
+		.res-nightmode .side .md a, &[href^="/r/poeblackmarket/about/moderators"], .gadget a, &[href^="/r/poeblackmarket/about/moderators"]
+		{
+			color: $font_color_37 !important;
+		}
+
+		a.pretty-button {
+			&.neutral, &.negative {
+				color: $font_color_18 !important;
+			}
+		}
+
+		.link .domain a {
+			color: $font_color_12 !important;
+		}
+
+		&:not(.res-nightMode-coloredLinks) .thing .title:visited {
+			color: hsl(0,0%,65%) !important;
+		}
+		&:not(.res-nightMode-coloredLinks) .thing .title {
+			color: $font_color_37 !important;
+		}
+
 		.comment .flat-list li a[onclick*=reply], .tagline .submitter, .tagline .submitter:visited {
-			color: $font_color_37;
+			color: $font_color_37 !important;
 		}
 		.side .md a:visited, .side .md>ul:first-of-type li:first-of-type, .side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
 		{
-			color: $font_color_37;
+			color: $font_color_37 !important;
 		}
 
 		.side #moderation_tools .title h1, .side .titlebox .md h2, .sidecontentbox .title h1
@@ -5429,119 +5454,119 @@ html[lang="dd"]{
 		}
 		.side .titlebox .md h2:before, .sidecontentbox .title h1:before
 		{
-			border-left-color: $border_color_24_dark;
+			border-left-color: $border_color_24_dark !important;
 		}
 		.side .titlebox .md h2:after, .sidecontentbox .title h1:after
 		{
-			border-right-color: $border_color_24_dark;
+			border-right-color: $border_color_24_dark !important;
 		}
 
 		.titlebox .tagline:after {
-			border-color: lighten(invert($bg_color_14),10%)
+			border-color: lighten(invert($bg_color_14),10%) !important;
 		}
 
 		.side .titlebox .md h4:first-of-type a:after, .side .md>ul:first-of-type li:first-of-type:after,
 		.side .md>ul:nth-of-type(2) li:first-of-type:after
 		{
-			background-image: $url_sidebaricons_dark;
+			background-image: $url_sidebaricons_dark !important;
 		}
 		#noresults {
-			background-image: $url_noresults_dark;
+			background-image: $url_noresults_dark !important;
 		}
 
 		.side .md>ul:first-of-type li:first-of-type, .side .md>ul:nth-of-type(2) li:first-of-type,
 		.side .md>ul:nth-of-type(3) li, .side .titlebox .md h4 a
 		{
-			border-color: lighten(invert($bg_color_15),10%);
+			border-color: lighten(invert($bg_color_15),10%) !important;
 		}
 		.expando-button, .expando-button.image,	.expando-button.video-muted
 		{
-			border-color: lighten(invert($bg_color_15),30%);
+			border-color: lighten(invert($bg_color_15),30%) !important;
 		}
 		.titlebox .tagline:after {
-			background-color: lighten(invert($bg_color_15),10%);
+			background-color: lighten(invert($bg_color_15),10%) !important;
 		}
 
 		body .content {
 			.text, textarea, input[type=text], input[type=password]  {
-				background-color: lighten(invert($bg_color_2),10%);
+				background-color: lighten(invert($bg_color_2),10%) !important;
 			}
 		}
 		.side .spacer input, body .content input[type=url] {
-			background-color: lighten(invert($bg_color_2),10%);
+			background-color: lighten(invert($bg_color_2),10%) !important;
 		}
 
 		ul.image-preview-list .description pre {
-			color: $font_color_1;
+			color: $font_color_1 !important;
 		}
 		.entry .buttons li.reported-stamp, .submit-page .roundfield .title, body .content textarea {
-			color: $font_color_1;
+			color: $font_color_1 !important;
 		}
 		.RESUserTagImage {
-			opacity: .6;
+			opacity: .6 !important;
 		}
 		.btn, button, .morelink, .nav-buttons a, .titlebox .fancy-toggle-button .active.remove,
 		.submit-page #newlink.submit.content ul.tabmenu.formtab
 		{
-			background-color: $lineargradient_bg_02;
-			border-color: $border_color_24_dark;
-			color: $font_color_1;
+			background-color: $lineargradient_bg_02 !important;
+			border-color: $border_color_24_dark !important;
+			color: $font_color_1 !important;
 		}
 		.dropdown.lightdrop .selected {
-			border-color: $border_color_24_dark;
-			color: $font_color_1;
+			border-color: $border_color_24_dark !important;
+			color: $font_color_1 !important;
 		}
 
 		.morelink a {
-			color: $font_color_1;
+			color: $font_color_1 !important;
 			&:hover {
-				color: darken($font_color_1, 10%);
+				color: darken($font_color_1, 10%) !important;
 			}
 		}
 		.btn:hover, button:hover {
-			background-color: lighten($lineargradient_bg_02, 10%);
+			background-color: lighten($lineargradient_bg_02, 10%) !important;
 		}
 		.submit-page #newlink.submit.content .tabmenu.formtab .selected a {
 			border-bottom-color: white;
 		}
 		#newlink-with-image-upload .clear-input-button {
-			background-color: $font_color_34;
+			background-color: $font_color_34 !important;
 		}
 		.side .md table thead tr {
-			background-color: invert($bg_color_36);
+			background-color: invert($bg_color_36) !important;
 		}
 		.md h1, .md h2, .md h3 {
-			color: $font_color_39;
+			color: $font_color_39 !important;
 		}
 		.gold-accent.comment-visits-box {
-			background-color: lighten(invert($bg_color_2),10%);
-			border-color: $border_color_24_dark;
-			color: $font_color_1;
+			background-color: lighten(invert($bg_color_2),10%) !important;
+			border-color: $border_color_24_dark !important;
+			color: $font_color_1 !important;
 		}
 		.comment .expand:hover {
-			background-color: invert($bg_color_50);
+			background-color: invert($bg_color_50) !important;
 		}
 		.comments-page .side .linkinfo {
-			background-color: lighten(invert($bg_color_2),10%);
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+			background-color: lighten(invert($bg_color_2),10%) !important;
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14) !important;
 			.score {
-				color: $font_color_1;
+				color: $font_color_1 !important;
 			}
 		}
 
 		.side .spacer input, body .content .text, body .content input[type=password], body .content input[type=text],
 		body .content input[type=url], body .content textarea
 		{
-			color: $font_color_1;
+			color: $font_color_1 !important;
 		}
 
 		.wiki-page .pageactions, .wiki-page .wikititle {
-			background-color: $lineargradient_bg_02;
-			color: $font_color_1;
+			background-color: $lineargradient_bg_02 !important;
+			color: $font_color_1 !important;
 		}
 		body .content input[type=text], .search-page #search input[type=text] {
 			color: $font_color_1 !important;
-			border: 1px solid $lineargradient_bg_02;
+			border: 1px solid $lineargradient_bg_02 !important;
 		}
 	}
 
