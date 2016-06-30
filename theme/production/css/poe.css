@@ -148,6 +148,9 @@ body .btn, body button {
   #sr-header-area .width-clip {
     right: 300px; }
 
+.res-nightmode #sr-header-area {
+  background-color: rgba(0, 0, 0, 0.08) !important; }
+
 body:not(.loggedin) #sr-header-area .width-clip {
   right: 340px; }
 
@@ -462,7 +465,7 @@ body.listing-page > .content {
 
 .link {
   margin: 0px;
-  padding: 16px;
+  padding: 10px;
   position: relative; }
 
 body:not(.comments-page) .link:hover {
@@ -496,7 +499,7 @@ body > .content .link .rank {
   margin: 0px 0px 0px 0px;
   background-image: url(%%spritesheet%%) !important;
   background-color: transparent;
-  width: 33px;
+  width: 32px;
   border-radius: 2px;
   transition: background-color 0.25s ease; }
   .arrow:hover {
@@ -893,7 +896,6 @@ body .content .sitetable .link .title a:hover {
   height: 18px;
   border-radius: 1px;
   border: 0px solid;
-  color: #fff;
   font-weight: bold;
   font-style: normal;
   font-variant: normal;
@@ -902,8 +904,12 @@ body .content .sitetable .link .title a:hover {
   cursor: default;
   vertical-align: middle;
   position: relative;
-  top: -2px;
-  background-color: #738491; }
+  top: -2px; }
+
+.res-nightmode .linkflairlabel, .linkflairlabel {
+  color: #fff;
+  background-color: #738491;
+  border-color: transparent; }
 
 .linkflair-mod .linkflairlabel {
   background-color: #27b062;
@@ -1250,7 +1256,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 /* Sorting Menu (Top links today/this week/ever) */
 .top-page .menuarea {
-  margin: 16px 0 24px 0;
+  margin: 40px 0 24px 16px;
   padding: 0;
   border: none;
   color: #738491;
@@ -1406,9 +1412,9 @@ div.commentarea div.RES-keyNav-activeElement .md {
         background-color: #64459c; }
       .side .md h6:first-of-type a[href*="www.youtube.com"]:hover {
         background-color: #c4302c; }
-      .side .md h6:first-of-type a[href*="mumble://thebwt.com"]:hover {
+      .side .md h6:first-of-type a[href*="https://discord.gg/0ybQUsRoo91vwONn"]:hover {
         background-color: #000; }
-      .side .md h6:first-of-type a[href*="http://webchat.freenode.net"]:hover {
+      .side .md h6:first-of-type a[href*="http://discord.gg/0ybQUsRoo91vwONn"]:hover {
         background-color: #6b6b6b; }
       .side .md h6:first-of-type a[href*="www.facebook.com"] {
         background-position: -30px 0; }
@@ -1416,9 +1422,9 @@ div.commentarea div.RES-keyNav-activeElement .md {
         background-position: -60px 0; }
       .side .md h6:first-of-type a[href*="www.youtube.com"] {
         background-position: -90px 0; }
-      .side .md h6:first-of-type a[href*="mumble://thebwt.com"] {
+      .side .md h6:first-of-type a[href*="https://discord.gg/0ybQUsRoo91vwONn"] {
         background-position: -120px 0; }
-      .side .md h6:first-of-type a[href*="http://webchat.freenode.net/"] {
+      .side .md h6:first-of-type a[href*="http://discord.gg/0ybQUsRoo91vwONn"] {
         background-position: -150px 0; }
   .side .titlebox .md h4 a[href*="/message/compose"] {
     color: #737373;
@@ -1603,10 +1609,10 @@ div.titlebox span.number:after {
     margin-left: -38px;
     border: none !important;
     border-radius: 16px;
-    background: url(%%spritesheet%%) no-repeat -64px -96px;
+    background: url(%%spritesheet%%) no-repeat -64px -97px;
     transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
     #search input[type=submit]:hover {
-      background: rgba(158, 158, 158, 0.2) url(%%spritesheet%%) no-repeat -64px -96px; }
+      background: rgba(158, 158, 158, 0.2) url(%%spritesheet%%) no-repeat -64px -97px; }
   #search #searchexpando {
     background-color: #edf1f3;
     border: none;
@@ -1941,7 +1947,7 @@ div.titlebox span.number:after {
     overflow: hidden;
     height: 35px;
     transition: all .2s ease; }
-  .side .md > ul:first-of-type li:first-of-type, .side .md > ul:nth-of-type(2) li:first-of-type, .side .md > ul:nth-of-type(3) li, .side .md > ul:nth-of-type(4) li, .side .md > ul:nth-of-type(5) li, .side .md > ul:nth-of-type(6) li {
+  .side .md > ul:first-of-type li:first-of-type, .side .md > ul:nth-of-type(2) li:first-of-type, .side .md > ul:nth-of-type(3) li {
     background-color: #fff;
     border: 1px solid #d4d4d4;
     border-radius: 2px;
@@ -1954,6 +1960,15 @@ div.titlebox span.number:after {
     font-size: 11px;
     box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+  .side .md > ul:nth-of-type(4) li, .side .md > ul:nth-of-type(5) li, .side .md > ul:nth-of-type(6) li {
+    padding: 4px 5px 3px 5px;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    color: #737373;
+    font-weight: 700;
+    font-size: 11px;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
   .side .md > ul:nth-of-type(3) {
     margin-bottom: 14px; }
     .side .md > ul:nth-of-type(3) li {
@@ -1961,7 +1976,7 @@ div.titlebox span.number:after {
       margin: 5px 0;
       width: 100%; }
   .side .md > ul:nth-of-type(4) li, .side .md > ul:nth-of-type(5) li, .side .md > ul:nth-of-type(6) li {
-    margin: 5px 0;
+    margin: 2px 0;
     width: 100%; }
   .side .md > ul:nth-of-type(3) li:hover, .side .md > ul:nth-of-type(4) li:hover, .side .md > ul:nth-of-type(5) li:hover, .side .md > ul:nth-of-type(6) li:hover {
     background-color: rgba(0, 0, 0, 0.04); }
@@ -1970,7 +1985,7 @@ div.titlebox span.number:after {
     display: block;
     width: 300px;
     position: relative;
-    top: 118px;
+    top: 84px;
     box-shadow: -55px 40px 32px 30px #fff;
     pointer-events: none;
     opacity: 1;
@@ -1979,12 +1994,12 @@ div.titlebox span.number:after {
   .side .md > ul:nth-of-type(4):hover:before, .side .md > ul:nth-of-type(5):hover:before {
     opacity: 0; }
   .side .md > ul:nth-of-type(4), .side .md > ul:nth-of-type(5) {
-    height: 146px;
+    height: 110px;
     overflow: hidden; }
   .side .md > ul:nth-of-type(4):hover {
-    height: 382px; }
+    height: 209px; }
   .side .md > ul:nth-of-type(5):hover {
-    height: 258px; }
+    height: 188px; }
   .side .md > ul:first-of-type li:nth-of-type(2), .side .md > ul:nth-of-type(2) li:nth-of-type(2) {
     padding-top: 10px; }
   .side .md > ul:first-of-type li:first-of-type:hover, .side .md > ul:nth-of-type(2) li:first-of-type:hover {
@@ -2233,7 +2248,7 @@ body.comments-page > .content {
   color: #24a0ed; }
 
 .commentarea > .usertext {
-  background-color: #fafafa !important;
+  background-color: #fafafa;
   margin: -58px 0 16px 0;
   padding: 64px 16px 16px 16px !important;
   overflow: visible; }
@@ -2580,9 +2595,9 @@ body.comments-page > .content {
   top: 56px; }
 
 .search-page .searchpane {
-  margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  margin: 30px 0 0; }
 
 .raisedbox h4 {
   display: none; }
@@ -2891,6 +2906,7 @@ body.comments-page > .content {
   #images #image-upload {
     margin: 0em 0em 4em 0em; }
   #images:before {
+    display: none;
     position: fixed;
     width: 100%;
     padding: 16px;
@@ -2902,6 +2918,7 @@ body.comments-page > .content {
     font-size: 18px;
     z-index: 100; }
   #images:after {
+    display: none;
     content: "";
     position: absolute;
     width: 100%;
@@ -2919,7 +2936,6 @@ body.comments-page > .content {
   font-size: 12px;
   font-family: Verdana, DejaVu Sans, sans-serif;
   font-weight: normal;
-  background-color: transparent;
   color: #98abba;
   padding-left: 0px;
   margin-right: inherit; }
@@ -2927,6 +2943,10 @@ body.comments-page > .content {
 .link .flair {
   font-size: 10px;
   line-height: 11px; }
+
+.res-nightmode .flair, .flair {
+  background-color: transparent;
+  border-color: transparent; }
 
 .side .flair:before {
   margin-left: 0px; }
@@ -3032,9 +3052,9 @@ body.comments-page > .content {
   display: none !important; }
 
 .res #header-bottom-right {
-  top: 1px;
+  top: -1px;
   border-radius: 0px;
-  height: 18px;
+  height: 21px;
   padding: 0px 8px 0px 0px; }
 
 .res #userbarToggle {
@@ -3439,7 +3459,7 @@ body.listing-page > .content {
   border: 1px solid #000;
   border-radius: 2px;
   font-size: x-small;
-  color: #fff;
+  color: #fff !important;
   padding: 1px 3px;
   pointer-events: none; }
 
@@ -3448,22 +3468,22 @@ body.listing-page > .content {
   border: 1px solid #000;
   border-radius: 2px;
   font-size: x-small;
-  color: #fff;
+  color: #fff !important;
   padding: 1px 3px;
   pointer-events: none; }
 
 .side a[href^="//#sdl"] {
-  color: #fff;
+  color: #fff !important;
   font-size: 10px;
   font-weight: 700;
   text-shadow: 1px 1px 2px #000, 0 0 1em green, 0 0 0.2em green;
   pointer-events: none; }
 
 .side a[href^="//#hcl"] {
-  color: #fff;
+  color: #fff !important;
   font-size: 10px;
   font-weight: 700;
-  text-shadow: 1px 1px 2px #000, 0 0 1em red, 0 0 0.2em red;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #9b0000, 0 0 0.2em #9b0000;
   pointer-events: none; }
 
 .side a[href^="//#n7"] {
@@ -3471,7 +3491,7 @@ body.listing-page > .content {
   border: 1px solid #000;
   border-radius: 2px;
   font-size: x-small;
-  color: #000;
+  color: #000 !important;
   padding: 1px 3px;
   pointer-events: none; }
 
@@ -3480,25 +3500,25 @@ body.listing-page > .content {
   border: 1px solid #000;
   border-radius: 2px;
   font-size: x-small;
-  color: #fff;
+  color: #fff !important;
   padding: 1px 3px;
   pointer-events: none; }
 
 .side a[href^="//#op"] {
   background: #ffd700;
-  color: #000;
+  color: #000 !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
 
 .side a[href^="//#ggg"] {
-  color: red;
+  color: #9b0000 !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
 
 .side a[href^="//#gggmod"] {
-  color: #3bb9ff;
+  color: #3bb9ff !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
@@ -3508,7 +3528,13 @@ body.listing-page > .content {
 
 .side a[href="/smallText"] {
   font-size: smaller;
-  color: #737373; }
+  color: #737373 !important; }
+
+.side a[href="//#submod"] {
+  color: #af6025 !important;
+  font-size: small;
+  font-weight: 700;
+  pointer-events: none; }
 
 a[href="/duelist"]:nth-of-type(n):after, a[href="/ranger"]:nth-of-type(n):after, a[href="/shadow"]:nth-of-type(n):after, a[href="/witch"]:nth-of-type(n):after, a[href="/templar"]:nth-of-type(n):after, a[href="/marauder"]:nth-of-type(n):after, a[href="/scion"]:nth-of-type(n):after {
   content: "";
@@ -3576,7 +3602,7 @@ a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover, a[href$="/s"]:hover, a[hre
 
 .flair-ggg {
   padding: 0 2px 0 2px;
-  color: red;
+  color: #9b0000;
   font-weight: 700; }
 
 .flair-duelistn, .flair-maraudern, .flair-rangern, .flair-scionn, .flair-shadown, .flair-templarn, .flair-witchn, .flair-duelisthc, .flair-marauderhc, .flair-rangerhc, .flair-scionhc, .flair-shadowhc, .flair-templarhc, .flair-witchhc {
@@ -3643,30 +3669,30 @@ a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover, a[href$="/s"]:hover, a[hre
   margin-right: 0;
   margin-left: 2px;
   padding: 2px;
-  color: #fff;
+  color: #fff !important;
   text-indent: 0;
-  border: 1px solid #000;
+  border: 1px solid #000 !important;
   font-weight: 200;
   background-image: none;
   line-height: 11px;
   width: auto; }
 
 .flair-hardcore {
-  background: #800080; }
+  background: #800080 !important; }
 
 .flair-n7 {
-  background: #f3f3f3;
-  color: #000; }
+  background: #f3f3f3 !important;
+  color: #000 !important; }
 
 .flair-ambush {
-  background: #006b6b; }
+  background: #006b6b !important; }
 
 .flair-invasion {
-  background: #800000; }
+  background: #800000 !important; }
 
 .flair-n0 {
-  background: #800080;
-  color: #000; }
+  background: #800080 !important;
+  color: #000 !important; }
 
 span[class*="flair-forum-avi-"] {
   min-width: 0;
@@ -3834,14 +3860,24 @@ span.flair-asc-unannounced {
   max-width: 13em; }
 
 .linkflair-ggg .linkflairlabel {
-  background-color: red;
+  background-color: #9b0000;
   border-color: #9b0000; }
+
+.link.linkflair-ggg {
+  border-left: 5px solid #9b0000;
+  border-radius: 5px -1;
+  margin-left: -5px; }
 
 .linkflair-guide .linkflairlabel {
   background-color: #ffff77; }
 
 .linkflair-discussion .linkflairlabel {
-  background-color: #88f; }
+  background-color: #AF6025; }
+
+.link.linkflair-discussion {
+  border-left: 5px solid #AF6025;
+  border-radius: 5px -1;
+  margin-left: -5px; }
 
 .linkflair-question .linkflairlabel {
   background-color: #c8c8c8; }
@@ -3855,17 +3891,27 @@ span.flair-asc-unannounced {
 .linkflair-psa .linkflairlabel {
   background-color: #7bb850; }
 
-a.author[href$="/slowmyrole19"], a.author[href$="/grangelov"], a.author[href$="/poe_ladder_bot"], a.author[href$="/AutoModerator"], a.author[href$="/Phenxx"], a.author[href$="/lakattack0221"], a.author[href$="/GoogaNautGod"], a.author[href$="/Msmit71"], a.author[href$="/MeanwhileInSAfrica"], a.author[href$="/Oos-PoE"] {
+a.author[href$="/slowmyrole19"], a.author[href$="/grangelov"], a.author[href$="/poe_ladder_bot"], a.author[href$="/AutoModerator"], a.author[href$="/lakattack0221"], a.author[href$="/GoogaNautGod"], a.author[href$="/Msmit71"], a.author[href$="/Oos-PoE"], a.author[href$="/trackpete"], a.author[href$="/Korrac"] {
   color: #af6025;
   font-weight: 700; }
 
-a.author[href$="/Invalesco_POE"], a.author[href$="/Schnaeble"], a.author[href$="/SpudOfDoom"], a.author[href$="/Metronomyy"], a.author[href$="/C4r1b0u"] {
+a.author[href$="/siffinleex"], a.author[href$="/Invalesco_POE"], a.author[href$="/Schnaeble"], a.author[href$="/SpudOfDoom"], a.author[href$="/Metronomyy"], a.author[href$="/C4r1b0u"] {
   color: #3bb9ff;
   font-weight: 700; }
 
-a.author[href$="/chris_wilson"], a.author[href$="/Bex_GGG"], a.author[href$="/Negitivefrags"], a.author[href$="/qarldev"], a.author[href$="/BrianWeissman_GGG"], a.author[href$="/Rory_Rackham"], a.author[href$="/Omnitect"], a.author[href$="/Mark_GGG"], a.author[href$="/Daniel_GGG"], a.author[href$="/Blake_GGG"], a.author[href$="/RhysGGG"], a.author[href$="/Dan_GGG"], a.author[href$="/PantherNZ"], a.author[href$="/Novynn"] {
-  color: red;
+a.author[href$="/chris_wilson"], a.author[href$="/Bex_GGG"], a.author[href$="/Negitivefrags"], a.author[href$="/qarldev"], a.author[href$="/BrianWeissman_GGG"], a.author[href$="/Rory_Rackham"], a.author[href$="/Omnitect"], a.author[href$="/Mark_GGG"], a.author[href$="/Daniel_GGG"], a.author[href$="/Blake_GGG"], a.author[href$="/RhysGGG"], a.author[href$="/Dan_GGG"], a.author[href$="/PantherNZ"], a.author[href$="/Novynn"], a.author[href$="/Fitzy_GGG"], a.author[href$="/Hrishi_GGG"] {
+  color: #9b0000;
   font-weight: 700; }
+  a.author[href$="/chris_wilson"]:before, a.author[href$="/Bex_GGG"]:before, a.author[href$="/Negitivefrags"]:before, a.author[href$="/qarldev"]:before, a.author[href$="/BrianWeissman_GGG"]:before, a.author[href$="/Rory_Rackham"]:before, a.author[href$="/Omnitect"]:before, a.author[href$="/Mark_GGG"]:before, a.author[href$="/Daniel_GGG"]:before, a.author[href$="/Blake_GGG"]:before, a.author[href$="/RhysGGG"]:before, a.author[href$="/Dan_GGG"]:before, a.author[href$="/PantherNZ"]:before, a.author[href$="/Novynn"]:before, a.author[href$="/Fitzy_GGG"]:before, a.author[href$="/Hrishi_GGG"]:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 14px solid #9b0000;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    left: 9px;
+    margin-top: 3px; }
 
 a[href^='https://pathofexile.com/shop/'] {
   position: absolute;
@@ -3881,6 +3927,13 @@ a[href^='https://pathofexile.com/shop/'] {
   color: #dfcf99;
   line-height: 20px;
   font-family: Fontin, Georgia, URW Bookman L, Verdana, sans-serif; }
+
+.thing .tagline .author.moderator[href$="/AutoModerator"] {
+  color: #4a7e69 !important;
+  background-color: RGBA(0, 0, 0, 0) !important; }
+
+.linklisting a.author:before, .side a.author:before {
+  display: none; }
 
 html .RES-keyNav-activeElement {
   background-color: transparent !important; }
@@ -3902,8 +3955,6 @@ html .RES-keyNav-activeElement {
     margin-right: 10px; }
     .side .titlebox .md h5 a[href^="https://dd.reddit.com/r/poeblackmarket/"], .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
       right: 40px; }
-  body > .content {
-    margin: 16px 346px 64px 10px; }
   #header:before {
     right: 346px; } }
 
@@ -3945,3 +3996,188 @@ html .RES-keyNav-activeElement {
   direction: rtl;
   overflow: hidden;
   content: "1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250"; }
+
+textarea.title {
+  text-transform: none !important; }
+
+/* --- Addon: Dark Mode colors --- */
+html[lang="dd"] .sidebar .md, html[lang="dd"] body, html[lang="dd"] .side, html[lang="dd"] .side *, html[lang="dd"] .side .spacer, html[lang="dd"] .content, html[lang="dd"] .traffic-tables .traffic-table tr, html[lang="dd"] .parentComment .md, html[lang="dd"] .post-body.entry-content, html[lang="dd"] .dsq-auth-header, html[lang="dd"] .instructions .preftable th, html[lang="dd"] #BigEditor .markdownEditor a, html[lang="dd"] #BigEditor .markdownEditor .RESMacroDropdownTitle, html[lang="dd"] #REScommentSubToggle, html[lang="dd"] #alert_message, html[lang="dd"] #report-action-form {
+  color: #ccc; }
+
+html[lang="dd"] body, html[lang="dd"] body .content, html[lang="dd"] .modal-body, html[lang="dd"] .side, html[lang="dd"] .icon-menu a, html[lang="dd"] .side .leavemoderator, html[lang="dd"] .side .leavecontributor-button, html[lang="dd"] .side .titlebox, html[lang="dd"] .side .spacer .titlebox .redditname, html[lang="dd"] .side .titlebox .flairtoggle, html[lang="dd"] .side .usertext-body .md ol, html[lang="dd"] .side .usertext-body .md ol ol, html[lang="dd"] .side .usertext-body .md ol ol li, html[lang="dd"] .modactionlisting table *, html[lang="dd"] .side .recommend-box .rec-item {
+  background-color: #262626;
+  border-color: #777; }
+
+/* --- End Addon --- */
+/* --- Addon: RES Nightmode colors --- */
+.res-nightmode #header, .res-nightmode .liveupdate-home .content {
+  background-color: transparent !important; }
+
+.res-nightmode .tabmenu li a {
+  background-color: transparent !important; }
+
+.res-nightmode, html[lang="dd"] {
+  /* Links */ }
+  .res-nightmode .res-nightmode .RES-keyNav-activeElement, .res-nightmode .res-nightmode .RES-keyNav-activeElement .md-container, html[lang="dd"] .res-nightmode .RES-keyNav-activeElement, html[lang="dd"] .res-nightmode .RES-keyNav-activeElement .md-container {
+    background-color: transparent !important; }
+  .res-nightmode .sidecontentbox .content, html[lang="dd"] .sidecontentbox .content {
+    background-color: transparent; }
+  .res-nightmode .side .titlebox h1.redditname a, .res-nightmode .titlebox:before, html[lang="dd"] .side .titlebox h1.redditname a, html[lang="dd"] .titlebox:before {
+    color: #DFCF99; }
+  .res-nightmode .link .entry .tagline a, html[lang="dd"] .link .entry .tagline a {
+    color: #d6d0cb; }
+  .res-nightmode body a.voteWeight, html[lang="dd"] body a.voteWeight {
+    color: #fff; }
+  .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode #images, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode .account-activity-box, .res-nightmode .combined-search-page > .content,
+  .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode .commentarea > .usertext, .res-nightmode .comments-page .link, .res-nightmode .linefield, .res-nightmode .login-form-side,
+  .res-nightmode .side .sidecontentbox, .res-nightmode .side .titlebox, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form,
+  .res-nightmode .submit-page .roundfield, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, html[lang="dd"] #ad-frame, html[lang="dd"] #ad_main, html[lang="dd"] #images, html[lang="dd"] #previoussearch #moresearchinfo, html[lang="dd"] .account-activity-box, html[lang="dd"] .combined-search-page > .content,
+  html[lang="dd"] .commentarea > .sitetable > .comment, html[lang="dd"] .commentarea > .usertext, html[lang="dd"] .comments-page .link, html[lang="dd"] .linefield, html[lang="dd"] .login-form-side,
+  html[lang="dd"] .side .sidecontentbox, html[lang="dd"] .side .titlebox, html[lang="dd"] .sponsorshipbox, html[lang="dd"] .stylesheet-customize-container .pretty-form,
+  html[lang="dd"] .submit-page .roundfield, html[lang="dd"] .wiki-page .wiki-page-content, html[lang="dd"] body.listing-page > .content, html[lang="dd"] body.other-discussions-page > .content {
+    background-color: #1a1a1a;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+  .res-nightmode .side .titlebox .md h5:first-of-type, .res-nightmode .side .titlebox h1.redditname:before, .res-nightmode #search input[type="text"],
+  .res-nightmode .side .titlebox .md h4 a, .res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .side .md > ul:first-of-type li:first-of-type,
+  .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .titlebox .md h5:first-of-type, html[lang="dd"] .side .titlebox h1.redditname:before, html[lang="dd"] #search input[type="text"],
+  html[lang="dd"] .side .titlebox .md h4 a, html[lang="dd"] .wiki-page .wiki-page-content .md.wiki h4, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type,
+  html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(3) li {
+    background-color: #1a1a1a; }
+  .res-nightmode body:not(.comments-page) .link:hover, html[lang="dd"] body:not(.comments-page) .link:hover {
+    background-color: #272727; }
+  .res-nightmode .stickied, html[lang="dd"] .stickied {
+    border-bottom-color: #272727; }
+  .res-nightmode #search #searchexpando, html[lang="dd"] #search #searchexpando {
+    background-color: #120e0c; }
+  .res-nightmode .res-nightmode .read-next .read-next-header, .res-nightmode .res-nightmode .flairselector h2,
+  .res-nightmode .res-nightmode .flairselector li:hover, html[lang="dd"] .res-nightmode .read-next .read-next-header, html[lang="dd"] .res-nightmode .flairselector h2,
+  html[lang="dd"] .res-nightmode .flairselector li:hover {
+    background-color: transparent !important; }
+  .res-nightmode .res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .res-nightmode .trophy-area .content, .res-nightmode .res-nightmode .side .md ol,
+  .res-nightmode .res-nightmode .side .md ul, html[lang="dd"] .res-nightmode .side .titlebox form.flairtoggle, html[lang="dd"] .res-nightmode .trophy-area .content, html[lang="dd"] .res-nightmode .side .md ol,
+  html[lang="dd"] .res-nightmode .side .md ul {
+    background-color: transparent !important; }
+  .res-nightmode .side .md > ul:nth-of-type(4):before, .res-nightmode .side .md > ul:nth-of-type(5):before, html[lang="dd"] .side .md > ul:nth-of-type(4):before, html[lang="dd"] .side .md > ul:nth-of-type(5):before {
+    box-shadow: -55px 40px 32px 30px #1a1a1a; }
+  .res-nightmode .arrow.upmod, html[lang="dd"] .arrow.upmod {
+    background-position: -32px -80px; }
+  .res-nightmode .arrow.up, html[lang="dd"] .arrow.up {
+    background-position: -0px -80px; }
+    .res-nightmode .arrow.up:hover, html[lang="dd"] .arrow.up:hover {
+      background-position: -0px -80px; }
+  .res-nightmode .arrow.down, html[lang="dd"] .arrow.down {
+    background-position: -64px -80px; }
+    .res-nightmode .arrow.down:hover, html[lang="dd"] .arrow.down:hover {
+      background-position: -64px -80px; }
+  .res-nightmode .arrow.downmod, html[lang="dd"] .arrow.downmod {
+    background-position: -0px -100px; }
+  .res-nightmode .side .md h6:first-of-type a, html[lang="dd"] .side .md h6:first-of-type a {
+    background-color: #333a4d; }
+  .res-nightmode .side .titlebox .md h5:first-of-type, html[lang="dd"] .side .titlebox .md h5:first-of-type {
+    color: #fff; }
+  .res-nightmode .thing .title.loggedin.click, .res-nightmode .thing .title.click, .res-nightmode .thing .title.loggedin, .res-nightmode .thing .title, .res-nightmode .link .entry .buttons li a.comments,
+  .res-nightmode .link .entry .buttons li a.flairselectbtn, .res-nightmode .link .entry .buttons li a:hover, .res-nightmode .titlebox .tagline a.flairselectbtn, .res-nightmode .md a,
+  .res-nightmode .side .titlebox .md h4 a, .res-nightmode .wiki-page .wiki-page-content .md.wiki h4, .res-nightmode .sidebox.create .morelink a, .res-nightmode a, .res-nightmode .side:after, .res-nightmode .usertext .bottom-area a.reddiquette,
+  .res-nightmode .wiki-page .pageactions .wikiaction-current, .res-nightmode .tagline .submitter, .res-nightmode .combined-search-page .search-result .search-result-header .search-title,
+  .res-nightmode .combined-search-page .search-result a, .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .combined-search-page .search-result .search-comments,
+  .res-nightmode .flairselector h2, .res-nightmode .linefield .title, .res-nightmode body .content .sitetable .link .title a:hover, .res-nightmode .link .entry .tagline a:hover, .res-nightmode .comment .author:hover,
+  .res-nightmode a, .res-nightmode .md a, .res-nightmode .share-button .option, .res-nightmode #subscribe a, .res-nightmode .share .option, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .link .score.dislikes,
+  .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, .res-nightmode #authorInfoToolTip h3 a, .res-nightmode .reddiquette,
+  .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .combined-search-page .search-result a,
+  .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .hoverHelp, .res-nightmode .deepthread a, .res-nightmode .policy-page .md h1 a,
+  .res-nightmode .policy-page .md h3 a, html[lang="dd"] .thing .title.loggedin.click, html[lang="dd"] .thing .title.click, html[lang="dd"] .thing .title.loggedin, html[lang="dd"] .thing .title, html[lang="dd"] .link .entry .buttons li a.comments,
+  html[lang="dd"] .link .entry .buttons li a.flairselectbtn, html[lang="dd"] .link .entry .buttons li a:hover, html[lang="dd"] .titlebox .tagline a.flairselectbtn, html[lang="dd"] .md a,
+  html[lang="dd"] .side .titlebox .md h4 a, html[lang="dd"] .wiki-page .wiki-page-content .md.wiki h4, html[lang="dd"] .sidebox.create .morelink a, html[lang="dd"] a, html[lang="dd"] .side:after, html[lang="dd"] .usertext .bottom-area a.reddiquette,
+  html[lang="dd"] .wiki-page .pageactions .wikiaction-current, html[lang="dd"] .tagline .submitter, html[lang="dd"] .combined-search-page .search-result .search-result-header .search-title,
+  html[lang="dd"] .combined-search-page .search-result a, html[lang="dd"] .combined-search-page .search-result a > mark, html[lang="dd"] .combined-search-page .search-result .search-comments,
+  html[lang="dd"] .flairselector h2, html[lang="dd"] .linefield .title, html[lang="dd"] body .content .sitetable .link .title a:hover, html[lang="dd"] .link .entry .tagline a:hover, html[lang="dd"] .comment .author:hover,
+  html[lang="dd"] a, html[lang="dd"] .md a, html[lang="dd"] .share-button .option, html[lang="dd"] #subscribe a, html[lang="dd"] .share .option, html[lang="dd"] .wired a, html[lang="dd"] .side a, html[lang="dd"] .link .score.dislikes,
+  html[lang="dd"] .linkcompressed .score.dislikes, html[lang="dd"] a[rel="tag"], html[lang="dd"] .dsq-help, html[lang="dd"] #authorInfoToolTip h3 a, html[lang="dd"] .reddiquette,
+  html[lang="dd"] .parent .author, html[lang="dd"] .parent .subreddit, html[lang="dd"] .combined-search-page .search-result a,
+  html[lang="dd"] .combined-search-page .search-result a > mark, html[lang="dd"] .hoverHelp, html[lang="dd"] .deepthread a, html[lang="dd"] .policy-page .md h1 a,
+  html[lang="dd"] .policy-page .md h3 a {
+    color: #DFCF99; }
+  .res-nightmode .comment .flat-list li a[onclick*=reply], .res-nightmode .tagline .submitter, .res-nightmode .tagline .submitter:visited, html[lang="dd"] .comment .flat-list li a[onclick*=reply], html[lang="dd"] .tagline .submitter, html[lang="dd"] .tagline .submitter:visited {
+    color: #DFCF99; }
+  .res-nightmode .side .md a:visited, .res-nightmode .side .md > ul:first-of-type li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .md a:visited, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(3) li {
+    color: #DFCF99; }
+  .res-nightmode .side #moderation_tools .title h1, .res-nightmode .side .titlebox .md h2, .res-nightmode .sidecontentbox .title h1, html[lang="dd"] .side #moderation_tools .title h1, html[lang="dd"] .side .titlebox .md h2, html[lang="dd"] .sidecontentbox .title h1 {
+    background: #333a4d;
+    background: -moz-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
+    background: -webkit-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
+    background: -o-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
+    background: -ms-linear-gradient(top, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%);
+    background: linear-gradient(to bottom, #333a4d 0%, #2b3140 50%, #232834 51%, #212531 100%); }
+  .res-nightmode .side .titlebox .md h2:before, .res-nightmode .sidecontentbox .title h1:before, html[lang="dd"] .side .titlebox .md h2:before, html[lang="dd"] .sidecontentbox .title h1:before {
+    border-left-color: #181c25; }
+  .res-nightmode .side .titlebox .md h2:after, .res-nightmode .sidecontentbox .title h1:after, html[lang="dd"] .side .titlebox .md h2:after, html[lang="dd"] .sidecontentbox .title h1:after {
+    border-right-color: #181c25; }
+  .res-nightmode .titlebox .tagline:after, html[lang="dd"] .titlebox .tagline:after {
+    border-color: #1f5cab; }
+  .res-nightmode .side .titlebox .md h4:first-of-type a:after, .res-nightmode .side .md > ul:first-of-type li:first-of-type:after,
+  .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type:after, html[lang="dd"] .side .titlebox .md h4:first-of-type a:after, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type:after,
+  html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type:after {
+    background-image: url(%%sidebaricons-dark%%); }
+  .res-nightmode #noresults, html[lang="dd"] #noresults {
+    background-image: url(%%noresults-dark%%); }
+  .res-nightmode .side .md > ul:first-of-type li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type,
+  .res-nightmode .side .md > ul:nth-of-type(3) li, .res-nightmode .side .titlebox .md h4 a, html[lang="dd"] .side .md > ul:first-of-type li:first-of-type, html[lang="dd"] .side .md > ul:nth-of-type(2) li:first-of-type,
+  html[lang="dd"] .side .md > ul:nth-of-type(3) li, html[lang="dd"] .side .titlebox .md h4 a {
+    border-color: #272727; }
+  .res-nightmode .expando-button, .res-nightmode .expando-button.image, .res-nightmode .expando-button.video-muted, html[lang="dd"] .expando-button, html[lang="dd"] .expando-button.image, html[lang="dd"] .expando-button.video-muted {
+    border-color: #5a5a5a; }
+  .res-nightmode .titlebox .tagline:after, html[lang="dd"] .titlebox .tagline:after {
+    background-color: #272727; }
+  .res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type=text], .res-nightmode body .content input[type=password], html[lang="dd"] body .content .text, html[lang="dd"] body .content textarea, html[lang="dd"] body .content input[type=text], html[lang="dd"] body .content input[type=password] {
+    background-color: #1a1a1a; }
+  .res-nightmode .side .spacer input, .res-nightmode body .content input[type=url], html[lang="dd"] .side .spacer input, html[lang="dd"] body .content input[type=url] {
+    background-color: #1a1a1a; }
+  .res-nightmode ul.image-preview-list .description pre, html[lang="dd"] ul.image-preview-list .description pre {
+    color: #fff; }
+  .res-nightmode .entry .buttons li.reported-stamp, .res-nightmode .submit-page .roundfield .title, .res-nightmode body .content textarea, html[lang="dd"] .entry .buttons li.reported-stamp, html[lang="dd"] .submit-page .roundfield .title, html[lang="dd"] body .content textarea {
+    color: #fff; }
+  .res-nightmode .RESUserTagImage, html[lang="dd"] .RESUserTagImage {
+    opacity: .6; }
+  .res-nightmode .btn, .res-nightmode button, .res-nightmode .morelink, .res-nightmode .nav-buttons a, .res-nightmode .titlebox .fancy-toggle-button .active.remove,
+  .res-nightmode .submit-page #newlink.submit.content ul.tabmenu.formtab, html[lang="dd"] .btn, html[lang="dd"] button, html[lang="dd"] .morelink, html[lang="dd"] .nav-buttons a, html[lang="dd"] .titlebox .fancy-toggle-button .active.remove,
+  html[lang="dd"] .submit-page #newlink.submit.content ul.tabmenu.formtab {
+    background-color: #333a4d;
+    border-color: #181c25;
+    color: #fff; }
+  .res-nightmode .dropdown.lightdrop .selected, html[lang="dd"] .dropdown.lightdrop .selected {
+    border-color: #181c25;
+    color: #fff; }
+  .res-nightmode .morelink a, html[lang="dd"] .morelink a {
+    color: #fff; }
+    .res-nightmode .morelink a:hover, html[lang="dd"] .morelink a:hover {
+      color: #e6e6e6; }
+  .res-nightmode .btn:hover, .res-nightmode button:hover, html[lang="dd"] .btn:hover, html[lang="dd"] button:hover {
+    background-color: #47526b; }
+  .res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a, html[lang="dd"] .submit-page #newlink.submit.content .tabmenu.formtab .selected a {
+    border-bottom-color: white; }
+  .res-nightmode #newlink-with-image-upload .clear-input-button, html[lang="dd"] #newlink-with-image-upload .clear-input-button {
+    background-color: #af6025; }
+  .res-nightmode .side .md table thead tr, html[lang="dd"] .side .md table thead tr {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .res-nightmode .md h1, .res-nightmode .md h2, .res-nightmode .md h3, html[lang="dd"] .md h1, html[lang="dd"] .md h2, html[lang="dd"] .md h3 {
+    color: #dddddd; }
+  .res-nightmode .gold-accent.comment-visits-box, html[lang="dd"] .gold-accent.comment-visits-box {
+    background-color: #1a1a1a;
+    border-color: #181c25;
+    color: #fff; }
+  .res-nightmode .comment .expand:hover, html[lang="dd"] .comment .expand:hover {
+    background-color: #120e0c; }
+  .res-nightmode .comments-page .side .linkinfo, html[lang="dd"] .comments-page .side .linkinfo {
+    background-color: #1a1a1a;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+    .res-nightmode .comments-page .side .linkinfo .score, html[lang="dd"] .comments-page .side .linkinfo .score {
+      color: #fff; }
+  .res-nightmode .side .spacer input, .res-nightmode body .content .text, .res-nightmode body .content input[type=password], .res-nightmode body .content input[type=text],
+  .res-nightmode body .content input[type=url], .res-nightmode body .content textarea, html[lang="dd"] .side .spacer input, html[lang="dd"] body .content .text, html[lang="dd"] body .content input[type=password], html[lang="dd"] body .content input[type=text],
+  html[lang="dd"] body .content input[type=url], html[lang="dd"] body .content textarea {
+    color: #fff; }
+  .res-nightmode .wiki-page .pageactions, .res-nightmode .wiki-page .wikititle, html[lang="dd"] .wiki-page .pageactions, html[lang="dd"] .wiki-page .wikititle {
+    background-color: #333a4d;
+    color: #fff; }
+
+/* --- End Addon --- */

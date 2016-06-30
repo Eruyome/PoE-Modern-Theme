@@ -5,9 +5,11 @@ $url_headerimage: 	url(%%headerimg%%);
 $url_spritesheet: 	url(%%spritesheet%%);
 $url_logo: 			url(%%logo%%);
 $url_noresults: 	url(%%noresults%%);
+$url_noresults_dark:url(%%noresults-dark%%);
 $url_mediaicons: 	url(%%mediaicons%%);
 $url_sidebarimg: 	url(%%sidebarimg%%);
 $url_sidebaricons: 	url(%%sidebaricons%%);
+$url_sidebaricons_dark:url(%%sidebaricons-dark%%);
 $url_commentbox: 	url(%%commentbox%%);
 $url_faq: 			url(%%faq%%);
 $url_flair-classes: url(%%flair-classes%%);
@@ -45,11 +47,15 @@ $font_color_27: rgba(255,255,255,0.45);
 $font_color_28: rgba(255,255,255,0.45);
 $font_color_29: rgba(255,255,255,0.6);
 $font_color_30: #516ae8;
-$font_color_32: red;
+$font_color_32: #9b0000;
 $font_color_33: #3bb9ff;
 $font_color_34: #af6025;
 $font_color_35: #dfcf99;
 $font_color_36: #BABABA;
+$font_color_37: #DFCF99;
+$font_color_38: #4a7e69;
+$font_color_39: rgb(221, 221, 221);
+$font_color_40: #ccc;
 
 // font-stacks
 $font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
@@ -128,17 +134,20 @@ $bg_color_71: #800080;
 $bg_color_72: #ffd700;
 $bg_color_73: #af6025;
 $bg_color_74: #db8516;
-$bg_color_75: red;
+$bg_color_75: #9b0000;
 $bg_color_76: #ffff77;
-$bg_color_77: #88f;
+$bg_color_77: #AF6025;
 $bg_color_78: #c8c8c8;
 $bg_color_79: #add5ab;
 $bg_color_80: #7bb850;
 $bg_color_81: #1ecd97;
+$bg_color_82: #262626;
 
 
 $lineargradient_01: hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%;
 $lineargradient_bg: hsla(206, 100%, 41%, 1);
+$lineargradient_02: hsla(223, 20%, 25%, 1) 0%, hsla(223, 20%, 21%, 1) 50%, hsla(223, 20%, 17%, 1) 51%, hsla(223, 20%, 16%, 1) 100%;
+$lineargradient_bg_02: hsla(223, 20%, 25%, 1);
 
 // border-colors
 $border_color_0: #c3cfd6;
@@ -166,6 +175,7 @@ $border_color_21: rgba(0, 0, 0, 0.08);
 $border_color_22: #333;
 $border_color_23: #cccccc;
 $border_color_24: hsla(206, 100%, 16%, 1);
+$border_color_24_dark: hsla(223, 20%, 12%, 1);
 $border_color_25: #d4d4d4;
 $border_color_26: #d8d8d8;
 $border_color_27: rgba(0, 0, 0, 0.06);
@@ -177,6 +187,7 @@ $border_color_32: #000;
 $border_color_33: #9b0000;
 $border_color_34: #e2e2e2;
 $border_color_35: #EAEAEA;
+$border_color_36: #777;
 
 // box-shadows
 $boxshadow_01: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);

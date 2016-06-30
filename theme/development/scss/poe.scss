@@ -187,6 +187,11 @@ body {
 	}
 }
 
+.res-nightmode #sr-header-area {
+	background-color: $bg_color_6 !important;
+	//color: rgb(0, 0, 0);
+}
+
 body:not(.loggedin) #sr-header-area .width-clip {
 	right: 340px;
 }
@@ -582,7 +587,7 @@ body {
 
 .link {
 	margin: 0px;
-	padding: 16px;
+	padding: 10px;
 	position: relative;
 }
 
@@ -628,7 +633,7 @@ body {
 	margin: 0px 0px 0px 0px;
 	background-image: $url_spritesheet !important;
 	background-color: transparent;
-	width: 33px;
+	width: 32px;
 	border-radius: 2px;
 	transition: background-color 0.25s ease;
 	&:hover {
@@ -1161,7 +1166,7 @@ body .content .sitetable .link .title a:hover {
 	height: 18px;
 	border-radius: 1px;
 	border: 0px solid;
-	color: $font_color_1;
+	//color: $font_color_1;
 	font-weight: bold;
 	font-style: normal;
 	font-variant: normal;
@@ -1171,7 +1176,13 @@ body .content .sitetable .link .title a:hover {
 	vertical-align: middle;
 	position: relative;
 	top: -2px;
+	//background-color: $bg_color_23;
+}
+
+.res-nightmode .linkflairlabel, .linkflairlabel {
+	color: $font_color_1;
 	background-color: $bg_color_23;
+	border-color: transparent;
 }
 
 .linkflair-mod {
@@ -1620,7 +1631,7 @@ div {
 /* Sorting Menu (Top links today/this week/ever) */
 
 .top-page .menuarea {
-	margin: 16px 0 24px 0;
+	margin: 40px 0 24px 16px;
 	padding: 0;
 	border: none;
 	color: $font_color_2;
@@ -1826,10 +1837,12 @@ div {
 				&[href*="www.youtube.com"]:hover {
 					background-color: $bg_color_40;
 				}
-				&[href*="mumble://thebwt.com"]:hover {
+				// Discord Link (https)
+				&[href*="https://discord.gg/0ybQUsRoo91vwONn"]:hover {
 					background-color: $bg_color_41;
 				}
-				&[href*="http://webchat.freenode.net"]:hover {
+				// Discord Link (http, redirects to https anyway)
+				&[href*="http://discord.gg/0ybQUsRoo91vwONn"]:hover {
 					background-color: $bg_color_42;
 				}
 				&[href*="www.facebook.com"] {
@@ -1841,10 +1854,12 @@ div {
 				&[href*="www.youtube.com"] {
 					background-position: -90px 0;
 				}
-				&[href*="mumble://thebwt.com"] {
+				// Discord Link (https)
+				&[href*="https://discord.gg/0ybQUsRoo91vwONn"] {
 					background-position: -120px 0;
 				}
-				&[href*="http://webchat.freenode.net/"] {
+				// Discord Link (http, redirects to https anyway)
+				&[href*="http://discord.gg/0ybQUsRoo91vwONn"] {
 					background-position: -150px 0;
 				}
 			}
@@ -2085,10 +2100,10 @@ div.titlebox span.number:after {
 			margin-left: -38px;
 			border: none !important;
 			border-radius: 16px;
-			background: $url_spritesheet no-repeat -64px -96px;
+			background: $url_spritesheet no-repeat -64px -97px;
 			transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				background: $bg_color_49 $url_spritesheet no-repeat -64px -96px;
+				background: $bg_color_49 $url_spritesheet no-repeat -64px -97px;
 			}
 		}
 	}
@@ -2492,7 +2507,7 @@ div.titlebox span.number:after {
 				height: 35px;
 				transition: all .2s ease;
 			}
-			&:first-of-type li:first-of-type, &:nth-of-type(2) li:first-of-type, &:nth-of-type(3) li, &:nth-of-type(4) li, &:nth-of-type(5) li, &:nth-of-type(6) li {
+			&:first-of-type li:first-of-type, &:nth-of-type(2) li:first-of-type, &:nth-of-type(3) li {
 				background-color: $bg_color_2;
 				border: 1px solid $border_color_25;
 				border-radius: 2px;
@@ -2504,7 +2519,18 @@ div.titlebox span.number:after {
 				font-weight: 700;
 				font-size: 11px;
 				box-shadow: $boxshadow_01;
-				transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+				transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+				color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			&:nth-of-type(4) li, &:nth-of-type(5) li, &:nth-of-type(6) li {
+				padding: 4px 5px 3px 5px;
+				cursor: pointer;
+				margin: 0;
+				position: relative;
+				color: $font_color_19;
+				font-weight: 700;
+				font-size: 11px;
+				transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),	color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 			&:nth-of-type(3) {
 				margin-bottom: 14px;
@@ -2515,7 +2541,7 @@ div.titlebox span.number:after {
 				}
 			}
 			&:nth-of-type(4) li, &:nth-of-type(5) li, &:nth-of-type(6) li {
-				margin: 5px 0;
+				margin: 2px 0;
 				width: 100%;
 			}
 			&:nth-of-type(3) li:hover, &:nth-of-type(4) li:hover, &:nth-of-type(5) li:hover, &:nth-of-type(6) li:hover {
@@ -2526,7 +2552,7 @@ div.titlebox span.number:after {
 				display: block;
 				width: 300px;
 				position: relative;
-				top: 118px;
+				top: 84px;
 				box-shadow: -55px 40px 32px 30px $font_color_1;
 				pointer-events: none;
 				opacity: 1;
@@ -2537,14 +2563,18 @@ div.titlebox span.number:after {
 				opacity: 0;
 			}
 			&:nth-of-type(4), &:nth-of-type(5) {
-				height: 146px;
+				height: 110px;
 				overflow: hidden;
 			}
 			&:nth-of-type(4):hover {
-				height: 382px;
+				$entry_count: 9;
+				$height_per_entry: 21px;
+				height: $entry_count * $height_per_entry + 20px;
 			}
 			&:nth-of-type(5):hover {
-				height: 258px;
+				$entry_count: 8;
+				$height_per_entry: 21px;
+				height: $entry_count * $height_per_entry + 20px;
 			}
 			&:first-of-type li:nth-of-type(2), &:nth-of-type(2) li:nth-of-type(2) {
 				padding-top: 10px;
@@ -2865,7 +2895,7 @@ body.comments-page > .content {
 }
 
 .commentarea > .usertext {
-	background-color: $bg_color_59 !important;
+	background-color: $bg_color_59;
 	margin: -58px 0 16px 0;
 	padding: 64px 16px 16px 16px !important;
 	overflow: visible;
@@ -3304,9 +3334,9 @@ body.comments-page > .content {
 		top: 56px;
 	}
 	.searchpane {
-		margin: 0;
 		padding: 0;
 		position: relative;
+		margin: 30px 0 0;
 	}
 }
 
@@ -3707,6 +3737,7 @@ body.comments-page > .content {
 		margin: 0em 0em 4em 0em;
 	}
 	&:before {
+		display: none;
 		position: fixed;
 		width: 100%;
 		padding: 16px;
@@ -3719,6 +3750,7 @@ body.comments-page > .content {
 		z-index: 100;
 	}
 	&:after {
+		display:none;
 		content: "";
 		position: absolute;
 		width: 100%;
@@ -3740,7 +3772,7 @@ body.comments-page > .content {
 	font-size: 12px;
 	font-family: $font_stack_sans;
 	font-weight: normal;
-	background-color: transparent;
+	//background-color: transparent;
 	color: $font_color_12;
 	padding-left: 0px;
 	margin-right: inherit;
@@ -3749,6 +3781,11 @@ body.comments-page > .content {
 .link .flair {
 	font-size: 10px;
 	line-height: 11px;
+}
+
+.res-nightmode .flair, .flair {
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .side .flair:before {
@@ -3885,9 +3922,9 @@ body.comments-page > .content {
 		display: none !important;
 	}
 	#header-bottom-right {
-		top: 1px;
+		top: -1px;
 		border-radius: 0px;
-		height: 18px;
+		height: 21px;
 		padding: 0px 8px 0px 0px;
 	}
 	#userbarToggle {
@@ -4436,7 +4473,7 @@ body.listing-page > .content {
 		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: $font_color_1;
+		color: $font_color_1 !important;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
@@ -4445,19 +4482,19 @@ body.listing-page > .content {
 		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: $font_color_1;
+		color: $font_color_1 !important;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#sdl"] {
-		color: $font_color_1;
+		color: $font_color_1 !important;
 		font-size: 10px;
 		font-weight: 700;
 		text-shadow: $text_shadow_06;
 		pointer-events: none;
 	}
 	&[href^="//#hcl"] {
-		color: $font_color_1;
+		color: $font_color_1 !important;
 		font-size: 10px;
 		font-weight: 700;
 		text-shadow: $text_shadow_07;
@@ -4468,7 +4505,7 @@ body.listing-page > .content {
 		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: $font_color_18;
+		color: $font_color_18 !important;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
@@ -4477,25 +4514,25 @@ body.listing-page > .content {
 		border: 1px solid $border_color_32;
 		border-radius: 2px;
 		font-size: x-small;
-		color: $font_color_1;
+		color: $font_color_1 !important;
 		padding: 1px 3px;
 		pointer-events: none;
 	}
 	&[href^="//#op"] {
 		background: $bg_color_72;
-		color: $font_color_18;
+		color: $font_color_18 !important;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
 	}
 	&[href^="//#ggg"] {
-		color: $font_color_32;
+		color: $font_color_32 !important;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
 	}
 	&[href^="//#gggmod"] {
-		color: $font_color_33;
+		color: $font_color_33 !important;
 		font-size: small;
 		font-weight: 700;
 		pointer-events: none;
@@ -4505,7 +4542,13 @@ body.listing-page > .content {
 	}
 	&[href="/smallText"] {
 		font-size: smaller;
-		color: $font_color_19;
+		color: $font_color_19 !important;
+	}
+	&[href="//#submod"] {
+		color: $font_color_34 !important;
+		font-size: small;
+		font-weight: 700;
+		pointer-events: none;
 	}
 }
 
@@ -4667,9 +4710,9 @@ a {
 	margin-right: 0;
 	margin-left: 2px;
 	padding: 2px;
-	color: $font_color_1;
+	color: $font_color_1 !important;
 	text-indent: 0;
-	border: 1px solid $border_color_32;
+	border: 1px solid $border_color_32 !important;
 	font-weight: 200;
 	background-image: none;
 	line-height: 11px;
@@ -4677,25 +4720,25 @@ a {
 }
 
 .flair-hardcore {
-	background: $bg_color_71;
+	background: $bg_color_71 !important;
 }
 
 .flair-n7 {
-	background: $bg_color_70;
-	color: $font_color_18;
+	background: $bg_color_70 !important;
+	color: $font_color_18 !important;
 }
 
 .flair-ambush {
-	background: $bg_color_68;
+	background: $bg_color_68 !important;
 }
 
 .flair-invasion {
-	background: $bg_color_69;
+	background: $bg_color_69 !important;
 }
 
 .flair-n0 {
-	background: $bg_color_71;
-	color: $font_color_18;
+	background: $bg_color_71 !important;
+	color: $font_color_18 !important;
 }
 
 span {
@@ -4873,12 +4916,26 @@ span {
 	border-color: $border_color_33;
 }
 
+.link.linkflair-ggg {
+	$borderSize : 5px;
+	border-left: $borderSize solid $border_color_33;
+	border-radius: $borderSize -1;
+	margin-left: -$borderSize;
+}
+
 .linkflair-guide .linkflairlabel {
 	background-color: $bg_color_76;
 }
 
 .linkflair-discussion .linkflairlabel {
 	background-color: $bg_color_77;
+}
+
+.link.linkflair-discussion {
+	$borderSize : 5px;
+	border-left: $borderSize solid $bg_color_77;
+	border-radius: $borderSize -1;
+	margin-left: -$borderSize;
 }
 
 .linkflair-question .linkflairlabel {
@@ -4899,17 +4956,38 @@ span {
 
 a {
 	&.author {
-		&[href$="/slowmyrole19"], &[href$="/grangelov"], &[href$="/poe_ladder_bot"], &[href$="/AutoModerator"], &[href$="/Phenxx"], &[href$="/lakattack0221"], &[href$="/GoogaNautGod"], &[href$="/Msmit71"], &[href$="/MeanwhileInSAfrica"], &[href$="/Oos-PoE"] {
+		&[href$="/slowmyrole19"], &[href$="/grangelov"], &[href$="/poe_ladder_bot"], &[href$="/AutoModerator"],
+		&[href$="/lakattack0221"], &[href$="/GoogaNautGod"], &[href$="/Msmit71"], &[href$="/Oos-PoE"],
+		&[href$="/trackpete"], &[href$="/Korrac"]
+		{
 			color: $font_color_34;
 			font-weight: 700;
 		}
-		&[href$="/Invalesco_POE"], &[href$="/Schnaeble"], &[href$="/SpudOfDoom"], &[href$="/Metronomyy"], &[href$="/C4r1b0u"] {
+		&[href$="/siffinleex"], &[href$="/Invalesco_POE"], &[href$="/Schnaeble"], &[href$="/SpudOfDoom"],
+		&[href$="/Metronomyy"], &[href$="/C4r1b0u"]
+		{
 			color: $font_color_33;
 			font-weight: 700;
 		}
-		&[href$="/chris_wilson"], &[href$="/Bex_GGG"], &[href$="/Negitivefrags"], &[href$="/qarldev"], &[href$="/BrianWeissman_GGG"], &[href$="/Rory_Rackham"], &[href$="/Omnitect"], &[href$="/Mark_GGG"], &[href$="/Daniel_GGG"], &[href$="/Blake_GGG"], &[href$="/RhysGGG"], &[href$="/Dan_GGG"], &[href$="/PantherNZ"], &[href$="/Novynn"] {
+		&[href$="/chris_wilson"], &[href$="/Bex_GGG"], &[href$="/Negitivefrags"], &[href$="/qarldev"],
+		&[href$="/BrianWeissman_GGG"], &[href$="/Rory_Rackham"], &[href$="/Omnitect"], &[href$="/Mark_GGG"],
+		&[href$="/Daniel_GGG"], &[href$="/Blake_GGG"], &[href$="/RhysGGG"], &[href$="/Dan_GGG"], &[href$="/PantherNZ"],
+		&[href$="/Novynn"], &[href$="/Fitzy_GGG"], &[href$="/Hrishi_GGG"]
+		{
 			color: $font_color_32;
 			font-weight: 700;
+
+			&:before {
+				content: " ";
+				width: 0;
+				height: 0;
+				border-top: 7px solid transparent;
+				border-left: 14px solid $font_color_32;
+				border-bottom: 7px solid transparent;
+				position: absolute;
+				left: 9px;
+				margin-top: 3px;
+			}
 		}
 	}
 	&[href^='https://pathofexile.com/shop/'] {
@@ -4927,6 +5005,15 @@ a {
 		line-height: 20px;
 		font-family: $font_stack_serif;
 	}
+}
+
+.thing .tagline .author.moderator[href$="/AutoModerator"] {
+	color: $font_color_38 !important;
+	background-color: RGBA(0,0,0,0) !important;
+}
+
+.linklisting a.author:before, .side a.author:before {
+	display: none;
 }
 
 html .RES-keyNav-activeElement {
@@ -4959,7 +5046,7 @@ html .RES-keyNav-activeElement {
 		}
 	}
 	body > .content {
-		margin: 16px 346px 64px 10px;
+		//margin: 16px 346px 64px 10px;
 	}
 	#header:before {
 		right: 346px;
@@ -5014,3 +5101,276 @@ html .RES-keyNav-activeElement {
 	overflow:hidden;
 	content:"1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250"
 }
+
+
+textarea.title {
+	text-transform: none!important;
+}
+
+
+/* --- Addon: Dark Mode colors --- */
+html[lang="dd"]{
+	.sidebar .md, body,  .side,  .side *,  .side .spacer,  .content,  .traffic-tables .traffic-table tr,  .parentComment .md,  .post-body.entry-content,  .dsq-auth-header,  .instructions .preftable th,  #BigEditor .markdownEditor a,  #BigEditor .markdownEditor .RESMacroDropdownTitle,  #REScommentSubToggle,  #alert_message,  #report-action-form
+	{
+		color: $font_color_40;
+	}
+
+	body,  body .content,  .modal-body,  .side,  .icon-menu a,  .side .leavemoderator,  .side .leavecontributor-button,  .side .titlebox,  .side .spacer .titlebox .redditname,  .side .titlebox .flairtoggle,  .side .usertext-body .md ol,  .side .usertext-body .md ol ol,  .side .usertext-body .md ol ol li,  .modactionlisting table *,  .side .recommend-box .rec-item
+	{
+		background-color: $bg_color_82;
+		border-color: $border_color_36;
+	}
+}
+/* --- End Addon --- */
+
+/* --- Addon: RES Nightmode colors --- */
+
+	.res-nightmode #header, .res-nightmode .liveupdate-home .content {
+		background-color: transparent !important;
+	}
+	.res-nightmode .tabmenu li a {
+		background-color: transparent !important;
+	}
+
+	.res-nightmode, html[lang="dd"] {
+		.res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .md-container
+		{
+			background-color: transparent !important;
+		}
+
+		.sidecontentbox .content {
+			background-color: transparent;
+		}
+
+		.side .titlebox h1.redditname a, .titlebox:before
+		{
+			color: $font_color_37;
+		}
+
+		.link .entry .tagline a {
+			color: invert($font_color_3);
+		}
+
+		body a.voteWeight {
+			color: $font_color_1;
+		}
+
+		#ad-frame, #ad_main, #images, #previoussearch #moresearchinfo, .account-activity-box, .combined-search-page > .content,
+		.commentarea > .sitetable > .comment, .commentarea > .usertext, .comments-page .link, .linefield, .login-form-side,
+		.side .sidecontentbox, .side .titlebox, .sponsorshipbox, .stylesheet-customize-container .pretty-form,
+		.submit-page .roundfield, .wiki-page .wiki-page-content, body.listing-page > .content, body.other-discussions-page > .content
+		{
+			background-color: lighten(invert($bg_color_2),10%);
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+		}
+
+		.side .titlebox .md h5:first-of-type, .side .titlebox h1.redditname:before, #search input[type="text"],
+		.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .side .md>ul:first-of-type li:first-of-type,
+		.side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
+		{
+			background-color: lighten(invert($bg_color_2),10%);
+		}
+
+		body:not(.comments-page) .link:hover {
+			background-color: lighten(invert($bg_color_15),10%);
+		}
+		.stickied {
+			border-bottom-color: lighten(invert($bg_color_15),10%);
+		}
+
+		#search #searchexpando {
+			background-color: invert($bg_color_50);
+		}
+
+		.res-nightmode .read-next .read-next-header, .res-nightmode .flairselector h2,
+		.res-nightmode .flairselector li:hover
+		{
+			background-color: transparent !important;
+		}
+
+		.res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .trophy-area .content, .res-nightmode .side .md ol,
+		.res-nightmode .side .md ul
+		{
+			background-color: transparent !important;
+		}
+
+		.side .md>ul:nth-of-type(4):before, .side .md>ul:nth-of-type(5):before
+		{
+			box-shadow: -55px 40px 32px 30px lighten(invert($bg_color_2),10%);
+		}
+
+		.arrow.upmod {
+			background-position: -32px -80px;
+		}
+		.arrow.up {
+			background-position: -0px -80px;
+			&:hover {
+				background-position: -0px -80px;
+			}
+		}
+		.arrow.down {
+			background-position: -64px -80px;
+			&:hover {
+				background-position: -64px -80px;
+			}
+		}
+		.arrow.downmod {
+			background-position: -0px -100px;
+		}
+
+		.side .md h6:first-of-type a {
+			background-color: $lineargradient_bg_02;
+		}
+
+		.side .titlebox .md h5:first-of-type {
+			color: $font_color_1;
+		}
+
+		/* Links */
+		.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,
+		.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,
+		.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,
+		.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,
+		.combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments,
+		.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover,
+		a,  .md a,  .share-button .option,  #subscribe a,  .share .option,  .wired a,  .side a,  .link .score.dislikes,
+		.linkcompressed .score.dislikes,  a[rel="tag"],  .dsq-help,  #authorInfoToolTip h3 a,  .reddiquette,
+		.parent .author,  .parent .subreddit,  .combined-search-page .search-result a,
+		.combined-search-page .search-result a > mark,  .hoverHelp,  .deepthread a,  .policy-page .md h1 a,
+		.policy-page .md h3 a
+		{
+			color: $font_color_37;
+		}
+		.comment .flat-list li a[onclick*=reply], .tagline .submitter, .tagline .submitter:visited {
+			color: $font_color_37;
+		}
+		.side .md a:visited, .side .md>ul:first-of-type li:first-of-type, .side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
+		{
+			color: $font_color_37;
+		}
+
+		.side #moderation_tools .title h1, .side .titlebox .md h2, .sidecontentbox .title h1
+		{
+			background: $lineargradient_bg_02;
+			background: -moz-linear-gradient(top, $lineargradient_02);
+			background: -webkit-linear-gradient(top, $lineargradient_02);
+			background: -o-linear-gradient(top, $lineargradient_02);
+			background: -ms-linear-gradient(top, $lineargradient_02);
+			background: linear-gradient(to bottom, $lineargradient_02);
+		}
+		.side .titlebox .md h2:before, .sidecontentbox .title h1:before
+		{
+			border-left-color: $border_color_24_dark;
+		}
+		.side .titlebox .md h2:after, .sidecontentbox .title h1:after
+		{
+			border-right-color: $border_color_24_dark;
+		}
+
+		.titlebox .tagline:after {
+			border-color: lighten(invert($bg_color_14),10%)
+		}
+
+		.side .titlebox .md h4:first-of-type a:after, .side .md>ul:first-of-type li:first-of-type:after,
+		.side .md>ul:nth-of-type(2) li:first-of-type:after
+		{
+			background-image: $url_sidebaricons_dark;
+		}
+		#noresults {
+			background-image: $url_noresults_dark;
+		}
+
+		.side .md>ul:first-of-type li:first-of-type, .side .md>ul:nth-of-type(2) li:first-of-type,
+		.side .md>ul:nth-of-type(3) li, .side .titlebox .md h4 a
+		{
+			border-color: lighten(invert($bg_color_15),10%);
+		}
+		.expando-button, .expando-button.image,	.expando-button.video-muted
+		{
+			border-color: lighten(invert($bg_color_15),30%);
+		}
+		.titlebox .tagline:after {
+			background-color: lighten(invert($bg_color_15),10%);
+		}
+
+		body .content {
+			.text, textarea, input[type=text], input[type=password]  {
+				background-color: lighten(invert($bg_color_2),10%);
+			}
+		}
+		.side .spacer input, body .content input[type=url] {
+			background-color: lighten(invert($bg_color_2),10%);
+		}
+
+		ul.image-preview-list .description pre {
+			color: $font_color_1;
+		}
+		.entry .buttons li.reported-stamp, .submit-page .roundfield .title, body .content textarea {
+			color: $font_color_1;
+		}
+		.RESUserTagImage {
+			opacity: .6;
+		}
+		.btn, button, .morelink, .nav-buttons a, .titlebox .fancy-toggle-button .active.remove,
+		.submit-page #newlink.submit.content ul.tabmenu.formtab
+		{
+			background-color: $lineargradient_bg_02;
+			border-color: $border_color_24_dark;
+			color: $font_color_1;
+		}
+		.dropdown.lightdrop .selected {
+			border-color: $border_color_24_dark;
+			color: $font_color_1;
+		}
+
+		.morelink a {
+			color: $font_color_1;
+			&:hover {
+				color: darken($font_color_1, 10%);
+			}
+		}
+		.btn:hover, button:hover {
+			background-color: lighten($lineargradient_bg_02, 10%);
+		}
+		.submit-page #newlink.submit.content .tabmenu.formtab .selected a {
+			border-bottom-color: white;
+		}
+		#newlink-with-image-upload .clear-input-button {
+			background-color: $font_color_34;
+		}
+		.side .md table thead tr {
+			background-color: invert($bg_color_36);
+		}
+		.md h1, .md h2, .md h3 {
+			color: $font_color_39;
+		}
+		.gold-accent.comment-visits-box {
+			background-color: lighten(invert($bg_color_2),10%);
+			border-color: $border_color_24_dark;
+			color: $font_color_1;
+		}
+		.comment .expand:hover {
+			background-color: invert($bg_color_50);
+		}
+		.comments-page .side .linkinfo {
+			background-color: lighten(invert($bg_color_2),10%);
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+			.score {
+				color: $font_color_1;
+			}
+		}
+
+		.side .spacer input, body .content .text, body .content input[type=password], body .content input[type=text],
+		body .content input[type=url], body .content textarea
+		{
+			color: $font_color_1;
+		}
+
+		.wiki-page .pageactions, .wiki-page .wikititle {
+			background-color: $lineargradient_bg_02;
+			color: $font_color_1;
+		}
+	}
+
+
+/* --- End Addon --- */
