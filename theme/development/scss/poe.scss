@@ -3362,7 +3362,7 @@ body.comments-page > .content {
 	height: 32px;
 	margin: 0;
 	padding: 0;
-	background: transparent $url_spritesheet -64px -96px;
+	background: transparent $url_spritesheet -64px -97px;
 	box-shadow: none;
 	border: none;
 	border-radius: 50%;
@@ -5108,9 +5108,78 @@ textarea.title {
 }
 
 
+/* --- Addon: Unique Mockups --- */
+	.content .md blockquote h6:first-of-type {
+		text-align: center !important;
+		border: 0 !important;
+		height: 53px !important;
+		width: 419px !important;
+		background: $bg_color_41 !important;
+		background-image: $url_unique_item_left, $url_unique_item_right, $url_unique_item_middle !important;
+		background-position: left 0,right 0,center 0!important;
+		background-repeat: no-repeat,no-repeat,repeat!important;
+		line-height: 22px !important;
+		font-size: 20px !important;
+		color: $font_color_34 !important;
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+		font-weight: normal !important;
+		padding: 4px 49px 0 48px !important;
+		margin-bottom: 0 !important;
+		overflow: hidden !important;
+		text-decoration: none;
+	}
+
+	.content .md blockquote h6 +blockquote {
+		background-color: $bg_color_41 !important;
+		color: $font_color_41 !important;
+		font-weight: normal !important;
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+		text-align: center !important;
+		width: 419px !important;
+		border: 2px solid $font_color_34 !important;
+		border-top: none !important;
+		padding-left: 0 !important;
+		margin: 0 !important;
+	}
+
+	.content .md blockquote h6 +blockquote >h4 {
+		color: $font_color_41 !important;
+	}
+
+	.content .md a[href="#line"] {
+		background-image: $url_unique_item_spacer !important;
+		width: 221px !important;
+		height: 2px !important;
+		display: block !important;
+		content: " " !important;
+		text-indent: -9999px !important;
+		text-align: center !important;
+		margin: auto !important;
+	}
+
+	.content .md blockquote h6+blockquote h5 {
+		color: $font_color_42 !important;
+		font-weight: normal !important;
+	}
+
+	.content .md blockquote h6+blockquote strong {
+		color: white !important;
+		font-weight: normal !important;
+	}
+
+	.content .md blockquote h6+blockquote em {
+		color: $font_color_34 !important;
+		font-style: italic !important;
+		font-weight: normal !important;
+	}
+/* --- End Addon --- */
+
 /* --- Addon: Dark Mode colors --- */
 html[lang="dd"]{
-	.sidebar .md, body,  .side,  .side *,  .side .spacer,  .content,  .traffic-tables .traffic-table tr,  .parentComment .md,  .post-body.entry-content,  .dsq-auth-header,  .instructions .preftable th,  #BigEditor .markdownEditor a,  #BigEditor .markdownEditor .RESMacroDropdownTitle,  #REScommentSubToggle,  #alert_message,  #report-action-form
+	.sidebar .md, body,  .side,  .side *,  .side .spacer,  .content,  .traffic-tables .traffic-table tr,
+	.parentComment .md,  .post-body.entry-content,  .dsq-auth-header,  .instructions .preftable th,
+	#BigEditor .markdownEditor a,  #BigEditor .markdownEditor .RESMacroDropdownTitle,  #REScommentSubToggle,
+	#alert_message,  #report-action-form, .link .usertext .md, .md h5, .md h6, .md, .comment .usertext .md
 	{
 		color: $font_color_40;
 	}
@@ -5119,6 +5188,102 @@ html[lang="dd"]{
 	{
 		background-color: $bg_color_82;
 		border-color: $border_color_36;
+	}
+
+	.side .titlebox .flairtoggle {
+		background-color: transparent !important;
+	}
+
+	body a.voteWeight {
+		background-color: transparent !important;
+	}
+	.side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
+		background-color: $bg_color_2;
+		color: $font-color_18;
+	}
+	.titlebox form.toggle, .leavemoderator {
+		background-color: transparent;
+	}
+	.new-comment .md :not(pre)>code, .link .md :not(pre)>code, .usertext.border .md :not(pre)>code,
+	.new-comment .md pre, .link .md pre, .usertext.border .md pre, .md code, .md pre
+	{
+		background-color: $bg_color_83;
+		border-color: $border_color_37;
+	}
+	.usertext .markhelp tr {
+		background-color: $lineargradient_bg_02 !important;
+		td {
+			background-color: $bg_color_86;
+		}
+	}
+	.RESDialogSmall>h3 {
+		background-color: $lineargradient_bg_02;
+	}
+
+	.side select {
+		color: $font_color_18;
+	}
+
+	.search-expando.collapsed:before {
+		background: rgba(26,26,26,0);
+		background: -moz-linear-gradient(top,rgba(26,26,26,0) 0%,$bg_color_86 100%);
+		background: -webkit-linear-gradient(top,rgba(26,26,26,0) 0%,$bg_color_86 100%);
+		background: -o-linear-gradient(top,rgba(26,26,26,0) 0%,$bg_color_86 100%);
+		background: -ms-linear-gradient(top,rgba(26,26,26,0) 0%,$bg_color_86 100%);
+		background: linear-gradient(to bottom,rgba(26,26,26,0) 0%,$bg_color_86 100%)
+	}
+
+	.combined-search-page #previoussearch .res-search-pane, ul.res-search-tabs li.res-search-tab-active {
+		background-color: $bg_color_86;
+	}
+	ul.res-search-tabs li, ul.res-search-tabs a {
+		background-color: lighten($bg_color_86, 10%);
+	}
+
+	.drop-choices {
+		background-color: $lineargradient_bg_02;
+	}
+
+	.wiki-page .wiki-page-content .wiki.md, .wiki-page .wiki-page-content .wiki.md h2, .wiki-page .wiki-page-content .description h2
+	{
+		color: $font_color_1;
+	}
+
+	.res:not(.res-nightmode) .commentarea .comment {
+		background-color: $bg_color_84 !important;
+		.comment {
+			background-color: $bg_color_85 !important;
+			.comment {
+				background-color: $bg_color_84 !important;
+				.comment {
+					background-color: $bg_color_85 !important;
+					.comment {
+						background-color: $bg_color_84 !important;
+						.comment {
+							background-color: $bg_color_85 !important;
+							.comment {
+								background-color: $bg_color_84 !important;
+								.comment {
+									background-color: $bg_color_85 !important;
+									.comment {
+										background-color: $bg_color_84 !important;
+										.comment {
+											background-color: $bg_color_85 !important;
+											.comment {
+												background-color: $bg_color_84 !important;
+												.comment {
+													background-color: $bg_color_85 !important;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 /* --- End Addon --- */
@@ -5140,6 +5305,10 @@ html[lang="dd"]{
 
 		.sidecontentbox .content {
 			background-color: transparent;
+		}
+
+		body .content {
+			background-color: $bg_color_86;
 		}
 
 		.side .titlebox h1.redditname a, .titlebox:before
@@ -5369,6 +5538,10 @@ html[lang="dd"]{
 		.wiki-page .pageactions, .wiki-page .wikititle {
 			background-color: $lineargradient_bg_02;
 			color: $font_color_1;
+		}
+		body .content input[type=text], .search-page #search input[type=text] {
+			color: $font_color_1 !important;
+			border: 1px solid $lineargradient_bg_02;
 		}
 	}
 

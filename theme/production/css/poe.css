@@ -2618,7 +2618,7 @@ body.comments-page > .content {
   height: 32px;
   margin: 0;
   padding: 0;
-  background: transparent url(%%spritesheet%%) -64px -96px;
+  background: transparent url(%%spritesheet%%) -64px -97px;
   box-shadow: none;
   border: none;
   border-radius: 50%;
@@ -4000,13 +4000,149 @@ html .RES-keyNav-activeElement {
 textarea.title {
   text-transform: none !important; }
 
+/* --- Addon: Unique Mockups --- */
+.content .md blockquote h6:first-of-type {
+  text-align: center !important;
+  border: 0 !important;
+  height: 53px !important;
+  width: 419px !important;
+  background: #000 !important;
+  background-image: url(%%unique-item-left%%), url(%%unique-item-right%%), url(%%unique-item-middle%%) !important;
+  background-position: left 0, right 0, center 0 !important;
+  background-repeat: no-repeat, no-repeat, repeat !important;
+  line-height: 22px !important;
+  font-size: 20px !important;
+  color: #af6025 !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  font-weight: normal !important;
+  padding: 4px 49px 0 48px !important;
+  margin-bottom: 0 !important;
+  overflow: hidden !important;
+  text-decoration: none; }
+
+.content .md blockquote h6 + blockquote {
+  background-color: #000 !important;
+  color: #7f7f7f !important;
+  font-weight: normal !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  width: 419px !important;
+  border: 2px solid #af6025 !important;
+  border-top: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important; }
+
+.content .md blockquote h6 + blockquote > h4 {
+  color: #7f7f7f !important; }
+
+.content .md a[href="#line"] {
+  background-image: url(%%unique-item-spacer%%) !important;
+  width: 221px !important;
+  height: 2px !important;
+  display: block !important;
+  content: " " !important;
+  text-indent: -9999px !important;
+  text-align: center !important;
+  margin: auto !important; }
+
+.content .md blockquote h6 + blockquote h5 {
+  color: #88F !important;
+  font-weight: normal !important; }
+
+.content .md blockquote h6 + blockquote strong {
+  color: white !important;
+  font-weight: normal !important; }
+
+.content .md blockquote h6 + blockquote em {
+  color: #af6025 !important;
+  font-style: italic !important;
+  font-weight: normal !important; }
+
+/* --- End Addon --- */
 /* --- Addon: Dark Mode colors --- */
-html[lang="dd"] .sidebar .md, html[lang="dd"] body, html[lang="dd"] .side, html[lang="dd"] .side *, html[lang="dd"] .side .spacer, html[lang="dd"] .content, html[lang="dd"] .traffic-tables .traffic-table tr, html[lang="dd"] .parentComment .md, html[lang="dd"] .post-body.entry-content, html[lang="dd"] .dsq-auth-header, html[lang="dd"] .instructions .preftable th, html[lang="dd"] #BigEditor .markdownEditor a, html[lang="dd"] #BigEditor .markdownEditor .RESMacroDropdownTitle, html[lang="dd"] #REScommentSubToggle, html[lang="dd"] #alert_message, html[lang="dd"] #report-action-form {
+html[lang="dd"] .sidebar .md, html[lang="dd"] body, html[lang="dd"] .side, html[lang="dd"] .side *, html[lang="dd"] .side .spacer, html[lang="dd"] .content, html[lang="dd"] .traffic-tables .traffic-table tr,
+html[lang="dd"] .parentComment .md, html[lang="dd"] .post-body.entry-content, html[lang="dd"] .dsq-auth-header, html[lang="dd"] .instructions .preftable th,
+html[lang="dd"] #BigEditor .markdownEditor a, html[lang="dd"] #BigEditor .markdownEditor .RESMacroDropdownTitle, html[lang="dd"] #REScommentSubToggle,
+html[lang="dd"] #alert_message, html[lang="dd"] #report-action-form, html[lang="dd"] .link .usertext .md, html[lang="dd"] .md h5, html[lang="dd"] .md h6, html[lang="dd"] .md, html[lang="dd"] .comment .usertext .md {
   color: #ccc; }
 
 html[lang="dd"] body, html[lang="dd"] body .content, html[lang="dd"] .modal-body, html[lang="dd"] .side, html[lang="dd"] .icon-menu a, html[lang="dd"] .side .leavemoderator, html[lang="dd"] .side .leavecontributor-button, html[lang="dd"] .side .titlebox, html[lang="dd"] .side .spacer .titlebox .redditname, html[lang="dd"] .side .titlebox .flairtoggle, html[lang="dd"] .side .usertext-body .md ol, html[lang="dd"] .side .usertext-body .md ol ol, html[lang="dd"] .side .usertext-body .md ol ol li, html[lang="dd"] .modactionlisting table *, html[lang="dd"] .side .recommend-box .rec-item {
   background-color: #262626;
   border-color: #777; }
+
+html[lang="dd"] .side .titlebox .flairtoggle {
+  background-color: transparent !important; }
+
+html[lang="dd"] body a.voteWeight {
+  background-color: transparent !important; }
+
+html[lang="dd"] .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
+  background-color: #fff;
+  color: #000; }
+
+html[lang="dd"] .titlebox form.toggle, html[lang="dd"] .leavemoderator {
+  background-color: transparent; }
+
+html[lang="dd"] .new-comment .md :not(pre) > code, html[lang="dd"] .link .md :not(pre) > code, html[lang="dd"] .usertext.border .md :not(pre) > code,
+html[lang="dd"] .new-comment .md pre, html[lang="dd"] .link .md pre, html[lang="dd"] .usertext.border .md pre, html[lang="dd"] .md code, html[lang="dd"] .md pre {
+  background-color: #2A3340;
+  border-color: #58697B; }
+
+html[lang="dd"] .usertext .markhelp tr {
+  background-color: #333a4d !important; }
+  html[lang="dd"] .usertext .markhelp tr td {
+    background-color: #1a1a1a; }
+
+html[lang="dd"] .RESDialogSmall > h3 {
+  background-color: #333a4d; }
+
+html[lang="dd"] .side select {
+  color: #000; }
+
+html[lang="dd"] .search-expando.collapsed:before {
+  background: rgba(26, 26, 26, 0);
+  background: -moz-linear-gradient(top, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  background: -webkit-linear-gradient(top, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  background: -o-linear-gradient(top, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  background: -ms-linear-gradient(top, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%); }
+
+html[lang="dd"] .combined-search-page #previoussearch .res-search-pane, html[lang="dd"] ul.res-search-tabs li.res-search-tab-active {
+  background-color: #1a1a1a; }
+
+html[lang="dd"] ul.res-search-tabs li, html[lang="dd"] ul.res-search-tabs a {
+  background-color: #343434; }
+
+html[lang="dd"] .drop-choices {
+  background-color: #333a4d; }
+
+html[lang="dd"] .wiki-page .wiki-page-content .wiki.md, html[lang="dd"] .wiki-page .wiki-page-content .wiki.md h2, html[lang="dd"] .wiki-page .wiki-page-content .description h2 {
+  color: #fff; }
+
+html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
+  background-color: #121212 !important; }
+  html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment {
+    background-color: #161616 !important; }
+    html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment {
+      background-color: #121212 !important; }
+      html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment {
+        background-color: #161616 !important; }
+        html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment {
+          background-color: #121212 !important; }
+          html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment {
+            background-color: #161616 !important; }
+            html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment {
+              background-color: #121212 !important; }
+              html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment {
+                background-color: #161616 !important; }
+                html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+                  background-color: #121212 !important; }
+                  html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+                    background-color: #161616 !important; }
+                    html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+                      background-color: #121212 !important; }
+                      html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+                        background-color: #161616 !important; }
 
 /* --- End Addon --- */
 /* --- Addon: RES Nightmode colors --- */
@@ -4022,6 +4158,8 @@ html[lang="dd"] body, html[lang="dd"] body .content, html[lang="dd"] .modal-body
     background-color: transparent !important; }
   .res-nightmode .sidecontentbox .content, html[lang="dd"] .sidecontentbox .content {
     background-color: transparent; }
+  .res-nightmode body .content, html[lang="dd"] body .content {
+    background-color: #1a1a1a; }
   .res-nightmode .side .titlebox h1.redditname a, .res-nightmode .titlebox:before, html[lang="dd"] .side .titlebox h1.redditname a, html[lang="dd"] .titlebox:before {
     color: #DFCF99; }
   .res-nightmode .link .entry .tagline a, html[lang="dd"] .link .entry .tagline a {
@@ -4179,5 +4317,8 @@ html[lang="dd"] body, html[lang="dd"] body .content, html[lang="dd"] .modal-body
   .res-nightmode .wiki-page .pageactions, .res-nightmode .wiki-page .wikititle, html[lang="dd"] .wiki-page .pageactions, html[lang="dd"] .wiki-page .wikititle {
     background-color: #333a4d;
     color: #fff; }
+  .res-nightmode body .content input[type=text], .res-nightmode .search-page #search input[type=text], html[lang="dd"] body .content input[type=text], html[lang="dd"] .search-page #search input[type=text] {
+    color: #fff !important;
+    border: 1px solid #333a4d; }
 
 /* --- End Addon --- */

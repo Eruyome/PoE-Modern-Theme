@@ -16,6 +16,10 @@ $url_flair-classes: url(%%flair-classes%%);
 $url_flair-forum: 	url(%%flair-forum%%);
 $url_flair-asc: 	url(%%flair-asc%%);
 $url_thumb: 		url(%%poe-thumb%%);
+$url_unique_item_left:url(%%unique-item-left%%);
+$url_unique_item_middle:url(%%unique-item-middle%%);
+$url_unique_item_right:url(%%unique-item-right%%);
+$url_unique_item_spacer:url(%%unique-item-spacer%%);
 
 // font-colors
 $font_color_0: #24a0ed;
@@ -56,6 +60,8 @@ $font_color_37: #DFCF99;
 $font_color_38: #4a7e69;
 $font_color_39: rgb(221, 221, 221);
 $font_color_40: #ccc;
+$font_color_41: #7f7f7f;
+$font_color_42: #88F;
 
 // font-stacks
 $font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
@@ -142,6 +148,10 @@ $bg_color_79: #add5ab;
 $bg_color_80: #7bb850;
 $bg_color_81: #1ecd97;
 $bg_color_82: #262626;
+$bg_color_83: #2A3340;
+$bg_color_84: #121212;
+$bg_color_85: #161616;
+$bg_color_86: #1a1a1a;
 
 
 $lineargradient_01: hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%;
@@ -188,6 +198,7 @@ $border_color_33: #9b0000;
 $border_color_34: #e2e2e2;
 $border_color_35: #EAEAEA;
 $border_color_36: #777;
+$border_color_37: #58697B;
 
 // box-shadows
 $boxshadow_01: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
