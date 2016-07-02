@@ -2917,28 +2917,6 @@ body.comments-page > .content {
   position: relative; }
   #images #image-upload {
     margin: 0em 0em 4em 0em; }
-  #images:before {
-    display: none;
-    position: fixed;
-    width: 100%;
-    padding: 16px;
-    color: #fff;
-    left: 0px;
-    bottom: 0px;
-    background-color: #2e2f31;
-    content: "Hey! There's a FAQ if you just scroll down a little.";
-    font-size: 18px;
-    z-index: 100; }
-  #images:after {
-    display: none;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    left: 0px;
-    bottom: -1200px;
-    z-index: 100;
-    background: #fff url(%%faq%%) no-repeat 50% 50%; }
 
 /* FAQ */
 /* Flairs */

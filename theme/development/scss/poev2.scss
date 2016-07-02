@@ -3758,30 +3758,6 @@ body.comments-page > .content {
 	#image-upload {
 		margin: 0em 0em 4em 0em;
 	}
-	&:before {
-		display: none;
-		position: fixed;
-		width: 100%;
-		padding: 16px;
-		color: $font_color_1;
-		left: 0px;
-		bottom: 0px;
-		background-color: $bg_color_64;
-		content: "Hey! There's a FAQ if you just scroll down a little.";
-		font-size: 18px;
-		z-index: 100;
-	}
-	&:after {
-		display:none;
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 800px;
-		left: 0px;
-		bottom: -1200px;
-		z-index: 100;
-		background: $bg_color_2 $url_faq no-repeat 50% 50%;
-	}
 }
 
 /* FAQ */
