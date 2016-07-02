@@ -21,6 +21,10 @@ $url_unique_item_middle:url(%%unique-item-middle%%);
 $url_unique_item_right:url(%%unique-item-right%%);
 $url_unique_item_spacer:url(%%unique-item-spacer%%);
 
+$url_submit_image:url(%%submit-image%%);
+$url_submit_image_dark:url(%%submit-image-dark%%);
+
+
 // font-colors
 $font_color_0: #24a0ed;
 $font_color_1: #fff;
@@ -223,6 +227,8 @@ $boxshadow_19: inset 0px 0px 0px rgba(0, 0, 0, 0.25);
 $boxshadow_20: inset 0px 3px 1px rgba(0, 0, 0, 0.15);
 $boxshadow_21: 0px 2px 4px rgba(0, 0, 0, 0.2);
 $boxshadow_22: 0px 1px 5px rgba(0, 0, 0, 0.16);
+$boxshadow_submit: inset 0 0 6px #044e86, 0 0 3px #044e86;
+$boxshadow_submit_dark: inset 0 0 6px darken($lineargradient_bg_02, 25%),0 0 3px darken($lineargradient_bg_02, 25%);
 
 
 // text-shadows
