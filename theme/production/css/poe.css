@@ -148,6 +148,18 @@ body .btn, body button {
   #sr-header-area .width-clip {
     right: 300px; }
 
+#sr-header-area .dropdown.srdrop .selected, .res #sr-header-area #srDropdownContainer a {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  font-size: 0 !important; }
+  #sr-header-area .dropdown.srdrop .selected:after, .res #sr-header-area #srDropdownContainer a:after {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 6px;
+    content: "≡";
+    font-size: 14px; }
+
 .res-nightmode #sr-header-area {
   background-color: rgba(0, 0, 0, 0.08) !important; }
 
@@ -669,7 +681,7 @@ body .content .sitetable .link .title a:hover {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  background: transparent url(%%spritesheet%%) !important;
+  background-image: url(%%spritesheet%%) !important;
   border: 1px solid #e9e9e9;
   cursor: pointer; }
   .expando-button.image, .expando-button.video-muted {
@@ -679,7 +691,7 @@ body .content .sitetable .link .title a:hover {
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    background: transparent url(%%spritesheet%%) !important;
+    background-image: url(%%spritesheet%%) !important;
     border: 1px solid #e9e9e9;
     cursor: pointer; }
   .expando-button:hover {
@@ -4002,61 +4014,61 @@ textarea.title {
 
 /* --- Addon: Unique Mockups --- */
 .content .md blockquote h6:first-of-type {
-  text-align: center !important;
-  border: 0 !important;
-  height: 53px !important;
-  width: 419px !important;
-  background: #000 !important;
-  background-image: url(%%unique-item-left%%), url(%%unique-item-right%%), url(%%unique-item-middle%%) !important;
-  background-position: left 0, right 0, center 0 !important;
-  background-repeat: no-repeat, no-repeat, repeat !important;
-  line-height: 22px !important;
-  font-size: 20px !important;
-  color: #af6025 !important;
-  font-family: Verdana, Arial, Helvetica, sans-serif !important;
-  font-weight: normal !important;
-  padding: 4px 49px 0 48px !important;
-  margin-bottom: 0 !important;
-  overflow: hidden !important;
+  text-align: center;
+  border: 0;
+  height: 53px;
+  width: 419px;
+  background: #000;
+  background-image: url(%%unique-item-left%%), url(%%unique-item-right%%), url(%%unique-item-middle%%);
+  background-position: left 0,right 0,center 0;
+  background-repeat: no-repeat,no-repeat,repeat;
+  line-height: 22px;
+  font-size: 20px;
+  color: #af6025;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 4px 49px 0 48px;
+  margin-bottom: 0;
+  overflow: hidden;
   text-decoration: none; }
 
 .content .md blockquote h6 + blockquote {
-  background-color: #000 !important;
-  color: #7f7f7f !important;
-  font-weight: normal !important;
-  font-family: Verdana, Arial, Helvetica, sans-serif !important;
-  text-align: center !important;
-  width: 419px !important;
-  border: 2px solid #af6025 !important;
-  border-top: none !important;
-  padding-left: 0 !important;
-  margin: 0 !important; }
+  background-color: #000;
+  color: #7f7f7f;
+  font-weight: normal;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 419px;
+  border: 2px solid #af6025;
+  border-top: none;
+  padding-left: 0;
+  margin: 0; }
 
 .content .md blockquote h6 + blockquote > h4 {
-  color: #7f7f7f !important; }
+  color: #7f7f7f; }
 
 .content .md a[href="#line"] {
-  background-image: url(%%unique-item-spacer%%) !important;
-  width: 221px !important;
-  height: 2px !important;
-  display: block !important;
-  content: " " !important;
-  text-indent: -9999px !important;
-  text-align: center !important;
-  margin: auto !important; }
+  background-image: url(%%unique-item-spacer%%);
+  width: 221px;
+  height: 2px;
+  display: block;
+  content: " ";
+  text-indent: -9999px;
+  text-align: center;
+  margin: auto; }
 
 .content .md blockquote h6 + blockquote h5 {
-  color: #88F !important;
-  font-weight: normal !important; }
+  color: #88F;
+  font-weight: normal; }
 
 .content .md blockquote h6 + blockquote strong {
-  color: white !important;
-  font-weight: normal !important; }
+  color: white;
+  font-weight: normal; }
 
 .content .md blockquote h6 + blockquote em {
-  color: #af6025 !important;
-  font-style: italic !important;
-  font-weight: normal !important; }
+  color: #af6025;
+  font-style: italic;
+  font-weight: normal; }
 
 /* --- End Addon --- */
 /* --- Addon: Dark Mode colors --- */
@@ -4071,9 +4083,6 @@ html[lang="dd"] body, html[lang="dd"] body .content, html[lang="dd"] .modal-body
   border-color: #777; }
 
 html[lang="dd"] .side .titlebox .flairtoggle {
-  background-color: transparent !important; }
-
-html[lang="dd"] body a.voteWeight {
   background-color: transparent !important; }
 
 html[lang="dd"] .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
@@ -4165,7 +4174,8 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
   .res-nightmode .link .entry .tagline a, html[lang="dd"] .link .entry .tagline a {
     color: #d6d0cb !important; }
   .res-nightmode body a.voteWeight, html[lang="dd"] body a.voteWeight {
-    color: #fff !important; }
+    color: #fff !important;
+    background-color: transparent !important; }
   .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode #images, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode .account-activity-box, .res-nightmode .combined-search-page > .content,
   .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode .commentarea > .usertext, .res-nightmode .comments-page .link, .res-nightmode .linefield, .res-nightmode .login-form-side,
   .res-nightmode .side .sidecontentbox, .res-nightmode .side .titlebox, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form,
@@ -4274,6 +4284,8 @@ html[lang="dd"] .res:not(.res-nightmode) .commentarea .comment {
     border-color: #272727 !important; }
   .res-nightmode .expando-button, .res-nightmode .expando-button.image, .res-nightmode .expando-button.video-muted, html[lang="dd"] .expando-button, html[lang="dd"] .expando-button.image, html[lang="dd"] .expando-button.video-muted {
     border-color: #5a5a5a !important; }
+    .res-nightmode .expando-button:hover, .res-nightmode .expando-button.image:hover, .res-nightmode .expando-button.video-muted:hover, html[lang="dd"] .expando-button:hover, html[lang="dd"] .expando-button.image:hover, html[lang="dd"] .expando-button.video-muted:hover {
+      background-color: #DFCF99; }
   .res-nightmode .titlebox .tagline:after, html[lang="dd"] .titlebox .tagline:after {
     background-color: #272727 !important; }
   .res-nightmode body .content .text, .res-nightmode body .content textarea, .res-nightmode body .content input[type=text], .res-nightmode body .content input[type=password], html[lang="dd"] body .content .text, html[lang="dd"] body .content textarea, html[lang="dd"] body .content input[type=text], html[lang="dd"] body .content input[type=password] {

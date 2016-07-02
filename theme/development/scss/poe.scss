@@ -187,6 +187,21 @@ body {
 	}
 }
 
+
+#sr-header-area .dropdown.srdrop .selected, .res #sr-header-area #srDropdownContainer a {
+	margin: 0;
+	padding: 0;
+	background-image: none;
+	font-size: 0!important;
+	&:after {
+		position: relative;
+		padding-right: 10px;
+		padding-left: 6px;
+		content: "≡";
+		font-size: 14px;
+	}
+}
+
 .res-nightmode #sr-header-area {
 	background-color: $bg_color_6 !important;
 	//color: rgb(0, 0, 0);
@@ -861,7 +876,7 @@ body .content .sitetable .link .title a:hover {
 	width: 16px;
 	height: 16px;
 	border-radius: 2px;
-	background: transparent $url_spritesheet !important;
+	background-image: $url_spritesheet !important;
 	border: 1px solid $border_color_4;
 	cursor: pointer;
 	&.image, &.video-muted {
@@ -871,7 +886,7 @@ body .content .sitetable .link .title a:hover {
 		width: 16px;
 		height: 16px;
 		border-radius: 2px;
-		background: transparent $url_spritesheet !important;
+		background-image: $url_spritesheet !important;
 		border: 1px solid $border_color_4;
 		cursor: pointer;
 	}
@@ -5109,69 +5124,69 @@ textarea.title {
 
 
 /* --- Addon: Unique Mockups --- */
-	.content .md blockquote h6:first-of-type {
-		text-align: center !important;
-		border: 0 !important;
-		height: 53px !important;
-		width: 419px !important;
-		background: $bg_color_41 !important;
-		background-image: $url_unique_item_left, $url_unique_item_right, $url_unique_item_middle !important;
-		background-position: left 0,right 0,center 0!important;
-		background-repeat: no-repeat,no-repeat,repeat!important;
-		line-height: 22px !important;
-		font-size: 20px !important;
-		color: $font_color_34 !important;
-		font-family: Verdana, Arial, Helvetica, sans-serif !important;
-		font-weight: normal !important;
-		padding: 4px 49px 0 48px !important;
-		margin-bottom: 0 !important;
-		overflow: hidden !important;
-		text-decoration: none;
-	}
+.content .md blockquote h6:first-of-type {
+	text-align: center ;
+	border: 0 ;
+	height: 53px ;
+	width: 419px ;
+	background: $bg_color_41 ;
+	background-image: $url_unique_item_left, $url_unique_item_right, $url_unique_item_middle ;
+	background-position: left 0,right 0,center 0;
+	background-repeat: no-repeat,no-repeat,repeat;
+	line-height: 22px ;
+	font-size: 20px ;
+	color: $font_color_34 ;
+	font-family: Verdana, Arial, Helvetica, sans-serif ;
+	font-weight: normal ;
+	padding: 4px 49px 0 48px ;
+	margin-bottom: 0 ;
+	overflow: hidden ;
+	text-decoration: none;
+}
 
-	.content .md blockquote h6 +blockquote {
-		background-color: $bg_color_41 !important;
-		color: $font_color_41 !important;
-		font-weight: normal !important;
-		font-family: Verdana, Arial, Helvetica, sans-serif !important;
-		text-align: center !important;
-		width: 419px !important;
-		border: 2px solid $font_color_34 !important;
-		border-top: none !important;
-		padding-left: 0 !important;
-		margin: 0 !important;
-	}
+.content .md blockquote h6 +blockquote {
+	background-color: $bg_color_41 ;
+	color: $font_color_41 ;
+	font-weight: normal ;
+	font-family: Verdana, Arial, Helvetica, sans-serif ;
+	text-align: center ;
+	width: 419px ;
+	border: 2px solid $font_color_34 ;
+	border-top: none ;
+	padding-left: 0 ;
+	margin: 0 ;
+}
 
-	.content .md blockquote h6 +blockquote >h4 {
-		color: $font_color_41 !important;
-	}
+.content .md blockquote h6 +blockquote >h4 {
+	color: $font_color_41 ;
+}
 
-	.content .md a[href="#line"] {
-		background-image: $url_unique_item_spacer !important;
-		width: 221px !important;
-		height: 2px !important;
-		display: block !important;
-		content: " " !important;
-		text-indent: -9999px !important;
-		text-align: center !important;
-		margin: auto !important;
-	}
+.content .md a[href="#line"] {
+	background-image: $url_unique_item_spacer ;
+	width: 221px ;
+	height: 2px ;
+	display: block ;
+	content: " " ;
+	text-indent: -9999px ;
+	text-align: center ;
+	margin: auto ;
+}
 
-	.content .md blockquote h6+blockquote h5 {
-		color: $font_color_42 !important;
-		font-weight: normal !important;
-	}
+.content .md blockquote h6+blockquote h5 {
+	color: $font_color_42 ;
+	font-weight: normal ;
+}
 
-	.content .md blockquote h6+blockquote strong {
-		color: white !important;
-		font-weight: normal !important;
-	}
+.content .md blockquote h6+blockquote strong {
+	color: white ;
+	font-weight: normal ;
+}
 
-	.content .md blockquote h6+blockquote em {
-		color: $font_color_34 !important;
-		font-style: italic !important;
-		font-weight: normal !important;
-	}
+.content .md blockquote h6+blockquote em {
+	color: $font_color_34 ;
+	font-style: italic ;
+	font-weight: normal ;
+}
 /* --- End Addon --- */
 
 /* --- Addon: Dark Mode colors --- */
@@ -5194,9 +5209,6 @@ html[lang="dd"]{
 		background-color: transparent !important;
 	}
 
-	body a.voteWeight {
-		background-color: transparent !important;
-	}
 	.side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
 		background-color: $bg_color_2;
 		color: $font-color_18;
@@ -5322,6 +5334,7 @@ html[lang="dd"]{
 
 		body a.voteWeight {
 			color: $font_color_1 !important;
+			background-color: transparent !important;
 		}
 
 		#ad-frame, #ad_main, #images, #previoussearch #moresearchinfo, .account-activity-box, .combined-search-page > .content,
@@ -5482,6 +5495,9 @@ html[lang="dd"]{
 		.expando-button, .expando-button.image,	.expando-button.video-muted
 		{
 			border-color: lighten(invert($bg_color_15),30%) !important;
+			&:hover {
+				background-color: $font_color_37;
+			}
 		}
 		.titlebox .tagline:after {
 			background-color: lighten(invert($bg_color_15),10%) !important;
