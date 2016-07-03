@@ -21,6 +21,8 @@ $url_unique_item_left:url(%%unique-item-left%%);
 $url_unique_item_middle:url(%%unique-item-middle%%);
 $url_unique_item_right:url(%%unique-item-right%%);
 $url_unique_item_spacer:url(%%unique-item-spacer%%);
+$url_asc_plate:		url(%%asc-plate%%);
+$url_daily_lab:		url(%%daily-lab%%);
 
 $url_submit_image:	url(%%submit-image%%);
 $url_submit_image_dark:url(%%submit-image-dark%%);
@@ -159,6 +161,7 @@ $bg_color_84: #121212;
 $bg_color_85: #161616;
 $bg_color_86: #1a1a1a;
 $bg_color_87: #f0f0f0;
+$bg_color_88: rgba(2, 2, 2, 0.64);
 
 
 $lineargradient_01: hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%;
@@ -233,6 +236,7 @@ $boxshadow_21: 0px 2px 4px rgba(0, 0, 0, 0.2);
 $boxshadow_22: 0px 1px 5px rgba(0, 0, 0, 0.16);
 $boxshadow_23: inset 0 0 7px 5px #f1f0eb;
 $boxshadow_24: inset 0 0 7px 2px darken($bg_color_86, 2%);
+$boxshadow_25: 0 1px 4px 0 rgba(255, 250, 250, 0.26);
 $boxshadow_submit: inset 0 0 6px #044e86, 0 0 3px #044e86;
 $boxshadow_submit_dark: inset 0 0 6px darken($lineargradient_bg_02, 25%),0 0 3px darken($lineargradient_bg_02, 25%);
 

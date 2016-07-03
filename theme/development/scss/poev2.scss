@@ -676,6 +676,9 @@ body {
 .sitetable {
 	margin-top: 31px;
 }
+.content .sitetable {
+	margin-top: 0;
+}
 
 .subreddit-rules-page {
 	margin-top: 60px;
@@ -1977,6 +1980,29 @@ div {
 			color: $font_color_19;
 		}
 	}
+	.md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
+		position: absolute;
+		top: 242px;
+		z-index: 200;
+		display: block;
+		height: 70px;
+		width: 50px;
+		font-size: 0;
+		right: 150px;
+		background: $url_daily_lab;
+		background-position: 2px 0;
+		&:hover {
+			background-position: -48px 0;
+		}
+	}
+	.md li a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
+		position: inherit;
+		display: inline;
+		font-size: 11px;
+		background: none;
+
+	}
+
 	.spacer {
 		margin: 0 0 16px 0;
 	}
@@ -2006,6 +2032,12 @@ div {
 			background-color: $bg_color_2;
 			border-radius: 0 0 2px 2px;
 			box-shadow: $boxshadow_15;
+
+			/*
+			background: $url_asc_plate;
+			background-size: 330px;
+			background-position: -5px -6px;
+			*/
 		}
 		margin-bottom: 6px;
 		position: absolute;
@@ -2057,7 +2089,7 @@ div {
 	}
 
 	.flairtoggle, #subButtons-poecss, .res-sr-style-toggle, .titlebox .users-online,
-	.res .titlebox .tagline
+	.titlebox .tagline
 	{
 		text-align: center;
 	}
@@ -2120,8 +2152,10 @@ div.titlebox span.number:after {
 	}
 	.fancy-toggle-button {
 		position: absolute;
-		margin-left: 190px;
-		top: 256px;
+		//margin-left: 190px;
+		margin-left: 187px;
+		//top: 256px;
+		top: 260px;
 		z-index: 100;
 		font-family: $font_stack_serif;
 		.active {
@@ -2181,7 +2215,8 @@ div.titlebox span.number:after {
 	left: 16px;
 	height: auto;
 	//top: 162px;
-	top: 222px;
+	top: 220px;
+	z-index: 100;
 	padding: 11px 11px 11px 16px;
 	background-color: $bg_color_2;
 	color: $font_color_6;
@@ -3370,7 +3405,7 @@ body.comments-page > .content {
 /* Sidebar stuff */
 
 .comments-page .side {
-	margin-top: 376px;
+	margin-top: 334px;
 	.linkinfo {
 		position: absolute;
 		top: 419px;
@@ -3393,7 +3428,13 @@ body.comments-page > .content {
 }
 
 .res.comments-page .side {
-	margin-top: 390px;
+	margin-top: 335px;
+}
+
+.new-page, .rising-page, .top-page, .wiki.page {
+	.side {
+		margin-top: 202px;
+	}
 }
 
 /* That new blog-like next-post thing */
@@ -4044,12 +4085,14 @@ body.comments-page > .content {
 	height: 265px;
 	margin-top: 192px;
 	padding: 15px 0 64px 0;
+	box-shadow: $boxshadow_05;
+	background-color: $bg_color_33;
 }
 
 .footer {
 	border: 0;
 	border-radius: 2px;
-	background-color: $bg_color_65;
+	background-color: $bg_color_88;
 	padding: 16px;
 	max-width: 640px;
 	.col {
@@ -4109,6 +4152,64 @@ body.comments-page > .content {
 	background-color: transparent !important;
 	color: $font_color_27 !important;
 	top: 1px !important;
+}
+
+.NERPageMarker {
+	background: none;
+	border: none;
+	margin-bottom: 15px;
+	color: #a59a78;
+}
+
+.pageNavigator {
+	background: $url_spritesheet no-repeat;
+	background-position: -158px -160px;
+	display: block;
+	height: 42px;
+	width: 20px;
+	font-size: 0;
+	transition: all 600ms cubic-bezier(0.755,0.05,0.855,0.06) 0ms;
+}
+
+.res .res-floater-visibleAfterScroll >ul >li {
+	float: none !important;
+	transition: all .2s ease;
+	text-align: center;
+}
+
+.res .res-floater-visibleAfterScroll >ul >li:hover .pageNavigator {
+	animation: updown 1s ease-out 0s infinite;
+}
+
+.pageNavigator.res-icon {
+	font-size: 0!important;
+}
+
+.res .res-floater-visibleAfterScroll {
+	position: fixed;
+	bottom: 20px;
+	right: 29px;
+	top: initial;
+}
+
+@-webkit-keyframes updown {
+	0%, 100% {
+	}
+
+	50% {
+	}
+
+}
+
+@keyframes updown {
+	0%, 100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
 }
 
 /* Pinheader */
@@ -4382,6 +4483,7 @@ body {
 	&.listing-page > .content, &.other-discussions-page > .content {
 		background-color: $bg_color_2;
 		padding: 16px;
+		padding-top: 40px !important;
 		border-radius: 2px;
 		box-shadow: $boxshadow_05;
 	}
@@ -4389,9 +4491,13 @@ body {
 
 .comments-page .link, .commentarea > .sitetable > .comment, #images, .combined-search-page > .content, .sponsorshipbox, .commentarea > .usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
 	background-color: $bg_color_2;
-	padding: 16px;
+	//padding: 16px;
+	padding: 40px 16px 16px 16px;
 	border-radius: 2px;
 	box-shadow: $boxshadow_05;
+}
+.side .titlebox {
+	padding-top: 16px;
 }
 
 body.listing-page > .content {
@@ -5834,9 +5940,10 @@ html[lang="dd"]{
 		color: $font_color_37;
 	}
 
-	#rem-login-main, .res-nightmode .side .titlebox h1.redditname+div:before, input[type=checkbox]
+	#rem-login-main, .res-nightmode .side .titlebox h1.redditname+div:before, input[type=checkbox],
+	.side .spacer input[type="checkbox"]
 	{
-		background-color: $lineargradient_bg_02;
+		background-color: $lineargradient_bg_02 !important;
 	}
 	.RESshortcutside, .RESDashboardToggle {
 		background-color: darken($bg_color_86, 0%);
@@ -5850,6 +5957,11 @@ html[lang="dd"]{
 
 	.res .RESDashboardToggle:hover, .res .RESshortcutside:hover {
 		background-color: transparent;
+	}
+
+	.footer-parent {
+		background-color: $bg_color_86 !important;
+		box-shadow: 0 1px 4px 0 rgba(255, 250, 250, 0.26);
 	}
 }
 
