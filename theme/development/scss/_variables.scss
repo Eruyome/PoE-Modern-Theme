@@ -4,6 +4,7 @@
 $url_headerimage: 	url(%%headerimg%%);
 $url_spritesheet: 	url(%%spritesheet%%);
 $url_logo: 			url(%%logo%%);
+$url_logo_big: 		url(%%POELogo-big%%);
 $url_noresults: 	url(%%noresults%%);
 $url_noresults_dark:url(%%noresults-dark%%);
 $url_mediaicons: 	url(%%mediaicons%%);
@@ -21,8 +22,9 @@ $url_unique_item_middle:url(%%unique-item-middle%%);
 $url_unique_item_right:url(%%unique-item-right%%);
 $url_unique_item_spacer:url(%%unique-item-spacer%%);
 
-$url_submit_image:url(%%submit-image%%);
+$url_submit_image:	url(%%submit-image%%);
 $url_submit_image_dark:url(%%submit-image-dark%%);
+$url_checkbox:		url(%%check%%);
 
 
 // font-colors
@@ -156,6 +158,7 @@ $bg_color_83: #2A3340;
 $bg_color_84: #121212;
 $bg_color_85: #161616;
 $bg_color_86: #1a1a1a;
+$bg_color_87: #f0f0f0;
 
 
 $lineargradient_01: hsla(206, 100%, 41%, 1) 0%, hsla(206, 100%, 37%, 1) 50%, hsla(206, 100%, 33%, 1) 51%, hsla(206, 100%, 30%, 1) 100%;
@@ -203,6 +206,7 @@ $border_color_34: #e2e2e2;
 $border_color_35: #EAEAEA;
 $border_color_36: #777;
 $border_color_37: #58697B;
+$border_color_38: #e5e3da;
 
 // box-shadows
 $boxshadow_01: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0px 4px 0 rgba(0, 0, 0, 0.12);
@@ -227,6 +231,8 @@ $boxshadow_19: inset 0px 0px 0px rgba(0, 0, 0, 0.25);
 $boxshadow_20: inset 0px 3px 1px rgba(0, 0, 0, 0.15);
 $boxshadow_21: 0px 2px 4px rgba(0, 0, 0, 0.2);
 $boxshadow_22: 0px 1px 5px rgba(0, 0, 0, 0.16);
+$boxshadow_23: inset 0 0 7px 5px #f1f0eb;
+$boxshadow_24: inset 0 0 7px 2px darken($bg_color_86, 2%);
 $boxshadow_submit: inset 0 0 6px #044e86, 0 0 3px #044e86;
 $boxshadow_submit_dark: inset 0 0 6px darken($lineargradient_bg_02, 25%),0 0 3px darken($lineargradient_bg_02, 25%);
 
