@@ -484,14 +484,14 @@ body:not(.loggedin) #header-bottom-right {
 		//height: 98px;
 		//margin-top: 40px;
 		background: $url_logo_big 0 0;
-		width: 201px;
-		height: 148px;
-		margin-top: 17px;
+		width: 190px;
+		height: 140px;
+		margin-top: 19px;
 
 		font-size: 0;
 		&:hover {
 			//background-position: 128px 0;
-			background-position: 207px 0;
+			background-position: -193px 0;
 
 			-webkit-animation: heartPound 1.5s linear infinite;
 			-moz-animation: heartPound 1.5s linear infinite;
@@ -1986,21 +1986,19 @@ div {
 		z-index: 200;
 		display: block;
 		height: 70px;
-		width: 50px;
+		width: 49px;
 		font-size: 0;
-		right: 150px;
-		background: $url_daily_lab;
-		background-position: 2px 0;
+		right: 146px;
+		background: $url_daily_lab 1px 0;
 		&:hover {
-			background-position: -48px 0;
+			background-position: -49px 0;
 		}
 	}
 	.md li a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
-		position: inherit;
+		position: initial;
 		display: inline;
 		font-size: 11px;
 		background: none;
-
 	}
 
 	.spacer {
@@ -2593,6 +2591,12 @@ div.titlebox span.number:after {
 			margin-left: -5px;
 			thead tr {
 				background-color: $bg_color_36;
+			}
+			tr td a {
+				color: $font_color_3;
+				&:visited {
+					color: $font_color_3;
+				}
 			}
 		}
 		th, td {
@@ -5401,6 +5405,11 @@ html .RES-keyNav-activeElement {
 	.link {
 		padding: 8px 16px;
 	}
+	.side .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]
+	{
+		right: initial;
+		left: 725px;
+	}
 }
 
 @media only screen and (max-width: 1050px) {
@@ -5962,6 +5971,16 @@ html[lang="dd"]{
 	.footer-parent {
 		background-color: $bg_color_86 !important;
 		box-shadow: 0 1px 4px 0 rgba(255, 250, 250, 0.26);
+	}
+
+	.side .md table tr td a {
+		color: $font_color_40;
+		&:visited {
+			color: $font_color_40;
+		}
+	}
+	.side .md tbody tr:nth-child(odd) {
+		background-color: $bg_color_89;
 	}
 }
 
