@@ -2028,7 +2028,7 @@ div.titlebox span.number:after {
   background: -o-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: -ms-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: linear-gradient(to bottom, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
-  border-radius: 4px 4px 2px 2px; }
+  border-radius: 2px 2px 2px 2px; }
 
 /* Buttonstyle H3 */
 .sidecontentbox .title h1 {
@@ -2047,7 +2047,7 @@ div.titlebox span.number:after {
   background: -o-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: -ms-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: linear-gradient(to bottom, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
-  border-radius: 4px 4px 2px 2px; }
+  border-radius: 2px 2px 2px 2px; }
 
 .side #moderation_tools .title h1 {
   position: relative;
@@ -2065,7 +2065,7 @@ div.titlebox span.number:after {
   background: -o-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: -ms-linear-gradient(top, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
   background: linear-gradient(to bottom, #0076d1 0%, #006bbd 50%, #005fa8 51%, #005799 100%);
-  border-radius: 4px 4px 2px 2px; }
+  border-radius: 2px 2px 2px 2px; }
 
 .side .titlebox .md h2:before {
   content: "";
@@ -3230,8 +3230,7 @@ body.comments-page > .content {
   color: #a59a78; }
 
 .pageNavigator {
-  background: url(%%spritesheet%%) no-repeat;
-  background-position: -158px -160px;
+  background: no-repeat -156px -160px;
   display: block;
   height: 42px;
   width: 20px;

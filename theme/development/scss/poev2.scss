@@ -2645,7 +2645,7 @@ div.titlebox span.number:after {
 			background: -o-linear-gradient(top, $lineargradient_01);
 			background: -ms-linear-gradient(top, $lineargradient_01);
 			background: linear-gradient(to bottom, $lineargradient_01);
-			border-radius: 4px 4px 2px 2px;
+			border-radius: 2px 2px 2px 2px;
 		}
 	}
 }
@@ -2668,7 +2668,7 @@ div.titlebox span.number:after {
 	background: -o-linear-gradient(top, $lineargradient_01);
 	background: -ms-linear-gradient(top, $lineargradient_01);
 	background: linear-gradient(to bottom, $lineargradient_01);
-	border-radius: 4px 4px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
 }
 
 .side {
@@ -2688,7 +2688,7 @@ div.titlebox span.number:after {
 		background: -o-linear-gradient(top, $lineargradient_01);
 		background: -ms-linear-gradient(top, $lineargradient_01);
 		background: linear-gradient(to bottom, $lineargradient_01);
-		border-radius: 4px 4px 2px 2px;
+		border-radius: 2px 2px 2px 2px;
 	}
 	.titlebox .md h2:before {
 		content: "";
@@ -4166,8 +4166,7 @@ body.comments-page > .content {
 }
 
 .pageNavigator {
-	background: $url_spritesheet no-repeat;
-	background-position: -158px -160px;
+	background: no-repeat -156px -160px;
 	display: block;
 	height: 42px;
 	width: 20px;
