@@ -1464,17 +1464,23 @@ div.commentarea div.RES-keyNav-activeElement .md {
     color: #24a0ed; }
   .side .md h6:first-of-type {
     width: 270px;
-    height: 30px;
+    height: 41px;
     margin: 10px auto;
     text-align: center; }
     .side .md h6:first-of-type a {
-      width: 30px;
-      height: 30px;
+      width: 41px;
+      height: 41px;
       border-radius: 50%;
       display: inline-block;
       margin: 0 2px;
       background: rgba(0, 0, 0, 0.2) url(%%mediaicons%%);
-      transition: .3s background-color ease; }
+      transition: .3s background-color ease;
+      /*
+				&[href*="http://discord.gg/0ybQUsRoo91vwONn"] {
+					background-position: -150px 0;
+
+				}
+				*/ }
       .side .md h6:first-of-type a[href*="https://twitter.com"]:hover {
         background-color: #00a0d2; }
       .side .md h6:first-of-type a[href*="www.facebook.com"]:hover {
@@ -1484,19 +1490,17 @@ div.commentarea div.RES-keyNav-activeElement .md {
       .side .md h6:first-of-type a[href*="www.youtube.com"]:hover {
         background-color: #c4302c; }
       .side .md h6:first-of-type a[href*="https://discord.gg/0ybQUsRoo91vwONn"]:hover {
-        background-color: #000; }
+        background-color: #809dd5; }
       .side .md h6:first-of-type a[href*="http://discord.gg/0ybQUsRoo91vwONn"]:hover {
         background-color: #6b6b6b; }
       .side .md h6:first-of-type a[href*="www.facebook.com"] {
-        background-position: -30px 0; }
+        background-position: -41px 0; }
       .side .md h6:first-of-type a[href*="twitch.tv"] {
-        background-position: -60px 0; }
+        background-position: -82px 0; }
       .side .md h6:first-of-type a[href*="www.youtube.com"] {
-        background-position: -90px 0; }
+        background-position: -123px 0; }
       .side .md h6:first-of-type a[href*="https://discord.gg/0ybQUsRoo91vwONn"] {
-        background-position: -120px 0; }
-      .side .md h6:first-of-type a[href*="http://discord.gg/0ybQUsRoo91vwONn"] {
-        background-position: -150px 0; }
+        background-position: -164px 0; }
   .side .titlebox .md h4 a[href*="/message/compose"] {
     color: #737373;
     font-size: 11px; }

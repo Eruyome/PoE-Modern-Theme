@@ -1,13 +1,15 @@
-##### 🌟 The Daily Lab and Discord links now reside in the sidebar  
+##### Alternative header menu [here](https://dd.reddit.com/r/poecss/); Try installing [Fontin](http://www.exljbris.com/fontin.html)
 
 ##### [Light Mode](https://www.reddit.com/r/poeblackmarket/)[Dark Mode](https://dd.reddit.com/r/poeblackmarket/)  
 
-######[](https://twitter.com/pathofexile)[](https://www.facebook.com/pathofexile/)[](https://www.twitch.tv/directory/game/Path%20of%20Exile)[](https://www.youtube.com/user/grindinggear)[](https://discord.gg/0ybQUsRoo91vwONn)[](http://discord.gg/0ybQUsRoo91vwONn)######
+######[](https://twitter.com/pathofexile)[](https://www.facebook.com/pathofexile/)[](https://www.twitch.tv/directory/game/Path%20of%20Exile)[](https://www.youtube.com/user/grindinggear)[](https://discord.gg/0ybQUsRoo91vwONn)######
+
+https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day
 
 ####[Message the Moderators](/message/compose?to=%2Fr%2Fpoeblackmarket)  
 
 * Rules  
-* [Subreddit Rules](https://www.pathofexile.com/legal/terms-of-use-and-privacy-policy)
+* [Subreddit Rules](https://www.reddit.com/r/pathofexile/wiki/rules)
 * [Path of Exile Rules](https://www.pathofexile.com/legal/terms-of-use-and-privacy-policy)  
 
 *****
@@ -35,16 +37,16 @@
 
 Event|Starts in
 :---|---:
-1 Hour No Portals Party (WHV146)|0d 1:0
-2 Hour Headhunter Solo (WHC147)|0d 5:0
-Eternal Torment (WHC148)|0d 9:0
-Winterheart (WHS149)|0d 12:0
-Descent (WHC150)|0d 17:0
-Endless Ledge (WHC151)|0d 18:0
-3 Hour Party (WHV152)|1d 0:0
-BLAMT Party (WHC153)|1d 5:0
-Alt Start Malachai Kill (WHV154)|1d 9:0
-Winterheart (WHS155)|1d 15:0
+[1 Hour No Portals Party (WHV146)](https://www.pathofexile.com)|0d 1:0
+[2 Hour Headhunter Solo (WHC147)](https://www.pathofexile.com)|0d 5:0
+[Eternal Torment (WHC148)](https://www.pathofexile.com)|0d 9:0
+[Winterheart (WHS149)](https://www.pathofexile.com)|0d 12:0
+[Descent (WHC150)](https://www.pathofexile.com)|0d 17:0
+[Endless Ledge (WHC151)](https://www.pathofexile.com)|0d 18:0
+[3 Hour Party (WHV152)](https://www.pathofexile.com)|1d 0:0
+[BLAMT Party (WHC153)](https://www.pathofexile.com)|1d 5:0
+[Alt Start Malachai Kill (WHV154)](https://www.pathofexile.com)|1d 9:0
+[Winterheart (WHS155)](https://www.pathofexile.com)|1d 15:0
 
 [Official events page](https://www.reddit.com)
 
@@ -53,7 +55,7 @@ Winterheart (WHS155)|1d 15:0
 * [Path of Exile's Main Site](http://www.pathofexile.com/)
 * [Path of Exile's Unofficial Wiki](http://pathofexile.gamepedia.com/Path_of_Exile_Wiki)
 * [/r/Pathofexile's FAQ Page](https://www.reddit.com/r/pathofexile/wiki/faq)
-* 🌟 [/r/Pathofexile's Daily Labyrinth Discussion](https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day)
+* [/r/Pathofexile's Daily Labyrinth Discussion](https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day)
 * [/r/Pathofexile's Unique Mockup CSS Guide](https://www.reddit.com/r/pathofexile/comments/2kbo60/psameta_you_can_now_displaymockup_unique_items_in/)
 * [/r/Pathofexile's Weekly Threads Archive](https://www.reddit.com/r/pathofexile/wiki/weeklythreads)
 * [GGG's Guide to Fixing Connectivity Issues](https://www.pathofexile.com/forum/view-thread/1377789/page/1#p11291009)

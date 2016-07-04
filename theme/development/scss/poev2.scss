@@ -1922,12 +1922,15 @@ div {
 		}
 		h6:first-of-type {
 			width: 270px;
-			height: 30px;
+			//height: 30px;
+			height: 41px;
 			margin: 10px auto;
 			text-align: center;
 			a {
-				width: 30px;
-				height: 30px;
+				//width: 30px;
+				width: 41px;
+				//height: 30px;
+				height: 41px;
 				border-radius: 50%;
 				display: inline-block;
 				margin: 0 2px;
@@ -1947,29 +1950,35 @@ div {
 				}
 				// Discord Link (https)
 				&[href*="https://discord.gg/0ybQUsRoo91vwONn"]:hover {
-					background-color: $bg_color_41;
+					background-color: $bg_color_90;
 				}
 				// Discord Link (http, redirects to https anyway)
 				&[href*="http://discord.gg/0ybQUsRoo91vwONn"]:hover {
 					background-color: $bg_color_42;
 				}
 				&[href*="www.facebook.com"] {
-					background-position: -30px 0;
+					//background-position: -30px 0;
+					background-position: -41px 0;
 				}
 				&[href*="twitch.tv"] {
-					background-position: -60px 0;
+					//background-position: -60px 0;
+					background-position: -82px 0;
 				}
 				&[href*="www.youtube.com"] {
-					background-position: -90px 0;
+					//background-position: -90px 0;
+					background-position: -123px 0;
 				}
-				// Discord Link (https)
+				// Discord Link
 				&[href*="https://discord.gg/0ybQUsRoo91vwONn"] {
-					background-position: -120px 0;
+					//background-position: -120px 0;
+					background-position: -164px 0;
 				}
-				// Discord Link (http, redirects to https anyway)
+				/*
 				&[href*="http://discord.gg/0ybQUsRoo91vwONn"] {
 					background-position: -150px 0;
+
 				}
+				*/
 			}
 		}
 	}
