@@ -2696,7 +2696,6 @@ body.comments-page > .content {
   height: 144px; }
 
 .submit-page #header-bottom-left {
-  top: 86px;
   left: 50%;
   margin-left: -262px; }
 
@@ -2793,18 +2792,13 @@ body.comments-page > .content {
   display: none; }
 
 /* Search Page */
-.search-page #header {
-  height: 156px; }
-  .search-page #header .pagename a {
-    display: none; }
-
-.search-page #header-bottom-left {
-  top: 56px; }
-
 .search-page .searchpane {
   padding: 0;
   position: relative;
   margin: 30px 0 0; }
+
+.combined-search-page > .content {
+  padding-top: 40px; }
 
 .raisedbox h4 {
   display: none; }
@@ -2816,7 +2810,7 @@ body.comments-page > .content {
   padding: 0; }
   .search-page #search input[type=text] {
     min-width: 320px;
-    width: 320px; }
+    width: 380px; }
 
 .combined-search-page .search-submit-button {
   position: relative;
@@ -2981,10 +2975,10 @@ body.comments-page > .content {
     text-decoration: none; }
 
 .search-page .morelink {
-  top: 384px; }
+  top: 332px; }
 
 .search-page .side {
-  margin-top: 264px; }
+  margin-top: 163px; }
 
 /* Wiki Page */
 .wiki-page .wikititle {

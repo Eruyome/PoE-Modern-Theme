@@ -3489,7 +3489,7 @@ body.comments-page > .content {
 		height: 144px;
 	}
 	#header-bottom-left {
-		top: 86px;
+		//top: 86px;
 		left: 50%;
 		margin-left: -262px;
 	}
@@ -3616,18 +3616,21 @@ body.comments-page > .content {
 .search-page {
 	#header {
 		.pagename a {
-			display: none;
+			//display: none;
 		}
-		height: 156px;
+		//height: 156px;
 	}
 	#header-bottom-left {
-		top: 56px;
+		//top: 56px;
 	}
 	.searchpane {
 		padding: 0;
 		position: relative;
 		margin: 30px 0 0;
 	}
+}
+.combined-search-page>.content {
+	padding-top: 40px;
 }
 
 .raisedbox h4 {
@@ -3641,7 +3644,7 @@ body.comments-page > .content {
 	padding: 0;
 	input[type=text] {
 		min-width: 320px;
-		width: 320px;
+		width: 380px;
 	}
 }
 
@@ -3853,10 +3856,10 @@ body.comments-page > .content {
 
 .search-page {
 	.morelink {
-		top: 384px;
+		top: 332px;
 	}
 	.side {
-		margin-top: 264px;
+		margin-top: 163px;
 	}
 }
 
