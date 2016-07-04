@@ -3223,7 +3223,7 @@ body.comments-page > .content {
   color: #a59a78; }
 
 .pageNavigator {
-  background: no-repeat -156px -160px;
+  background: url(%%spritesheet%%) no-repeat -156px -160px;
   display: block;
   height: 42px;
   width: 20px;
@@ -4113,7 +4113,7 @@ span.flair-asc-unannounced {
 
 .link.linkflair-ggg {
   border-left: 5px solid #9b0000;
-  border-radius: 5px -1;
+  border-radius: 4px;
   margin-left: -5px; }
 
 .linkflair-guide .linkflairlabel {
