@@ -1094,7 +1094,7 @@ ul.report-reasons {
       min-height: 0; }
 
 .organic-listing {
-  background-color: white !important;
+  background-color: #fff !important;
   padding: 0;
   position: relative;
   margin-bottom: 0;
@@ -1446,6 +1446,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
     color: #738491;
     font-size: 14px; }
     .nav-buttons .nextprev a {
+      display: inline-block;
       padding: 8px 16px;
       background-color: transparent;
       border: 1px solid #edf1f3;
@@ -1683,7 +1684,7 @@ div.titlebox span.number:after {
 /* Unsubscribe */
 .side .titlebox .md h5:first-of-type {
   position: absolute;
-  left: 16px;
+  left: 18px;
   height: auto;
   top: 220px;
   z-index: 100;
@@ -1737,15 +1738,15 @@ div.titlebox span.number:after {
   #search input[type=text]::-webkit-input-placeholder, #search input[type=text]:-moz-placeholder, #search input[type=text]::-moz-placeholder, #search input[type=text]:-ms-input-placeholder {
     color: #b3b3b3; }
   #search input[type=submit] {
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
     margin-left: -38px;
     border: none !important;
     border-radius: 16px;
-    background: url(%%spritesheet%%) no-repeat -64px -97px;
+    background: url(%%spritesheet%%) no-repeat -65px -99px;
     transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
     #search input[type=submit]:hover {
-      background: rgba(158, 158, 158, 0.2) url(%%spritesheet%%) no-repeat -64px -97px; }
+      background: rgba(158, 158, 158, 0.2) url(%%spritesheet%%) no-repeat -65px -99px; }
   #search #searchexpando {
     background-color: #edf1f3;
     border: none;
@@ -2075,7 +2076,8 @@ div.titlebox span.number:after {
   transform: rotate(-45deg);
   position: absolute;
   left: 4px;
-  bottom: -8px; }
+  bottom: -8px;
+  z-index: -2; }
 
 .sidecontentbox .title h1:before {
   content: "";
@@ -2087,7 +2089,8 @@ div.titlebox span.number:after {
   transform: rotate(-45deg);
   position: absolute;
   left: 4px;
-  bottom: -8px; }
+  bottom: -8px;
+  z-index: -2; }
 
 .side .titlebox .md h2:after {
   display: block;
@@ -2100,7 +2103,8 @@ div.titlebox span.number:after {
   transform: rotate(45deg);
   position: absolute;
   right: 4px;
-  bottom: -8px; }
+  bottom: -8px;
+  z-index: -2; }
 
 .sidecontentbox .title h1 {
   display: block; }
@@ -2115,7 +2119,8 @@ div.titlebox span.number:after {
     transform: rotate(45deg);
     position: absolute;
     right: 4px;
-    bottom: -8px; }
+    bottom: -8px;
+    z-index: -2; }
 
 .side #moderation_tools .title h1 {
   display: block; }
@@ -3475,7 +3480,7 @@ html.res-commentBoxes .comment {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12); }
 
 /* Shadows and cards */
-body.listing-page > .content, body.other-discussions-page > .content {
+body.listing-page > .content, body.other-discussions-page > .content, body.wiki-page > .content {
   background-color: #fff;
   padding: 16px;
   padding-top: 40px !important;
@@ -4476,7 +4481,7 @@ html[lang="dd"]{
   .res-nightmode .arrow.downmod {
     background-position: -0px -100px !important; }
   .res-nightmode .side .md h6:first-of-type a {
-    background-color: #333a4d !important; }
+    background-color: #333a4d; }
   .res-nightmode .side .titlebox .md h5:first-of-type {
     color: #fff !important; }
   .res-nightmode .thing .title.loggedin.click, .res-nightmode .thing .title.click, .res-nightmode .thing .title.loggedin, .res-nightmode .thing .title, .res-nightmode .link .entry .buttons li a.comments,
@@ -4629,6 +4634,7 @@ html[lang="dd"]{
     background-color: rgba(0, 0, 0, 0.24); }
 
 /* --- End Addon --- */
+/* --- Addon: Stash Tab Header Menu --- */
 html[lang="dd"] #header .tabmenu li a:after, html[lang="dd"] #header .tabmenu li a:before {
   content: "";
   display: block;
@@ -4651,7 +4657,7 @@ html[lang="dd"] #header .tabmenu li a {
   background-position: 0px -30px;
   background-repeat: repeat;
   margin: 0 14px;
-  color: black;
+  color: #000;
   line-height: 30px;
   height: 29px;
   z-index: 1;
@@ -4669,7 +4675,7 @@ html[lang="dd"] ul.tabmenu:after {
   display: none;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   position: absolute;
   bottom: 2px;
   left: 0px; }
@@ -4686,14 +4692,30 @@ html[lang="dd"] #header .tabmenu li.selected a:before {
   background-position: 0px -64px; }
 
 html[lang="dd"] body .content {
-  border: 1px solid grey;
   border-radius: 3px; }
+
+html[lang="dd"] body .content, html[lang="dd"] .side .titlebox, html[lang="dd"] .side .sidecontentbox, html[lang="dd"] .side .titlebox h1.redditname:before,
+html[lang="dd"] .side #search input[type=text], html[lang="dd"] #search #searchexpando, html[lang="dd"] .comments-page .side .linkinfo {
+  border: 1px solid grey; }
+
+html[lang="dd"] #search #searchexpando {
+  padding-top: 0; }
+
+html[lang="dd"] .side .titlebox h1.redditname:before {
+  border-top: none; }
 
 html[lang="dd"] #header:before {
   display: none; }
 
 html[lang="dd"] .side .titlebox .md h5:first-of-type {
-  left: 17px; }
+  left: 18px; }
+
+html[lang="dd"] body.comments-page > .content {
+  margin-top: 18px;
+  padding-top: 0 !important; }
+
+html[lang="dd"] .commentarea .thing {
+  margin-bottom: 0 !important; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li.selected a {
   background-position: 0px -223px; }
@@ -4714,5 +4736,8 @@ html[lang="dd"] .res-nightmode #header .tabmenu li a:before {
 html[lang="dd"] .res-nightmode #header .tabmenu li a:after {
   background-position: 19px -128px; }
 
-html[lang="dd"] .res-nightmode > .content {
+html[lang="dd"] .res-nightmode > .content, html[lang="dd"] .res-nightmode .side .titlebox, html[lang="dd"] .res-nightmode .side .sidecontentbox, html[lang="dd"] .res-nightmode .side .titlebox h1.redditname:before,
+html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .res-nightmode #search #searchexpando, html[lang="dd"] .res-nightmode .comments-page .side .linkinfo {
   border-color: #3b3b3b; }
+
+/* --- End Addon --- */

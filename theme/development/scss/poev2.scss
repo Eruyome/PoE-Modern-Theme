@@ -1896,6 +1896,7 @@ div {
 		color: $font_color_2;
 		font-size: 14px;
 		a {
+			display: inline-block;
 			padding: 8px 16px;
 			background-color: transparent;
 			border: 1px solid $border_color_6;
@@ -2219,7 +2220,7 @@ div.titlebox span.number:after {
 
 .side .titlebox .md h5:first-of-type {
 	position: absolute;
-	left: 16px;
+	left: 18px;
 	height: auto;
 	//top: 162px;
 	top: 220px;
@@ -2292,15 +2293,15 @@ div.titlebox span.number:after {
 			}
 		}
 		&[type=submit] {
-			height: 32px;
-			width: 32px;
+			height: 28px;
+			width: 28px;
 			margin-left: -38px;
 			border: none !important;
 			border-radius: 16px;
-			background: $url_spritesheet no-repeat -64px -97px;
+			background: $url_spritesheet no-repeat -65px -99px;
 			transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				background: $bg_color_49 $url_spritesheet no-repeat -64px -97px;
+				background: $bg_color_49 $url_spritesheet no-repeat -65px -99px;
 			}
 		}
 	}
@@ -2710,6 +2711,7 @@ div.titlebox span.number:after {
 		position: absolute;
 		left: 4px;
 		bottom: -8px;
+		z-index: -2;
 	}
 }
 
@@ -2724,6 +2726,7 @@ div.titlebox span.number:after {
 	position: absolute;
 	left: 4px;
 	bottom: -8px;
+	z-index: -2;
 }
 
 .side .titlebox .md h2:after {
@@ -2738,6 +2741,7 @@ div.titlebox span.number:after {
 	position: absolute;
 	right: 4px;
 	bottom: -8px;
+	z-index: -2;
 }
 
 .sidecontentbox .title h1 {
@@ -2753,6 +2757,7 @@ div.titlebox span.number:after {
 		position: absolute;
 		right: 4px;
 		bottom: -8px;
+		z-index: -2;
 	}
 	display: block;
 }
@@ -4495,7 +4500,7 @@ html.res-commentBoxes .comment {
 /* Shadows and cards */
 
 body {
-	&.listing-page > .content, &.other-discussions-page > .content {
+	&.listing-page > .content, &.other-discussions-page > .content, &.wiki-page > .content {
 		background-color: $bg_color_2;
 		padding: 16px;
 		padding-top: 40px !important;
@@ -5751,7 +5756,7 @@ html[lang="dd"]{
 	}
 
 	.side .md h6:first-of-type a {
-		background-color: $lineargradient_bg_02 !important;
+		background-color: $lineargradient_bg_02;
 	}
 
 	.side .titlebox .md h5:first-of-type {
@@ -6009,6 +6014,7 @@ html[lang="dd"]{
 
 /* --- End Addon --- */
 
+/* --- Addon: Stash Tab Header Menu --- */
 	html[lang="dd"] {
 
 		#header .tabmenu li a:after, #header .tabmenu li a:before {
@@ -6024,7 +6030,6 @@ html[lang="dd"]{
 		}
 
 		#header .tabmenu li a:after {
-			//background-position: 35px 0px;
 			background-position: 19px 0px;
 			width: 20px;
 			right: -14px;
@@ -6036,7 +6041,7 @@ html[lang="dd"]{
 			background-position: 0px -30px;
 			background-repeat: repeat;
 			margin: 0 14px;
-			color: black;
+			color: $font_color_18;
 			line-height: 30px;
 			height: 29px;
 			z-index: 1;
@@ -6060,11 +6065,10 @@ html[lang="dd"]{
 			display: none;
 			width: 100%;
 			height: 2px;
-			background-color: white;
+			background-color: $bg_color_2;
 			position: absolute;
 			bottom: 2px;
 			left: 0px;
-			//box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 1);
 		}
 		#header .tabmenu li.selected a {
 			padding-bottom: 0;
@@ -6078,14 +6082,31 @@ html[lang="dd"]{
 			background-position: 0px -64px;
 		}
 		body .content {
-			border: 1px solid grey;
 			border-radius: 3px;
+		}
+		body .content, .side .titlebox, .side .sidecontentbox, .side .titlebox h1.redditname:before,
+		.side #search input[type=text], #search #searchexpando, .comments-page .side .linkinfo
+		{
+			border: 1px solid $border_color_39;
+		}
+		#search #searchexpando {
+			padding-top: 0;
+		}
+		.side .titlebox h1.redditname:before {
+			border-top: none;
 		}
 		#header:before {
 			display: none;
 		}
 		.side .titlebox .md h5:first-of-type {
-			left: 17px;
+			left: 18px;
+		}
+		body.comments-page>.content {
+			margin-top: 18px;
+			padding-top: 0 !important;
+		}
+		.commentarea .thing {
+			margin-bottom: 0 !important;
 		}
 
 		//dark
@@ -6102,7 +6123,7 @@ html[lang="dd"]{
 
 			#header .tabmenu li a {
 				background-position: 0px -158px;
-				color: #d2d1d1;
+				color: $font_color_43;
 			}
 			#header .tabmenu li a:before {
 				background-position: 0px -128px;
@@ -6111,9 +6132,13 @@ html[lang="dd"]{
 				background-position: 19px -128px;
 			}
 
-			>.content {
-				border-color: #3b3b3b;
+			>.content, .side .titlebox, .side .sidecontentbox, .side .titlebox h1.redditname:before,
+			.side #search input[type=text], #search #searchexpando, .comments-page .side .linkinfo
+			{
+				border-color: $border_color_40;
 			}
 		}
 
 	}
+
+/* --- End Addon --- */
