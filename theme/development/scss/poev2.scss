@@ -688,7 +688,7 @@ body {
 	margin-top: 30px;
 }
 
-.wiki-page .content {
+.wiki-page> .content {
 	padding-top: 50px !important;
 }
 
@@ -901,7 +901,7 @@ a.thumbnail[href*="reddit.com"] {
 		margin: 0 0 0 0;
 		font-size: 13.5pt;
 		font-family: $font_stack_serif;
-		font-weight: 700;
+		//font-weight: 700;
 		transition: all 0.15s ease;
 		overflow: visible;
 	}
@@ -1148,7 +1148,7 @@ body .content .sitetable .link .title a:hover {
 		padding: 0 1px;
 		color: $font_color_12;
 		font-weight: normal;
-		font-size: 13px;
+		font-size: 11px;
 		font-family: $font_stack_sans;
 		transition: all 0.15s ease;
 	}
@@ -1912,7 +1912,7 @@ div {
 
 .side {
 	//margin: 259px 16px 108px 0;
-	margin: 197px 16px 108px 0;
+	margin: 201px 16px 108px 0;
 	padding: 0;
 	background-color: transparent;
 	width: 320px;
@@ -2222,7 +2222,7 @@ div.titlebox span.number:after {
 	margin: 0;
 	line-height: 1;
 	font-family: $font_stack_serif;
-	font-weight: 700;
+	//font-weight: 700;
 	font-size: 16px;
 }
 
@@ -2523,7 +2523,7 @@ div.titlebox span.number:after {
 		//display: block;
 		display: none;
 		font-size: 18px;
-		font-weight: 700;
+		//font-weight: 700;
 		line-height: 24px;
 		color: $font_color_3;
 		font-family: $font_stack_serif;
@@ -2638,7 +2638,7 @@ div.titlebox span.number:after {
 			border: none;
 			font-size: 15px;
 			font-family: $font_stack_serif;
-			font-weight: 700;
+			//font-weight: 700;
 			background: $lineargradient_bg;
 			background: -moz-linear-gradient(top, $lineargradient_01);
 			background: -webkit-linear-gradient(top, $lineargradient_01);
@@ -2661,7 +2661,7 @@ div.titlebox span.number:after {
 	border: none;
 	font-size: 15px;
 	font-family: $font_stack_serif;
-	font-weight: 700;
+	//font-weight: 700;
 	background: $lineargradient_bg;
 	background: -moz-linear-gradient(top, $lineargradient_01);
 	background: -webkit-linear-gradient(top, $lineargradient_01);
@@ -2681,7 +2681,7 @@ div.titlebox span.number:after {
 		border: none;
 		font-size: 15px;
 		font-family: $font_stack_serif;
-		font-weight: 700;
+		//font-weight: 700;
 		background: $lineargradient_bg;
 		background: -moz-linear-gradient(top, $lineargradient_01);
 		background: -webkit-linear-gradient(top, $lineargradient_01);
@@ -3307,11 +3307,11 @@ body.comments-page > .content {
 
 .tagline .moderator, .green {
 	color: $font_color_13 !important;
-	font-weight: 700;
+	//font-weight: 700;
 }
 
 .tagline .submitter {
-	font-weight: 700;
+	//font-weight: 700;
 	color: $font_color_0;
 }
 
@@ -3332,7 +3332,7 @@ body.comments-page > .content {
 .comment {
 	.score {
 		font-size: inherit;
-		font-weight: 700;
+		//font-weight: 700;
 		color: $font_color_2;
 		&:before {
 			content: "• ";
@@ -3527,7 +3527,7 @@ body.comments-page > .content {
 				text-align: center;
 				color: $font_color_7;
 				text-transform: uppercase;
-				font-weight: 700;
+				//font-weight: 700;
 				transition: all 0.15s ease;
 				font-size: 16px;
 				border: none;
@@ -4492,12 +4492,20 @@ body {
 	}
 }
 
-.comments-page .link, .commentarea > .sitetable > .comment, #images, .combined-search-page > .content, .sponsorshipbox, .commentarea > .usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
+.comments-page .link, .commentarea > .sitetable > .comment, #images, .combined-search-page > .content,
+.sponsorshipbox, .commentarea > .usertext, .stylesheet-customize-container .pretty-form,
+.side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo,
+#ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield,
+.login-form-side
+{
 	background-color: $bg_color_2;
-	//padding: 16px;
-	padding: 40px 16px 16px 16px;
+	padding: 16px;
+	//padding: 40px 16px 16px 16px;
 	border-radius: 2px;
 	box-shadow: $boxshadow_05;
+}
+.comments-page .link {
+	padding: 40px 16px 16px 16px;
 }
 .side .titlebox {
 	padding-top: 16px;
