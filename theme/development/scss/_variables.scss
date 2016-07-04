@@ -27,6 +27,7 @@ $url_daily_lab:		url(%%daily-lab%%);
 $url_submit_image:	url(%%submit-image%%);
 $url_submit_image_dark:url(%%submit-image-dark%%);
 $url_checkbox:		url(%%check%%);
+$url_stashtab:		url(%%stash%%);
 
 
 // font-colors
@@ -72,7 +73,8 @@ $font_color_41: #7f7f7f;
 $font_color_42: #88F;
 
 // font-stacks
-$font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
+//$font_stack_serif: #{Fontin, Georgia, 'URW Bookman L', Verdana, sans-serif};
+$font_stack_serif: #{Fontin, 'DejaVu Sans', Verdana, sans-serif};
 $font_stack_sans: #{Verdana, 'DejaVu Sans', sans-serif};
 
 // background-colors
