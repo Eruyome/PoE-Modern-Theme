@@ -1515,7 +1515,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
     height: 70px;
     width: 49px;
     font-size: 0;
-    right: 146px;
+    right: 152px;
     background: url(%%daily-lab%%) 1px 0; }
     .side .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:hover {
       background-position: -49px 0; }
@@ -1562,7 +1562,8 @@ div.commentarea div.RES-keyNav-activeElement .md {
 			background-position: -5px -6px;
 			*/ }
     .side .titlebox h1.redditname a {
-      color: #333; }
+      color: #333;
+      display: none; }
   .side input[type="checkbox"], .side #rem-login-main, .side .side .titlebox h1.redditname + div:before {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1630,7 +1631,7 @@ div.titlebox span.number:after {
     margin-right: 8px;
     background: url(%%spritesheet%%) -64px -36px; }
   .titlebox .users-online .number:after {
-    content: " Exiles in town."; }
+    content: " Exiles in town"; }
 
 .titlelebox .word {
   display: none; }
@@ -4620,9 +4621,8 @@ html[lang="dd"]{
     border: 1px solid #1a1a1a;
     color: #ccc !important; }
     .res-nightmode .RESshortcutside:hover, .res-nightmode .RESDashboardToggle:hover {
-      color: #fff !important; }
-  .res-nightmode .res .RESDashboardToggle:hover, .res-nightmode .res .RESshortcutside:hover {
-    background-color: transparent; }
+      color: #fff !important;
+      background-color: #1f1f1f; }
   .res-nightmode .footer-parent {
     background-color: #1a1a1a !important;
     box-shadow: 0 1px 4px 0 rgba(255, 250, 250, 0.26); }
@@ -4741,3 +4741,81 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
   border-color: #3b3b3b; }
 
 /* --- End Addon --- */
+/* --- Addon: Subscribe Button --- */
+.titlebox .fancy-toggle-button {
+  display: inline-block;
+  margin-right: 0;
+  position: initial;
+  font-size: 10px;
+  font-family: Verdana, DejaVu Sans, sans-serif;
+  margin-left: 0;
+  top: initial;
+  border-radius: 5px;
+  box-shadow: inset 0 0 7px 5px #f1f0eb;
+  border: 1px solid #e5e3da; }
+
+.titlebox .fancy-toggle-button .active {
+  width: 212px;
+  margin: 0;
+  display: block;
+  text-transform: uppercase; }
+
+.titlebox .fancy-toggle-button .active.remove {
+  background-color: transparent;
+  color: #4d5763;
+  margin-left: 0;
+  text-transform: uppercase; }
+  .titlebox .fancy-toggle-button .active.remove:hover {
+    background-color: transparent; }
+
+.titlebox .fancy-toggle-button .active.add {
+  color: #4d5763;
+  background-color: transparent; }
+  .titlebox .fancy-toggle-button .active.add:hover {
+    color: #fff; }
+
+.res-nightmode .titlebox .fancy-toggle-button {
+  border: 1px solid #1a1a1a !important; }
+
+.res-nightmode .titlebox .fancy-toggle-button .active.remove {
+  background-color: #1a1a1a !important;
+  box-shadow: inset 0 0 7px 2px #151515 !important;
+  border: none;
+  color: #ccc !important; }
+  .res-nightmode .titlebox .fancy-toggle-button .active.remove:hover {
+    color: #fff !important;
+    background-color: #1f1f1f !important; }
+
+.res-nightmode .titlebox .fancy-toggle-button .active.add {
+  background-color: #333a4d;
+  color: #ccc !important; }
+  .res-nightmode .titlebox .fancy-toggle-button .active.add:hover {
+    color: #fff !important; }
+
+/* --- End Addon --- */
+/* --- Addon: Users Info --- */
+.side .titlebox .users-online {
+  top: 260px;
+  right: 0;
+  padding-top: 0;
+  margin-right: 32px; }
+
+.titlebox span.subscribers {
+  top: 260px; }
+
+.side .titlebox #flair_enabled {
+  margin-top: 5px !important; }
+
+.side .titlebox .users-online, .titlebox span.subscribers {
+  width: 105px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 100;
+  position: absolute;
+  color: #333;
+  font-weight: 700; }
+
+.titlebox .users-online .number:after, div.titlebox span.number:after {
+  display: block;
+  font-size: 11px;
+  font-weight: 500; }

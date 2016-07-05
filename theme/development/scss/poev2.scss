@@ -1998,7 +1998,7 @@ div {
 		height: 70px;
 		width: 49px;
 		font-size: 0;
-		right: 146px;
+		right: 152px;
 		background: $url_daily_lab 1px 0;
 		&:hover {
 			background-position: -49px 0;
@@ -2055,6 +2055,7 @@ div {
 		font-family: $font_stack_serif;
 		a {
 			color: $font_color_20;
+			display: none;
 		}
 	}
 
@@ -2146,7 +2147,7 @@ div.titlebox span.number:after {
 		background: $url_spritesheet -64px -36px;
 	}
 	&:after {
-		content: " Exiles in town.";
+		content: " Exiles in town";
 	}
 }
 
@@ -5988,11 +5989,8 @@ html[lang="dd"]{
 		color: $font_color_40 !important;
 		&:hover {
 			color: $font_color_1 !important;
+			background-color: lighten(darken($bg_color_86, 0%),2%);
 		}
-	}
-
-	.res .RESDashboardToggle:hover, .res .RESshortcutside:hover {
-		background-color: transparent;
 	}
 
 	.footer-parent {
@@ -6142,3 +6140,110 @@ html[lang="dd"]{
 	}
 
 /* --- End Addon --- */
+
+
+/* --- Addon: Subscribe Button --- */
+
+.titlebox .fancy-toggle-button {
+	display: inline-block;
+	margin-right: 0;
+	position: initial;
+	font-size: 10px;
+	font-family: $font_stack_sans;
+	margin-left: 0;
+	top: initial;
+
+	border-radius: 5px;
+	box-shadow: inset 0 0 7px 5px #f1f0eb;
+	border: 1px solid #e5e3da;
+
+	// not done
+}
+
+.titlebox .fancy-toggle-button .active {
+	width: 212px;
+	margin: 0;
+	display: block;
+	text-transform: uppercase;
+}
+
+.titlebox .fancy-toggle-button .active.remove {
+	background-color: transparent;
+	color: #4d5763;
+	margin-left: 0;
+	text-transform: uppercase;
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.titlebox .fancy-toggle-button .active.add {
+	color: #4d5763;
+	background-color: transparent;
+	&:hover {
+		color: $font_color_1;
+	}
+}
+
+//dark
+.res-nightmode {
+	.titlebox .fancy-toggle-button {
+		border: 1px solid darken($bg_color_86, 0%) !important;
+	}
+	.titlebox .fancy-toggle-button .active.remove {
+		background-color: darken($bg_color_86, 0%) !important;
+		box-shadow: $boxshadow_24 !important;
+		border: none;
+		color: $font_color_40 !important;
+		&:hover {
+			color: $font_color_1 !important;
+			background-color: lighten(darken($bg_color_86, 0%),2%) !important;
+		}
+	}
+
+	.titlebox .fancy-toggle-button .active.add {
+		background-color: $lineargradient_bg_02;
+		//box-shadow: $boxshadow_24 !important;
+		color: $font_color_40 !important;
+		&:hover {
+			color: $font_color_1 !important;
+		}
+	}
+
+}
+
+/* --- End Addon --- */
+
+
+/* --- Addon: Users Info --- */
+
+.side .titlebox .users-online {
+	top: 260px;
+	right: 0;
+	padding-top: 0;
+	margin-right: 32px;
+}
+
+.titlebox span.subscribers {
+	top: 260px;
+}
+
+.side .titlebox #flair_enabled {
+	margin-top: 5px !important;
+}
+
+.side .titlebox .users-online, .titlebox span.subscribers {
+	width: 105px;
+	text-align: center;
+	font-size: 14px;
+	z-index: 100;
+	position: absolute;
+	color: $font_color_20;
+	font-weight: 700;
+}
+
+.titlebox .users-online .number:after, div.titlebox span.number:after {
+	display: block;
+	font-size: 11px;
+	font-weight: 500;
+}
