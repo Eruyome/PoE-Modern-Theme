@@ -811,7 +811,7 @@ body .content .sitetable .link .title a:hover {
 
 /* Submitted X ago by.. */
 .entry .tagline {
-  margin-top: 3px;
+  margin-top: 2px;
   color: #98abba;
   font-size: 12px;
   font-family: Verdana, DejaVu Sans, sans-serif; }
@@ -3026,7 +3026,8 @@ body.comments-page > .content {
   background-color: #fff;
   padding: 8px 0; }
   .wiki-page .wiki-page-content .wiki > .toc > ul {
-    border: none; }
+    border: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
   .wiki-page .wiki-page-content .wiki.md {
     color: #292f34; }
     .wiki-page .wiki-page-content .wiki.md h2 {
@@ -4588,6 +4589,10 @@ html[lang="dd"]{
   .res-nightmode .wiki-page .pageactions, .res-nightmode .wiki-page .wikititle {
     background-color: #333a4d !important;
     color: #fff !important; }
+  .res-nightmode .wiki-page .wiki-page-content .wiki.md, .res-nightmode .wiki-page .wiki-page-content .wiki.md h2 {
+    color: #fff !important; }
+  .res-nightmode .wiki-page .wiki-page-content hr {
+    border-color: #262626; }
   .res-nightmode body .content input[type=text], .res-nightmode .search-page #search input[type=text] {
     color: #fff !important;
     border: 1px solid #333a4d !important; }
@@ -4696,7 +4701,7 @@ html[lang="dd"] body .content {
 
 html[lang="dd"] body .content, html[lang="dd"] .side .titlebox, html[lang="dd"] .side .sidecontentbox, html[lang="dd"] .side .titlebox h1.redditname:before,
 html[lang="dd"] .side #search input[type=text], html[lang="dd"] #search #searchexpando, html[lang="dd"] .comments-page .side .linkinfo {
-  border: 1px solid grey; }
+  border: 1px solid #bfbfbf; }
 
 html[lang="dd"] #search #searchexpando {
   padding-top: 0; }
@@ -4766,7 +4771,8 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
   margin-left: 0;
   text-transform: uppercase; }
   .titlebox .fancy-toggle-button .active.remove:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #24a0ed; }
 
 .titlebox .fancy-toggle-button .active.add {
   color: #4d5763;
@@ -4819,3 +4825,47 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
   display: block;
   font-size: 11px;
   font-weight: 500; }
+
+/* --- End Addon --- */
+/* --- Addon: Header Area (Non RES) Fix --- */
+.side .titlebox .md h5:first-of-type {
+  z-index: 0; }
+
+#header-bottom-left {
+  z-index: 0; }
+
+#sr-header-area {
+  z-index: 0; }
+
+/* --- End Addon --- */
+/* --- Addon: Nightmode Link --- */
+.side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"] {
+  background: url(%%spritesheet%%) -117px -182px;
+  height: 44px;
+  width: 44px;
+  display: block;
+  font-size: 0;
+  position: absolute;
+  top: 420px;
+  right: 17px;
+  border-radius: 50%; }
+  .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"]:hover {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+    .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"]:hover:after {
+      content: "Night";
+      width: 40px;
+      height: 19px;
+      position: absolute;
+      top: 14px;
+      color: black;
+      z-index: 100;
+      font-size: 10px;
+      right: 2px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 4px #738491, -1px -1px 4px #738491; }
+
+.res-nightmode .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"] {
+  display: none; }
+
+/* --- End Addon --- */
