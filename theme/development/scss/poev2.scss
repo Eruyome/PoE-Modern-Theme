@@ -2028,6 +2028,9 @@ div {
 		display: inline;
 		font-size: 11px;
 		background: none;
+		&:after {
+			display: none;
+		}
 	}
 
 	.spacer {
@@ -2098,22 +2101,21 @@ div {
 		background: $bg_color_1;
 	}
 
-	.titlebox #flair_enabled:after {
-		font-size: 13px;
-		content: "Show my flair";
-		color: $font-color_0;
-		font-weight: 700;
-		display: inline-block;
-		width: 100px;
-		margin-left: 20px;
-		line-height: 18px;
+	form.toggle.flairtoggle {
+		position: relative;
+		font-size: 0;
+		&:after {
+			content: "Show my flair";
+			display: inline-block;
+			position: absolute;
+			left: 107px;
+			color: $font-color_0;
+			font-weight: 700;
+			font-size: 13px;
+		}
 	}
 	.titlebox #flair_enabled {
 		margin-right: 102px;
-	}
-
-	.titlebox form.flairtoggle {
-		font-size: 0;
 	}
 
 	.flairtoggle, #subButtons-poecss, .res-sr-style-toggle, .titlebox .users-online,
@@ -5423,29 +5425,12 @@ html .RES-keyNav-activeElement {
 }
 
 @media only screen and (max-width: 1200px) {
-	.side {
-		margin-right: 10px;
-		.titlebox .md h5 a {
-			&[href^="https://dd.reddit.com/r/poeblackmarket/"], &[href^="https://www.reddit.com/r/poeblackmarket/"] {
-				right: 40px;
-			}
-		}
-	}
-	body > .content {
-		//margin: 16px 346px 64px 10px;
-	}
 	#header:before {
 		right: 346px;
 	}
 }
 
 @media only screen and (max-width: 938px) {
-	.side .titlebox .md h5 a {
-		&[href^="https://dd.reddit.com/r/poeblackmarket/"], &[href^="https://www.reddit.com/r/poeblackmarket/"] {
-			right: initial;
-			left: 800px;
-		}
-	}
 	a[href^="https://pathofexile.com/shop/"] {
 		right: initial;
 		left: 589px;
@@ -5505,10 +5490,7 @@ textarea.title {
 	border: 0 ;
 	height: 53px ;
 	width: 419px ;
-	background: $bg_color_41 ;
-	background-image: $url_unique_item_left, $url_unique_item_right, $url_unique_item_middle ;
-	background-position: left 0,right 0,center 0;
-	background-repeat: no-repeat,no-repeat,repeat;
+	background: $bg_color_41 $url_unique_item_left, $url_unique_item_right, $url_unique_item_middle no-repeat, no-repeat, repeat left 0, right 0, center 0;
 	line-height: 22px ;
 	font-size: 20px ;
 	color: $font_color_34 ;
@@ -5828,7 +5810,8 @@ html[lang="dd"]{
 	.comment .flat-list li a[onclick*=reply], .tagline .submitter, .tagline .submitter:visited {
 		color: $font_color_37 !important;
 	}
-	.side .md a:visited, .side .md>ul:first-of-type li:first-of-type, .side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
+	.side .md a:visited, .side .md>ul:first-of-type li:first-of-type,
+	.side .md>ul:nth-of-type(2) li:first-of-type, .side .md>ul:nth-of-type(3) li
 	{
 		color: $font_color_37 !important;
 	}
@@ -5988,7 +5971,7 @@ html[lang="dd"]{
 
 	#search #searchexpando {
 		background-color: $lineargradient_bg_02;
-		border-color: lighten(invert($bg_color_15),10%) !important;;
+		border-color: lighten(invert($bg_color_15),10%) !important;
 	}
 
 	input[type="checkbox"], #rem-login-main, .side .titlebox h1.redditname+div:before {
@@ -5999,7 +5982,7 @@ html[lang="dd"]{
 		background: $bg_color_1;
 	}
 
-	.titlebox #flair_enabled:after {
+	form.toggle.flairtoggle:after {
 		color: $font_color_37;
 	}
 
@@ -6062,14 +6045,14 @@ html[lang="dd"]{
 		}
 
 		#header .tabmenu li a:after {
-			background-position: 19px 0px;
+			background-position: 19px 0;
 			width: 20px;
 			right: -14px;
 			left: initial;
 		}
 
 		#header .tabmenu li a {
-			background: $url_stashtab repeat 0px -30px;
+			background: $url_stashtab repeat 0 -30px;
 			margin: 0 14px;
 			color: $font_color_18;
 			line-height: 30px;
@@ -6083,7 +6066,7 @@ html[lang="dd"]{
 			margin-top: 146px;
 		}
 		#header .tabmenu {
-			margin-top: 0px;
+			margin-top:0;
 			height: 27px;
 			line-height: 30px;
 			margin-left: 3px;
@@ -6097,18 +6080,18 @@ html[lang="dd"]{
 			background-color: $bg_color_2;
 			position: absolute;
 			bottom: 2px;
-			left: 0px;
+			left:0;
 		}
 		#header .tabmenu li.selected a {
 			padding-bottom: 0;
 			border: none;
-			background-position: 0px -94px;
+			background-position:0 -94px;
 		}
 		#header .tabmenu li.selected a:after {
 			background-position: 20px -64px;
 		}
 		#header .tabmenu li.selected a:before {
-			background-position: 0px -64px;
+			background-position:0 -64px;
 		}
 		body .content {
 			border-radius: 3px;
@@ -6141,21 +6124,21 @@ html[lang="dd"]{
 		//dark
 		.res-nightmode {
 			#header .tabmenu li.selected a {
-				background-position: 0px -223px;
+				background-position:0 -223px;
 			}
 			#header .tabmenu li.selected a:after {
 				background-position: 19px -193px;
 			}
 			#header .tabmenu li.selected a:before {
-				background-position: 0px -193px;
+				background-position:0 -193px;
 			}
 
 			#header .tabmenu li a {
-				background-position: 0px -158px;
+				background-position:0 -158px;
 				color: $font_color_43;
 			}
 			#header .tabmenu li a:before {
-				background-position: 0px -128px;
+				background-position: 0 -128px;
 			}
 			#header .tabmenu li a:after {
 				background-position: 19px -128px;
@@ -6183,12 +6166,9 @@ html[lang="dd"]{
 	font-family: $font_stack_sans;
 	margin-left: 0;
 	top: initial;
-
 	border-radius: 5px;
 	box-shadow: inset 0 0 7px 5px #f1f0eb;
 	border: 1px solid #e5e3da;
-
-	// not done
 }
 
 .titlebox .fancy-toggle-button .active {
@@ -6235,7 +6215,6 @@ html[lang="dd"]{
 
 	.titlebox .fancy-toggle-button .active.add {
 		background-color: $lineargradient_bg_02;
-		//box-shadow: $boxshadow_24 !important;
 		color: $font_color_40 !important;
 		&:hover {
 			color: $font_color_1 !important;
@@ -6314,7 +6293,7 @@ html[lang="dd"]{
 	&:hover {
 		box-shadow: $boxshadow_05;
 		&:after {
-			content: "Night";
+			content: "NIGHT";
 			width: 40px;
 			height: 19px;
 			position: absolute;
@@ -6324,7 +6303,6 @@ html[lang="dd"]{
 			font-size: 10px;
 			right: 2px;
 			text-align: center;
-			text-transform: uppercase;
 			text-shadow: 1px 1px 4px $bg_color_23, -1px -1px 4px $bg_color_23;
 		}
 	}
@@ -6335,7 +6313,6 @@ html[lang="dd"]{
 {
 	display: none;
 }
-
 
 @media only screen and (max-width: 938px) {
 	.side .titlebox .users-online {

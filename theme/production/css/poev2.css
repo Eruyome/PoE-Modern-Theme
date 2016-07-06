@@ -1540,6 +1540,8 @@ div.commentarea div.RES-keyNav-activeElement .md {
     display: inline;
     font-size: 11px;
     background: none; }
+    .side .md li a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:after {
+      display: none; }
   .side .spacer {
     margin: 0 0 16px 0; }
   .side:before {
@@ -1596,19 +1598,19 @@ div.commentarea div.RES-keyNav-activeElement .md {
     padding: 0; }
   .side input[type="checkbox"]:not(:checked), .side input[type=radio]:not(:checked), .side #rem-login-main:not(:checked) {
     background: #0079d3; }
-  .side .titlebox #flair_enabled:after {
-    font-size: 13px;
-    content: "Show my flair";
-    color: #24a0ed;
-    font-weight: 700;
-    display: inline-block;
-    width: 100px;
-    margin-left: 20px;
-    line-height: 18px; }
+  .side form.toggle.flairtoggle {
+    position: relative;
+    font-size: 0; }
+    .side form.toggle.flairtoggle:after {
+      content: "Show my flair";
+      display: inline-block;
+      position: absolute;
+      left: 107px;
+      color: #24a0ed;
+      font-weight: 700;
+      font-size: 13px; }
   .side .titlebox #flair_enabled {
     margin-right: 102px; }
-  .side .titlebox form.flairtoggle {
-    font-size: 0; }
   .side .flairtoggle, .side #subButtons-poecss, .side .res-sr-style-toggle, .side .titlebox .users-online,
   .side .titlebox .tagline {
     text-align: center; }
@@ -4219,17 +4221,10 @@ html .RES-keyNav-activeElement {
     display: none; }
 
 @media only screen and (max-width: 1200px) {
-  .side {
-    margin-right: 10px; }
-    .side .titlebox .md h5 a[href^="https://dd.reddit.com/r/poeblackmarket/"], .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
-      right: 40px; }
   #header:before {
     right: 346px; } }
 
 @media only screen and (max-width: 938px) {
-  .side .titlebox .md h5 a[href^="https://dd.reddit.com/r/poeblackmarket/"], .side .titlebox .md h5 a[href^="https://www.reddit.com/r/poeblackmarket/"] {
-    right: initial;
-    left: 800px; }
   a[href^="https://pathofexile.com/shop/"] {
     right: initial;
     left: 589px; }
@@ -4277,10 +4272,7 @@ textarea.title {
   border: 0;
   height: 53px;
   width: 419px;
-  background: #000;
-  background-image: url(%%unique-item-left%%), url(%%unique-item-right%%), url(%%unique-item-middle%%);
-  background-position: left 0,right 0,center 0;
-  background-repeat: no-repeat,no-repeat,repeat;
+  background: #000 url(%%unique-item-left%%), url(%%unique-item-right%%), url(%%unique-item-middle%%) no-repeat, no-repeat, repeat left 0, right 0, center 0;
   line-height: 22px;
   font-size: 20px;
   color: #af6025;
@@ -4527,7 +4519,8 @@ html[lang="dd"]{
     color: #DFCF99 !important; }
   .res-nightmode .comment .flat-list li a[onclick*=reply], .res-nightmode .tagline .submitter, .res-nightmode .tagline .submitter:visited {
     color: #DFCF99 !important; }
-  .res-nightmode .side .md a:visited, .res-nightmode .side .md > ul:first-of-type li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li {
+  .res-nightmode .side .md a:visited, .res-nightmode .side .md > ul:first-of-type li:first-of-type,
+  .res-nightmode .side .md > ul:nth-of-type(2) li:first-of-type, .res-nightmode .side .md > ul:nth-of-type(3) li {
     color: #DFCF99 !important; }
   .res-nightmode .side #moderation_tools .title h1, .res-nightmode .side .titlebox .md h2, .res-nightmode .sidecontentbox .title h1 {
     background: #333a4d;
@@ -4631,7 +4624,7 @@ html[lang="dd"]{
     background: #0079d3 url(%%check%%) 2px 2px/11px no-repeat; }
   .res-nightmode input[type="checkbox"]:not(:checked), .res-nightmode input[type=radio]:not(:checked), .res-nightmode #rem-login-main:not(:checked) {
     background: #0079d3; }
-  .res-nightmode .titlebox #flair_enabled:after {
+  .res-nightmode form.toggle.flairtoggle:after {
     color: #DFCF99; }
   .res-nightmode #rem-login-main, .res-nightmode .res-nightmode .side .titlebox h1.redditname + div:before, .res-nightmode input[type=checkbox],
   .res-nightmode .side .spacer input[type="checkbox"] {
@@ -4671,13 +4664,13 @@ html[lang="dd"] #header .tabmenu li a:after, html[lang="dd"] #header .tabmenu li
   background: url(%%stash%%); }
 
 html[lang="dd"] #header .tabmenu li a:after {
-  background-position: 19px 0px;
+  background-position: 19px 0;
   width: 20px;
   right: -14px;
   left: initial; }
 
 html[lang="dd"] #header .tabmenu li a {
-  background: url(%%stash%%) repeat 0px -30px;
+  background: url(%%stash%%) repeat 0 -30px;
   margin: 0 14px;
   color: #000;
   line-height: 30px;
@@ -4690,7 +4683,7 @@ html[lang="dd"] #header-img.default-header {
   margin-top: 146px; }
 
 html[lang="dd"] #header .tabmenu {
-  margin-top: 0px;
+  margin-top: 0;
   height: 27px;
   line-height: 30px;
   margin-left: 3px; }
@@ -4703,18 +4696,18 @@ html[lang="dd"] ul.tabmenu:after {
   background-color: #fff;
   position: absolute;
   bottom: 2px;
-  left: 0px; }
+  left: 0; }
 
 html[lang="dd"] #header .tabmenu li.selected a {
   padding-bottom: 0;
   border: none;
-  background-position: 0px -94px; }
+  background-position: 0 -94px; }
 
 html[lang="dd"] #header .tabmenu li.selected a:after {
   background-position: 20px -64px; }
 
 html[lang="dd"] #header .tabmenu li.selected a:before {
-  background-position: 0px -64px; }
+  background-position: 0 -64px; }
 
 html[lang="dd"] body .content {
   border-radius: 3px; }
@@ -4743,20 +4736,20 @@ html[lang="dd"] .commentarea .thing {
   margin-bottom: 0 !important; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li.selected a {
-  background-position: 0px -223px; }
+  background-position: 0 -223px; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li.selected a:after {
   background-position: 19px -193px; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li.selected a:before {
-  background-position: 0px -193px; }
+  background-position: 0 -193px; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li a {
-  background-position: 0px -158px;
+  background-position: 0 -158px;
   color: #d2d1d1; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li a:before {
-  background-position: 0px -128px; }
+  background-position: 0 -128px; }
 
 html[lang="dd"] .res-nightmode #header .tabmenu li a:after {
   background-position: 19px -128px; }
@@ -4872,7 +4865,7 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
   .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"]:hover {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
     .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"]:hover:after {
-      content: "Night";
+      content: "NIGHT";
       width: 40px;
       height: 19px;
       position: absolute;
@@ -4882,7 +4875,6 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
       font-size: 10px;
       right: 2px;
       text-align: center;
-      text-transform: uppercase;
       text-shadow: 1px 1px 4px #738491, -1px -1px 4px #738491; }
 
 .res-nightmode .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"] {
