@@ -2493,7 +2493,7 @@ div.titlebox span.number:after {
 	height: 51px;
 	text-align: center;
 	border-radius: 5px;
-	right: 84px;
+	right: 75px;
 	top: 412px;
 	width: 188px;
 	z-index: 9999;
@@ -6069,24 +6069,21 @@ html[lang="dd"]{
 		}
 
 		#header .tabmenu li a {
-			background: $url_stashtab;
-			background-position: 0px -30px;
-			background-repeat: repeat;
+			background: $url_stashtab repeat 0px -30px;
 			margin: 0 14px;
 			color: $font_color_18;
 			line-height: 30px;
 			height: 29px;
 			z-index: 1;
 			padding-top: 2px;
-
-			text-shadow: 0 -1px 2px rgba(158, 158, 155, 0.2),
-				1px 0 2px hsla(46, 3%, 73%, 0.2),
-				0 1px 2px hsla(46, 3%, 73%, 0.2),
-				-1px 0 2px hsla(46, 3%, 73%, 0.2);
+			text-shadow: $text_shadow_10;
 		}
 
+		#header-img.default-header {
+			margin-top: 146px;
+		}
 		#header .tabmenu {
-			margin-top: 23px;
+			margin-top: 0px;
 			height: 27px;
 			line-height: 30px;
 			margin-left: 3px;
@@ -6304,7 +6301,7 @@ html[lang="dd"]{
 
 .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"]
 {
-	background: $url_spritesheet -117px -182px;
+	background: $url_spritesheet -117px -180px;
 	height: 44px;
 	width: 44px;
 	display: block;

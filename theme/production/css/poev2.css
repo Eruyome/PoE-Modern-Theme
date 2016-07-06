@@ -1907,7 +1907,7 @@ div.titlebox span.number:after {
   height: 51px;
   text-align: center;
   border-radius: 5px;
-  right: 84px;
+  right: 75px;
   top: 412px;
   width: 188px;
   z-index: 9999;
@@ -4677,9 +4677,7 @@ html[lang="dd"] #header .tabmenu li a:after {
   left: initial; }
 
 html[lang="dd"] #header .tabmenu li a {
-  background: url(%%stash%%);
-  background-position: 0px -30px;
-  background-repeat: repeat;
+  background: url(%%stash%%) repeat 0px -30px;
   margin: 0 14px;
   color: #000;
   line-height: 30px;
@@ -4688,8 +4686,11 @@ html[lang="dd"] #header .tabmenu li a {
   padding-top: 2px;
   text-shadow: 0 -1px 2px rgba(158, 158, 155, 0.2), 1px 0 2px rgba(188, 187, 184, 0.2), 0 1px 2px rgba(188, 187, 184, 0.2), -1px 0 2px rgba(188, 187, 184, 0.2); }
 
+html[lang="dd"] #header-img.default-header {
+  margin-top: 146px; }
+
 html[lang="dd"] #header .tabmenu {
-  margin-top: 23px;
+  margin-top: 0px;
   height: 27px;
   line-height: 30px;
   margin-left: 3px; }
@@ -4859,7 +4860,7 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
 /* --- End Addon --- */
 /* --- Addon: Nightmode Link --- */
 .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"] {
-  background: url(%%spritesheet%%) -117px -182px;
+  background: url(%%spritesheet%%) -117px -180px;
   height: 44px;
   width: 44px;
   display: block;
