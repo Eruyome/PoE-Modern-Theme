@@ -1520,6 +1520,21 @@ div.commentarea div.RES-keyNav-activeElement .md {
     background: url(%%daily-lab%%) 1px 0; }
     .side .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:hover {
       background-position: -49px 0; }
+      .side .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:hover:after {
+        text-shadow: 0px 0px 3px #5fb791, 0px 0px 3px #5fb791, 0px 0px 3px #5fb791;
+        color: #fff; }
+    .side .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:after {
+      content: "Daily";
+      position: absolute;
+      width: 49px;
+      height: 20px;
+      top: 47px;
+      font-size: 16px;
+      text-align: center;
+      color: #333;
+      font-family: Fontin, DejaVu Sans, Verdana, sans-serif;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 3px #bdbdbd, 0px 0px 3px #bdbdbd, 0px 0px 3px #bdbdbd; }
   .side .md li a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
     position: initial;
     display: inline;
@@ -4638,6 +4653,9 @@ html[lang="dd"]{
       color: #ccc; }
   .res-nightmode .side .md tbody tr:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.24); }
+  .res-nightmode .md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"]:after {
+    color: #ccc;
+    text-shadow: none; }
 
 /* --- End Addon --- */
 /* --- Addon: Stash Tab Header Menu --- */
@@ -4881,6 +4899,6 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
 /* --- Addon: Responsive Header Menu Entry Display --- */
 @media only screen and (min-width: 1100px) {
   .listing-page .tabmenu li > a[href$="/controversial/"], .wiki-page .tabmenu li > a[href$="/controversial/"] {
-    display: block !important; } }
+    display: inline-block !important; } }
 
 /* --- End Addon --- */

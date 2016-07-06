@@ -2003,7 +2003,25 @@ div {
 		background: $url_daily_lab 1px 0;
 		&:hover {
 			background-position: -49px 0;
+			&:after {
+				text-shadow: $text_shadow_09;
+				color: #fff;
+			}
 		}
+		&:after {
+			content: "Daily";
+			position: absolute;
+			width: 49px;
+			height: 20px;
+			top: 47px;
+			font-size: 16px;
+			text-align: center;
+			color: $font_color_20;
+			font-family: $font_stack_serif;
+			text-transform: uppercase;
+			text-shadow: $text_shadow_08;
+		}
+
 	}
 	.md li a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
 		position: initial;
@@ -6015,6 +6033,14 @@ html[lang="dd"]{
 	.side .md tbody tr:nth-child(odd) {
 		background-color: $bg_color_89;
 	}
+
+	.md a[href*="https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day"] {
+		&:after {
+			color: $font_color_40;
+			text-shadow: none;
+		}
+	}
+
 }
 
 
@@ -6332,7 +6358,7 @@ html[lang="dd"]{
 @media only screen and (min-width: 1100px) {
 	.listing-page .tabmenu li > a[href$="/controversial/"], .wiki-page .tabmenu li > a[href$="/controversial/"]
 	{
-		display: block !important;
+		display: inline-block !important;
 	}
 }
 
