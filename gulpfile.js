@@ -5,6 +5,9 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-cssmin'),
 	rename = require('gulp-rename');
 
+	var gitmodified = require('gulp-gitmodified');
+
+
 var imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant');
 
@@ -23,12 +26,14 @@ gulp.task('images', function() {
 gulp.task('styles', function() {
 	/* Compile nested (adding @charset "utf-8") */
 	gulp.src('./theme/development/scss/*.scss')
+		.pipe(gitmodified('modified'))
 		.pipe(sass({outputStyle: 'nested'})
 			.on('error', sass.logError))
 		.pipe(gulp.dest('./theme/production/css/'))
 	;
 	/* Compile compressed (no added charset) */
 	gulp.src('./theme/development/scss/*.scss')
+		.pipe(gitmodified('modified'))
 		.pipe(sass({outputStyle: 'compressed'})
 			.on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
@@ -39,11 +44,10 @@ gulp.task('styles', function() {
 	;
 });
 
-/* Watch sass file changes */
-gulp.task('watch', function() {
+
+gulp.task('default', ['styles', 'images'], function() {
+	// Watch Stylesheets
 	gulp.watch('./theme/development/scss/*.scss', ['styles']);
-});
-
-gulp.task('default', ['styles', 'watch'], function() {
-
+	// Watch Images
+	gulp.watch(['./theme/development/images/**/*.+(jpg|jpeg|gif|png|svg)'], ['images']);
 });

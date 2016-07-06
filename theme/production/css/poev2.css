@@ -4860,7 +4860,7 @@ html[lang="dd"] .res-nightmode .side #search input[type=text], html[lang="dd"] .
 /* --- End Addon --- */
 /* --- Addon: Nightmode Link --- */
 .side .md a[href*="https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21"] {
-  background: url(%%spritesheet%%) -117px -180px;
+  background: url(%%spritesheet%%) -117px -184px;
   height: 44px;
   width: 44px;
   display: block;
