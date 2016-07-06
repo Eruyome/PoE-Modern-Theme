@@ -1,10 +1,12 @@
-##### Alternative header menu [here](https://dd.reddit.com/r/poecss/); Try installing [Fontin](http://www.exljbris.com/fontin.html)
+##### Alternative header menu [here](https://dd.reddit.com/r/poecss/); Try installing [Fontin](http://www.exljbris.com/fontin.html); Theme on [Github](https://github.com/Eruyome/PoE-Modern-Theme)
 
 ##### [Light Mode](https://www.reddit.com/r/poeblackmarket/)[Dark Mode](https://dd.reddit.com/r/poeblackmarket/)  
 
 ######[](https://twitter.com/pathofexile)[](https://www.facebook.com/pathofexile/)[](https://www.twitch.tv/directory/game/Path%20of%20Exile)[](https://www.youtube.com/user/grindinggear)[](https://discord.gg/0ybQUsRoo91vwONn)######
 
 https://www.reddit.com/r/pathofexile/search?q=title%3ADaily+Labyrinth+author%3AAutoModerator&sort=new&restrict_sr=on&t=day
+
+https://www.reddit.com/r/poecss/wiki/index#wiki_custom_dark_mode_for_the_subreddit.21
 
 ####[Message the Moderators](/message/compose?to=%2Fr%2Fpoeblackmarket)  
 
