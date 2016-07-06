@@ -1909,7 +1909,7 @@ div.titlebox span.number:after {
   height: 51px;
   text-align: center;
   border-radius: 5px;
-  right: 75px;
+  right: 80px;
   top: 412px;
   width: 188px;
   z-index: 9999;
@@ -3722,7 +3722,7 @@ body.listing-page > .content {
 .side, a[name^="content"] {
   background-color: transparent; }
 
-.side a[href^="//#ambush"] {
+html .side a[href^="//#ambush"] {
   background: #006b6b;
   border: 1px solid #000;
   border-radius: 2px;
@@ -3731,7 +3731,7 @@ body.listing-page > .content {
   padding: 1px 3px;
   pointer-events: none; }
 
-.side a[href^="//#invasion"] {
+html .side a[href^="//#invasion"] {
   background: #800000;
   border: 1px solid #000;
   border-radius: 2px;
@@ -3740,21 +3740,21 @@ body.listing-page > .content {
   padding: 1px 3px;
   pointer-events: none; }
 
-.side a[href^="//#sdl"] {
+html .side a[href^="//#sdl"] {
   color: #fff !important;
   font-size: 10px;
   font-weight: 700;
   text-shadow: 1px 1px 2px #000, 0 0 1em green, 0 0 0.2em green;
   pointer-events: none; }
 
-.side a[href^="//#hcl"] {
+html .side a[href^="//#hcl"] {
   color: #fff !important;
   font-size: 10px;
   font-weight: 700;
   text-shadow: 1px 1px 2px #000, 0 0 1em #9b0000, 0 0 0.2em #9b0000;
   pointer-events: none; }
 
-.side a[href^="//#n7"] {
+html .side a[href^="//#n7"] {
   background: #f3f3f3;
   border: 1px solid #000;
   border-radius: 2px;
@@ -3763,7 +3763,7 @@ body.listing-page > .content {
   padding: 1px 3px;
   pointer-events: none; }
 
-.side a[href^="//#hardcore"] {
+html .side a[href^="//#hardcore"] {
   background: #800080;
   border: 1px solid #000;
   border-radius: 2px;
@@ -3772,33 +3772,33 @@ body.listing-page > .content {
   padding: 1px 3px;
   pointer-events: none; }
 
-.side a[href^="//#op"] {
+html .side a[href^="//#op"] {
   background: #ffd700;
   color: #000 !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
 
-.side a[href^="//#ggg"] {
+html .side a[href^="//#ggg"] {
   color: #9b0000 !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
 
-.side a[href^="//#gggmod"] {
+html .side a[href^="//#gggmod"] {
   color: #3bb9ff !important;
   font-size: small;
   font-weight: 700;
   pointer-events: none; }
 
-.side a[href="/s"] {
+html .side a[href="/s"] {
   display: none; }
 
-.side a[href="/smallText"] {
+html .side a[href="/smallText"] {
   font-size: smaller;
   color: #737373 !important; }
 
-.side a[href="//#submod"] {
+html .side a[href="//#submod"] {
   color: #af6025 !important;
   font-size: small;
   font-weight: 700;
@@ -4506,7 +4506,7 @@ html[lang="dd"]{
   .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .combined-search-page .search-result a,
   .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .hoverHelp, .res-nightmode .deepthread a, .res-nightmode .policy-page .md h1 a,
   .res-nightmode .policy-page .md h3 a {
-    color: #DFCF99; }
+    color: #DFCF99 !important; }
   .res-nightmode[href^="/r/poeblackmarket/about/moderators"], .res-nightmode .gadget a, .res-nightmode[href^="/r/poeblackmarket/about/moderators"] {
     color: #DFCF99 !important; }
   .res-nightmode a.pretty-button.neutral, .res-nightmode a.pretty-button.negative {

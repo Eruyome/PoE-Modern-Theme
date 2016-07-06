@@ -2495,7 +2495,7 @@ div.titlebox span.number:after {
 	height: 51px;
 	text-align: center;
 	border-radius: 5px;
-	right: 75px;
+	right: 80px;
 	top: 412px;
 	width: 188px;
 	z-index: 9999;
@@ -4852,7 +4852,7 @@ body.listing-page > .content {
 	background-color: transparent;
 }
 
-.side a {
+html .side a {
 	&[href^="//#ambush"] {
 		background: $bg_color_68;
 		border: 1px solid $border_color_32;
@@ -5782,7 +5782,7 @@ html[lang="dd"]{
 	.combined-search-page .search-result a > mark,  .hoverHelp,  .deepthread a,  .policy-page .md h1 a,
 	.policy-page .md h3 a
 	{
-		color: $font_color_37;
+		color: $font_color_37 !important;
 	}
 	//.res-nightmode .side .md a,
 	&[href^="/r/poeblackmarket/about/moderators"], .gadget a, &[href^="/r/poeblackmarket/about/moderators"]
