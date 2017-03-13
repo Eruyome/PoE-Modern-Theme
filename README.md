@@ -1,6 +1,8 @@
 # PoE-Modern-Theme
 New theme for the PoE subreddit
 
+[Version 2](https://www.reddit.com/r/poecss/)
+
 ## Instructions 
 
 - Install `Node package Manager - npm`.
